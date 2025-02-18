@@ -1,0 +1,1288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+
+@font-face {
+  font-family: 'Boska-Variable';
+  src: url('./assets/font/Boska-Variable.woff2') format('woff2'),
+    url('./assets/font/Boska-Variable.woff') format('woff'),
+    url('./assets/font/Boska-Variable.ttf') format('truetype');
+  font-weight: 200 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+html,
+body {
+  overflow-y: auto;
+  /* Allow vertical scrolling */
+  height: 100%;
+  /* Ensure body takes full height */
+}
+
+
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Boska-Variable', sans-serif;
+}
+
+.and-symbol {
+  font-family: "Playfair Display", serif;
+  color: var(--optional-color)
+}
+
+.title {
+  position: relative;
+  font-size: 80px;
+  color: var(--primary-color);
+  margin: 0;
+  z-index: 2;
+}
+
+/* styles.css or your CSS-in-JS solution */
+.left-to-right-reveal {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  /* Initially set width to 0 */
+}
+
+.reveal-content {
+  display: inline-block;
+  position: relative;
+}
+
+.left-to-right-reveal.animate {
+  animation: leftreveal 3s ease-out;
+  /* Adjust timing as needed */
+}
+
+@keyframes leftreveal {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+    /* Ensure it reveals fully */
+  }
+}
+
+/* styles.css or your CSS-in-JS solution */
+.top-to-bottom-reveal {
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  height: 0;
+  /* Initially set height to 0 */
+}
+
+.tbreveal-content {
+  display: block;
+  position: relative;
+}
+
+.top-to-bottom-reveal.tbanimate {
+  height: auto;
+  /* Change height to auto when animating */
+  animation: topreveal 3s ease-out;
+  /* Adjust timing as needed */
+}
+
+@keyframes topreveal {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 100%;
+    /* Ensure it reveals fully */
+  }
+}
+
+.visible-reveal {
+  opacity: 0;
+  /* Start with opacity 0 */
+  transition: opacity 3s ease-out;
+  /* Smooth transition to opacity 1 */
+}
+
+.visible-reveal.vbanimate {
+  opacity: 1;
+  /* End with opacity 1 when animated */
+}
+
+.subtitle {
+  position: relative;
+  font-family: "Bonheur Royale", cursive;
+  color: var(--black-color);
+  font-size: 24px;
+  z-index: 2;
+  margin: 0;
+}
+
+.description {
+  font-size: 16px;
+  margin: 0;
+  z-index: 2;
+}
+
+:root {
+  --background-color: #FFF2EC;
+  --primary-color: #347440;
+  --secondary-color: #FFC3AB;
+  --border-color: #DDAAAA;
+  --input-background: #F3F1ED;
+  --optional-color: #DAA547;
+  --black-color: #222222;
+}
+
+.global-style {
+  background-color: var(--background-color);
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.socialmedia-icons {
+  color: var(--border-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+.header {
+  position: relative;
+  /* Use relative positioning */
+  z-index: 1000;
+  /* Ensure it's above other elements */
+  width: 100%;
+  /* Full width */
+}
+
+.navbar-nav {
+  margin-left: auto;
+  /* Pushes the logo to the right */
+}
+
+.navbar-brand {
+  padding-left: 20px;
+  margin-right: auto;
+  /* Moves the logo to the right end */
+}
+
+.navbar-nav .nav-link {
+  color: var(--primary-color) !important;
+  /* Change link color */
+  margin: 0 10px;
+  padding: 10px;
+  /* Adjust the gap between links */
+}
+
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    background: var(--secondary-color);
+    border-radius: 20px;
+    max-width: 130px;
+  }
+}
+
+/* Hero section */
+.hero-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  top: -93px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  /* Ensure no overflow from positioned elements */
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Adjust opacity as needed */
+  pointer-events: none;
+  /* Prevents blocking interactions */
+}
+
+
+.leaf-right,
+.leaf-left {
+  position: absolute;
+  width: 25%;
+  /* Ensure leaves are behind the text */
+}
+
+.leaf-right {
+  top: 0;
+  left: 0;
+}
+
+.leaf-left {
+
+  top: 50%;
+  bottom: 0;
+  right: 0;
+}
+
+.hero-title-wrapper {
+  position: relative;
+
+}
+
+.hero-subtitle-wrapper,
+.hero-titles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  /* Adjust as needed */
+  z-index: 1;
+  /* Ensure text is above the image */
+}
+
+.hero-title {
+  font-size: 80px;
+  color: var(--primary-color);
+  margin: 0;
+  display: inline-block;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.hero-subtitle {
+  font-size: 80px;
+  display: inline-block;
+  z-index: 1;
+  margin: 0;
+  white-space: nowrap;
+  /* Set the SVG image as the text fill */
+  /* background: var(--primary-color); */
+  background-image: url('./assets/TextImage.svg');
+  background-size: cover;
+  /* Ensures the SVG covers the text area */
+  -webkit-background-clip: text;
+  /* Clips the background to the text */
+  background-clip: text;
+  /* For non-webkit browsers */
+  color: transparent;
+  /* Make the text color transparent to show the background image */
+}
+
+
+.hero-image-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  display: flex;
+  overflow: hidden;
+}
+
+.overlay-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+
+  .hero-subtitle,
+  .hero-title {
+    font-size: 48px;
+    /* Smaller font size for mobile screens */
+  }
+
+  .title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero-subtitle,
+  .hero-title {
+    font-size: 18px;
+    font-weight: 800;
+    /* Even smaller font size for very small screens */
+  }
+}
+
+/* About us section */
+.aboutus-section {
+  position: relative;
+  width: 100%;
+  padding: 0px 20px;
+  padding-top: 70px;
+  z-index: 2;
+}
+
+.aboutus-leaf-right,
+.aboutus-leaf-left {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.aboutus-leaf-left {
+  top: 50px;
+  left: 0;
+}
+
+.aboutus-leaf-right {
+  top: 90%;
+  bottom: 0;
+  right: 0;
+}
+
+.aboutus-star {
+  position: absolute;
+}
+
+.aboutus-cracker {
+  position: absolute;
+  top: -45px;
+  left: 90%;
+}
+
+.aboutus-image {
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 20px;
+  z-index: 3;
+}
+
+
+/* Services section */
+
+.services-section {
+  position: relative;
+  width: 100%;
+  padding: 0px 20px;
+  padding-top: 70px;
+  z-index: 2;
+}
+
+.service-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service-number {
+  color: var(--black-color);
+  font-size: 52px;
+}
+
+.service-title {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.service-subtitle {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 250;
+}
+
+.service-item-title {
+  color: var(--optional-color);
+}
+
+.service-item-descrition {
+  margin: 20px 0;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.service-description-container {
+  min-height: 260px;
+}
+
+.service-item-hr {
+  border: 0;
+  border-top: 1px solid var(--secondary-color);
+  /* Adjust thickness and color */
+}
+
+
+.service-hr {
+  position: absolute;
+  border: 0;
+  border-top: 1px solid var(--border-color);
+  width: 100%;
+  /* Ensures the line takes up the full width of its container */
+  margin: 0;
+  /* Removes default margins that might affect the width */
+  padding: 0;
+  /* Removes default padding that might affect the width */
+}
+
+
+/* Gallery Section */
+
+.gallery-section {
+  position: relative;
+  width: 100%;
+  padding: 0px 20px;
+  padding-top: 70px;
+  z-index: 2;
+}
+
+.gallery-hr {
+  border: 0;
+  border-top: 2px solid var(--border-color);
+  width: 100%;
+  /* Ensures the line takes up the full width of its container */
+
+  margin: 0;
+  margin-top: 50px;
+  /* Removes default margins that might affect the width */
+  padding: 0;
+}
+
+.gallery-design-right {
+  position: absolute;
+  top: 95%;
+  bottom: 0;
+  right: 0;
+}
+
+
+/* Testimonial Section */
+
+.testimonial-section {
+  position: relative;
+  width: 100%;
+  padding: 0px 20px;
+
+  padding-top: 70px;
+  z-index: 2;
+}
+
+.testimonial-design-left {
+  position: absolute;
+  top: 25%;
+  left: 0;
+}
+
+.testimonial-design-right {
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  right: 0;
+}
+
+.testimonial-container {
+  position: relative;
+  border: 1px solid var(--border-color);
+  background: rgb(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 400px;
+}
+
+.testimonial-title {
+  font-size: 40px;
+}
+
+.testimonial-description {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.testimonial-username {
+  font-size: 24px;
+  font-weight: 300;
+  display: flex;
+}
+
+.testimonial-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.testimonial-image-container {
+  position: relative;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.testimonial-image {
+  object-fit: cover;
+  height: 450px;
+  border-radius: 10px;
+}
+
+
+.indicators {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.indicator {
+  width: 100%;
+  height: 6px;
+  background-color: #ccc;
+  border-radius: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.indicator.active {
+  background-color: var(--secondary-color);
+}
+
+/* Contact section */
+
+.contact-section {
+  position: relative;
+  width: 100%;
+  padding: 0px 20px;
+  padding-top: 70px;
+  z-index: 2;
+}
+
+.contact-title {
+  font-size: 34px;
+  font-weight: 100;
+}
+
+.contact-subtitle {
+  font-size: 24px;
+  color: var(--black-color);
+  font-weight: 300;
+}
+
+.contact-label {
+  font-size: 13px;
+  color: var(--black-color);
+  font-weight: 200;
+}
+
+.contact-input {
+  background-color: var(--input-background);
+  border: 1px solid #D8D8DA;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.contact-design-left {
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.button-primary {
+  margin: 10px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: white;
+  background: var(--secondary-color);
+}
+
+.button-secondary {
+  margin: 10px;
+  border: 1px solid var(--secondary-color);
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: var(--secondary-color);
+  background: white;
+}
+
+
+/* Footer Section */
+
+.footer-section {
+  position: relative;
+  width: 100%;
+  padding: 0px 20px;
+
+  padding-top: 70px;
+  z-index: 2;
+}
+
+.footer-hr {
+  border: 0;
+  border-top: 2px solid var(--border-color);
+  width: 100%;
+  /* Ensures the line takes up the full width of its container */
+  margin: 0;
+  margin-top: 50px;
+  /* Removes default margins that might affect the width */
+  padding: 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.footer-link {
+  color: var(--border-color);
+  text-decoration: none;
+}
+
+.footer-text {
+  font-size: 12px;
+  color: var(--border-color);
+}
+
+.footer-note {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.footer-note a {
+  color: inherit;
+  font-weight: bold;
+}
+
+
+@media (max-width: 767px) {
+  .footer-links {
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .service-header {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+
+.gallerypage {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  top: -93px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.right-top {
+  position: absolute;
+  width: 25%;
+  right: 0;
+  top: 100px;
+
+}
+
+.left-bottom {
+  position: absolute;
+  width: 25%;
+  left: 0;
+  bottom: 0;
+}
+
+
+.gallerypage-title {
+  font-size: 80px;
+  color: var(--primary-color);
+  margin: 0;
+  display: inline-block;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.gallerypage-description {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+
+.gallerypage-categories {
+  display: flex;
+  gap: 20px;
+}
+
+.gallery-image-container {
+  position: relative;
+  object-fit: cover;
+  height: 480px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.gallery-image {
+
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+
+}
+
+
+.gallerypage-category {
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  padding: 5px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.gallerypage-category.active {
+  background: var(--primary-color);
+  color: white;
+}
+
+.gallerypage-card {
+  position: relative;
+  border: 1px solid var(--border-color);
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  min-height: 200px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.button-gallery {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: white;
+  background: var(--secondary-color);
+}
+
+.gallerypage-leftimage {
+  object-fit: cover;
+  height: 300px;
+  position: absolute;
+  /* Position it absolutely within the card */
+  top: 0;
+  left: 0%;
+  /* Start off-screen to the right */
+  width: 208%;
+  border-radius: 10px;
+  transition: width 2s ease;
+  /* Smooth transition for desktop */
+}
+
+.gallerypage-rightimage {
+  object-fit: cover;
+  height: 300px;
+  position: absolute;
+  /* Position it absolutely within the card */
+  top: 0;
+  right: 0;
+  /* Start off-screen to the right */
+  width: 208%;
+  /* Adjust based on your design needs */
+  transition: right 2s ease;
+  border-radius: 10px;
+  transition: width 2s ease;
+  /* Smooth transition for desktop */
+}
+
+.gallerypage-leftimage-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px 10px;
+  position: absolute;
+  /* Position it absolutely within the card */
+  top: 0;
+  right: -100%;
+  /* Start off-screen to the right */
+  width: 50%;
+  /* Adjust based on your design needs */
+  transition: right 2s ease;
+  /* Smooth transition for desktop */
+}
+
+.gallerypage-rightimage-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px 10px;
+  position: absolute;
+  /* Position it absolutely within the card */
+  top: 0;
+  left: -100%;
+  /* Start off-screen to the right */
+  width: 50%;
+  /* Adjust based on your design needs */
+  transition: left 2s ease;
+  /* Smooth transition for desktop */
+}
+
+.gallerypage-card:hover .gallerypage-leftimage {
+  width: 100%;
+}
+
+.gallerypage-card:hover .gallerypage-rightimage {
+  width: 100%;
+}
+
+
+.gallerypage-card:hover .gallerypage-leftimage-content {
+  right: 0;
+  /* Slide in to visible area on hover */
+}
+
+.gallerypage-card:hover .gallerypage-rightimage-content {
+  left: 0;
+  /* Slide in to visible area on hover */
+}
+
+/* Media query to disable animations on mobile */
+@media (max-width: 767px) {
+
+  .gallerypage-leftimage,
+  .gallerypage-rightimage {
+    transition: none;
+    /* Disable width transition */
+    width: 100%;
+    /* Ensure image width is 100% on mobile */
+  }
+
+  .gallerypage-leftimage-content {
+    position: relative;
+    width: 100%;
+    transition: none;
+    /* Disable right transition */
+    right: 0;
+    /* Ensure content is visible on mobile */
+  }
+
+  .gallerypage-rightimage-content {
+    position: relative;
+    width: 100%;
+    transition: none;
+    /* Disable right transition */
+    left: 0;
+    /* Ensure content is visible on mobile */
+  }
+
+  .gallerypage-categories {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+
+
+.gallerypage-image-container {
+  position: relative;
+  object-fit: cover;
+  height: 100%;
+  min-height: 300px;
+  border-radius: 10px;
+}
+
+.gallerypage-double-quote {
+  color: #f100a1;
+  font-size: 50px;
+  line-height: 0;
+}
+
+.gallerypage-image-title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.gallerypage-image-description {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+
+
+@media (max-width: 767px) {
+  .right-top {
+
+    width: 50%;
+
+  }
+
+  .left-bottom {
+    width: 50%;
+  }
+
+  .gallerypage-title {
+    font-size: 32px;
+    /* Smaller font size for mobile screens */
+  }
+
+}
+
+
+
+/* SERVICES PAGE SECTION  */
+
+.servicespage-section {
+  position: relative;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+.servicepage-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  min-height: 320px;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.servicepage-card-title {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+.servicepage-card-description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.servicepage-card-image-container {
+  position: relative;
+  object-fit: cover;
+  height: 380px;
+  border-radius: 10px;
+}
+
+.servicepage-card-image {
+  object-fit: cover;
+  height: 100%;
+  border-radius: 10px;
+}
+
+
+/* Blogs section */
+
+.blog {
+  position: relative;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+.blog-image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.blog-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+
+.blog-image-content {
+  position: absolute;
+  /* top: 0; */
+  /* right: 0; */
+  /* left: 0; */
+  bottom: 0;
+  /* width: 97%; */
+  /* height: 100%; */
+  border-radius: 16px;
+  padding: 15px;
+  color: white;
+  backdrop-filter: blur(20px);
+  background: #0000001A;
+  margin: 1rem;
+
+  .blog-content-tag {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1%;
+  }
+
+  .blog-hero-title {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 1%;
+  }
+
+  .blog-hero-description {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1%;
+
+  }
+
+}
+
+.blog-grid-container-title {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+  color: var(--primary-color);
+  letter-spacing: 1%;
+  margin-bottom: 3rem;
+}
+
+/* * Responsive Adjustments */
+@media (max-width: 1024px) {
+  .blog-image-content {
+    padding: 12px;
+    max-width: 95%;
+  }
+
+  .blog-content-tag {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .blog-hero-title {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .blog-hero-description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-image-content {
+    padding: 10px;
+    max-width: 100%;
+    margin: 0.5rem;
+  }
+
+  .blog-content-tag {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .blog-hero-title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .blog-hero-description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-image-content {
+    padding: 8px;
+    max-width: 100%;
+    margin: 0.5rem;
+  }
+
+  .blog-content-tag {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .blog-hero-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .blog-hero-description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.blog-grid-container {
+  margin-top: 2.5rem;
+}
+
+
+.blog-grid-container-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  /* Ensures all cards are the same height */
+  min-height: 400px;
+  /* Adjust based on your design */
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.blog-card-img-top {
+  width: 100%;
+  height: 200px;
+  /* Set fixed height to maintain consistency */
+  object-fit: cover;
+  /* Ensures image fits within the frame */
+  border-radius: 8px;
+}
+
+.blog-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Pushes the button to the bottom */
+  padding: 16px 0;
+}
+
+.blog-card-title {
+  margin-bottom: 8px;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 1%;
+}
+
+.blog-card-text {
+  flex-grow: 1;
+  /* Ensures text takes available space */
+  margin-bottom: 12px;
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1%;
+  max-height: 72px;
+  /* Prevents excessive content expansion */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* Limits text to 3 lines */
+  -webkit-box-orient: vertical;
+}
+
+.blog-redirect-btn {
+  margin: 0;
+  width: 100%;
+}
+
+
+
+.blog-title {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: 1%;
+  color: var(--primary-color);
+  margin-top: 1.5rem;
+}
+
+.blog-hr {
+  border: 0;
+  border-top: 2px solid var(--border-color);
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.blog-end-cta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2rem;
+
+  h4 {
+    margin: 0;
+  }
+
+  button {
+    margin: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .blog-end-cta {
+    flex-direction: column;
+    text-align: center;
+
+    button {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  .blog-grid-container-cards {
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .blog-title {
+    margin-bottom: 8px;
+    line-height: 36px;
+    letter-spacing: 1%;
+    font-size: 24px;
+  }
+}
