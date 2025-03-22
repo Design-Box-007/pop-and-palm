@@ -32,7 +32,7 @@ const BlogsGrid = () => {
             <h2 className='blog-grid-container-title'>Recent Post</h2>
             <div className='blog-grid-container-cards'>
                 {
-                    blogData.map((blog, index) =>
+                    [...blogData].reverse().map((blog, index) =>
                     (<BlogCard
                         key={index}
                         imgSrc={blog.imgSrc}
