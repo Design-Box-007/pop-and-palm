@@ -17,6 +17,17 @@ import Blog6 from "./Blogs/Blog6";
 import Blog7 from "./Blogs/Blog7";
 import Blog8 from "./Blogs/Blog8";
 
+import Blog9 from "./Blogs/Blog9";
+import Blog10 from "./Blogs/Blog10";
+import Blog11 from "./Blogs/Blog11";
+import Blog12 from "./Blogs/Blog12";
+import Blog13 from "./Blogs/Blog13";
+import Blog14 from "./Blogs/Blog14";
+import Blog15 from "./Blogs/Blog15";
+import Blog16 from "./Blogs/Blog16";
+import Blog17 from "./Blogs/Blog17";
+
+
 
 
 export const blogData = [
@@ -68,4 +79,61 @@ export const blogData = [
         description: "Women are the backbone of families, workplaces, and society, yet their journey is often filled with struggles and sacrifices. From an early age, many women are conditioned to balance personal and professional aspirations, often sacrificing one for the other. ",
         blogContent: Blog8
     },
+    // new blogs
+    {
+        title: "From Majlis to Modern: Styling UAE-Inspired Celebrations at Home",
+        description: "In today’s fast-paced world, the desire to celebrate cultural roots in a meaningful, personal way is stronger than ever. As more families in the UAE choose to host intimate yet elegant celebrations at home",
+        imgSrc: BlogImage8,
+        blogContent: Blog9
+    },
+    {
+        title: "Thriving During Dubai's Summer: Strategic Opportunities for Event Planners",
+        description: "Dubai's summer months, characterised by soaring temperatures and a general slowdown in outdoor activities, present unique challenges for event planners. Many residents and potential clients choose this period to travel abroad, leading to a temporary dip in local event demand.",
+        imgSrc: BlogImage8,
+        blogContent: Blog10
+    },
+    {
+        title: "The Rise of Experiential Marketing Events: What Brands Need to Know",
+        description: "In a world saturated with digital noise, audiences crave something more than just information- they want to feel something. That’s why experiential marketing is no longer a buzzword - it’s a brand necessity.",
+        imgSrc: BlogImage8,
+        blogContent: Blog11
+    },
+    {
+        title: "How Color Psychology Shapes Guest Perception at Events",
+        description: "When we think about event planning, we often focus on logistics — venue, food, entertainment. But there’s a silent influencer shaping every guest’s perception from the moment they walk in: color.",
+        imgSrc: BlogImage8,
+        blogContent: Blog12
+    },
+    {
+        title: "Wellness at Events: The New Corporate Trend",
+        description: "In the fast-paced world of corporate life, a quiet shift is taking place. It's no longer just about delivering information or hitting KPIs during company events. Now, it's about how people feel — before, during, and after.",
+        imgSrc: BlogImage8,
+        blogContent: Blog13
+    },
+    {
+        title: "Creative Ways to Personalize a Birthday Celebration",
+        description: "A birthday is more than just a party—it’s a chance to create lasting memories, especially for kids! At Pop and Palm Events, we specialize in themed birthday celebrations that bring imagination to life.",
+        imgSrc: BlogImage8,
+        blogContent: Blog14
+    },
+    {
+        title: "Event Storytelling: Creating a Narrative Your Guests Will Remember",
+        description: "Have you ever attended an event that felt more like an experience than just a gathering? That’s the power of storytelling. A well-crafted event isn’t just about logistics—it’s about creating an emotional journey for attendees.",
+        imgSrc: BlogImage8,
+        blogContent: Blog15
+    },
+    {
+        title: "Sustainable Event Planning: Eco-Friendly Practices in 2025",
+        description: "As the world moves towards sustainability, the events industry is evolving to reduce its environmental impact. At Pop and Palm Events, we recognize our responsibility to create memorable experiences ",
+        imgSrc: BlogImage8,
+        blogContent: Blog16
+    },
+    {
+        title: "5 Small Decor Touches That Make a Big Impact at Home Events",
+        description: "At Pop and Palm Events, we’ve seen firsthand how thoughtful, well-placed elements can elevate even the simplest gathering into a memorable celebration.",
+        imgSrc: BlogImage8,
+        blogContent: Blog17
+    },
+
+
 ];

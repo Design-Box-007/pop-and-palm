@@ -23,4 +23,5 @@ const BlogContent = ({ blog }) => {
     )
 }
 
+
 export default BlogContent
