@@ -57,10 +57,23 @@ import { HashLink } from 'react-router-hash-link';
     // },
     {
       category: "Corporate Events",
+      name: "New Beginnings",
+      description: "Grand Ambience for Grand Openings",
+      link:'/galleryimages/inaguration'
+    },
+    {
+      category: "Corporate Events",
+      name: "Academic Celebrations",
+      description: "Decorated with Dreams, Designed for Memories",
+      link:'/galleryimages/academic-celebrations'
+    },
+    {
+      category: "Corporate Events",
       name: "Team Building Events",
       description: "Activities aimed at strengthening collaboration and camaraderie among team members.",
       link:'/galleryimages/teambuildingevents'
     },
+
     // {
     //   category: "Corporate Events",
     //   name: "Award Ceremonies",

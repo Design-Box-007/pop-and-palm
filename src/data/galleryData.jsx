@@ -12,6 +12,17 @@ import BirthdayParties11 from "../assets/Website photos/Private events/Birthday 
 import BirthdayParties12 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (12).jpg";
 import BirthdayParties13 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (13).jpg";
 import BirthdayParties14 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (14).jpg";
+import BirthdayParties15 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (15).jpg";
+import BirthdayParties16 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (16).jpg";
+import BirthdayParties17 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (17).jpg";
+import BirthdayParties18 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (18).jpg";
+import BirthdayParties19 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (19).jpg";
+import BirthdayParties20 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (20).jpg";
+import BirthdayParties21 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (21).jpg";
+import BirthdayParties22 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (22).jpg";
+import BirthdayParties23 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (23).jpg";
+import BirthdayParties24 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (24).jpg";
+import BirthdayParties25 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (25).jpg";
 
 
 // import Festivaldecor1 from "../assets/Website photos/Private events/Festival decor/Festival decor (1).jpg";
@@ -59,6 +70,15 @@ import Newbeginnings9 from "../assets/Website photos/Private events/New beginnin
 import Newbeginnings10 from "../assets/Website photos/Private events/New beginnings/New beginnings (10).jpg";
 import Newbeginnings11 from "../assets/Website photos/Private events/New beginnings/New beginnings (11).jpg";
 import Newbeginnings12 from "../assets/Website photos/Private events/New beginnings/New beginnings.jpeg";
+import Newbeginnings13 from "../assets/Website photos/Private events/New beginnings/New beginnings (13).jpg";
+import Newbeginnings14 from "../assets/Website photos/Private events/New beginnings/New beginnings (14).jpg";
+import Newbeginnings15 from "../assets/Website photos/Private events/New beginnings/New beginnings (15).jpg";
+import Newbeginnings16 from "../assets/Website photos/Private events/New beginnings/New beginnings (16).jpg";
+import Newbeginnings17 from "../assets/Website photos/Private events/New beginnings/New beginnings (17).jpg";
+import Newbeginnings18 from "../assets/Website photos/Private events/New beginnings/New beginnings (18).jpg";
+import Newbeginnings19 from "../assets/Website photos/Private events/New beginnings/New beginnings (19).jpg";
+import Newbeginnings20 from "../assets/Website photos/Private events/New beginnings/New beginnings (12).jpg";
+
 
 
 import WeddingsandReception1 from "../assets/Website photos/Private events/Weddings and Reception/Weddings and Reception (1).jpg";
@@ -66,6 +86,7 @@ import WeddingsandReception2 from "../assets/Website photos/Private events/Weddi
 import WeddingsandReception3 from "../assets/Website photos/Private events/Weddings and Reception/Weddings and Reception (3).jpg";
 import WeddingsandReception4 from "../assets/Website photos/Private events/Weddings and Reception/Weddings and Reception (4).jpg";
 import WeddingsandReception5 from "../assets/Website photos/Private events/Weddings and Reception/Weddings and Reception (5).jpg";
+import WeddingsandReception6 from "../assets/Website photos/Private events/Weddings and Reception/Weddings and Reception (6).jpg";
 
 import CorporateRetreats1 from "../assets/Website photos/Corporate Events/CorporateRetreats/CorporateRetreats (1).jpg";
 import CorporateRetreats2 from "../assets/Website photos/Corporate Events/CorporateRetreats/CorporateRetreats (2).jpg";
@@ -76,6 +97,11 @@ import CorporateRetreats6 from "../assets/Website photos/Corporate Events/Corpor
 import CorporateRetreats7 from "../assets/Website photos/Corporate Events/CorporateRetreats/CorporateRetreats (7).jpg";
 import CorporateRetreats8 from "../assets/Website photos/Corporate Events/CorporateRetreats/CorporateRetreats (8).jpg";
 import CorporateRetreats9 from "../assets/Website photos/Corporate Events/CorporateRetreats/CorporateRetreats (9).jpg";
+
+import Inaugration1 from '../assets/Website photos/Corporate Events/Inaugration/Inaugration-1.jpg';
+
+import SchoolEvents1 from '../assets/Website photos/Corporate Events/School Events/school-event-1.jpg'
+import SchoolEvents2 from '../assets/Website photos/Corporate Events/School Events/school-event-2.jpg'
 
 import TeamBuilding1 from "../assets/Website photos/Corporate Events/TeamBuilding/TeamBuilding (1).jpg";
 import TeamBuilding2 from "../assets/Website photos/Corporate Events/TeamBuilding/TeamBuilding (2).jpg";
@@ -172,6 +198,51 @@ export const galleryImages = {
             imgSrc: BirthdayParties14,
             alt: "Outdoor Peppa Pig-themed welcome board with colorful decorations, Peppa and George Pig cutouts, and a personalized message for a 3rd birthday celebration",
         },
+        {
+            imgSrc: BirthdayParties15,
+            alt: "",
+        },
+        {
+            imgSrc: BirthdayParties16,
+            alt: "",
+        },
+        {
+            imgSrc: BirthdayParties17,
+            alt: "",
+        },
+        {
+            imgSrc: BirthdayParties18,
+            alt: "",
+        },
+        {
+            imgSrc: BirthdayParties19,
+            alt: "",
+        },
+        {
+            imgSrc: BirthdayParties20,
+            alt: "",
+        },
+        {
+            imgSrc: BirthdayParties21,
+            alt: "",
+        },
+        {
+            imgSrc: BirthdayParties22,
+            alt: "",
+        },
+        {
+            imgSrc: BirthdayParties23,
+            alt: "",
+        },
+        {
+            imgSrc: BirthdayParties24,
+            alt: "",
+        },
+        {
+            imgSrc: BirthdayParties25,
+            alt: "",
+        },
+
     ],
     "newbeginnings": [
         {
@@ -221,7 +292,40 @@ export const galleryImages = {
         {
             imgSrc: Newbeginnings12,
             alt: "Baby shower decorations with a beautiful flower backdrop, soft pastel-colored blooms, and elegant lamps creating a warm and inviting atmosphere"
-        }
+        },
+        {
+            imgSrc: Newbeginnings13,
+            alt: "",
+        },
+        {
+            imgSrc: Newbeginnings14,
+            alt: "",
+        },
+        {
+            imgSrc: Newbeginnings15,
+            alt: "",
+        },
+        {
+            imgSrc: Newbeginnings16,
+            alt: "",
+        },
+        {
+            imgSrc: Newbeginnings17,
+            alt: "",
+        },
+        {
+            imgSrc: Newbeginnings18,
+            alt: "",
+        },
+        {
+            imgSrc: Newbeginnings19,
+            alt: "",
+        },
+        {
+            imgSrc: Newbeginnings20,
+            alt: "",
+        },
+
     ],
     "weddingsandreception": [
         {
@@ -243,6 +347,10 @@ export const galleryImages = {
         {
             imgSrc: WeddingsandReception5,
             alt: "Wedding hall decor featuring neatly arranged tables and chairs with elegant dining setup, including table linens, centerpieces, and soft ambient lighting"
+        },
+        {
+            imgSrc: WeddingsandReception6,
+            alt: ""
         }
     ],
     "festivaldecors": [
@@ -380,6 +488,23 @@ export const galleryImages = {
             imgSrc: CorporateRetreats8,
             alt: "Food setup decor featuring an elegant display of various dishes, arranged with decorative elements to enhance the presentation"
         }
+    ],
+    "inaguration": [
+        {
+            imgSrc: Inaugration1,
+            alt: "Beautiful wedding stage decor featuring white seating with white fabric, elegant white screen pillars, green leaf strings, and white floral arrangements for a fresh and elegant look"
+        }
+    ],
+    "academic-celebrations": [
+        {
+            imgSrc: SchoolEvents1,
+            alt: "",
+        },
+        {
+            imgSrc: SchoolEvents2,
+            alt: "",
+        },
+
     ],
     "teambuildingevents": [
         {
