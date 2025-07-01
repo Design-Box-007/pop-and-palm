@@ -637,3 +637,100 @@ export const galleryImages = {
         }
     ]
 };
+export const categories = ['All', 'Private Events', 'Corporate Events', 'Rentals', 'Quizzy Beez'];
+// Define your gallery items array here...
+
+export const galleryItems = [
+  {
+    category: "Private Events",
+    name: "Birthday Parties",
+    description: "We organize kids' birthday parties, adult celebrations, and themed events.",
+    link: '/galleryimages/birthdayparties'
+  },
+  {
+    category: "Private Events",
+    name: "New Beginnings",
+    description: "We organize baby welcoming, baby showers, and engagement parties.",
+    link: '/galleryimages/newbeginnings'
+  },
+
+  {
+    category: "Private Events",
+    name: "Weddings and Reception",
+    description: "Elegant ceremonies and receptions that create lasting memories for the couple.",
+    link: '/galleryimages/weddingsandreception'
+  },
+  {
+    category: "Private Events",
+    name: "Festival Decor",
+    description: "Vibrant decorations that bring festive spirit to community celebrations and events.",
+    link: '/galleryimages/festivaldecors'
+  },
+  // {
+  //   category: "Corporate Events",
+  //   name: "Product Launch Decor",
+  //   description: "Creative decor to showcase new products and enhance brand presence.",
+  //   link:'/galleryimages/productlaunchdecor'
+  // },
+  {
+    category: "Corporate Events",
+    name: "Corporate Celebrations",
+    description: "Engaging experiences designed for team bonding and relaxation away from the office.",
+    link: '/galleryimages/corporateretreats'
+  },
+  // {
+  //   category: "Corporate Events",
+  //   name: "Annual General Meetings Decor",
+  //   description: "Professional decor to create an impactful setting for important discussions.",
+  //   link:'/galleryimages/corporateevents'
+  // },
+  {
+    category: "Corporate Events",
+    name: "New Beginnings",
+    description: "Grand Ambience for Grand Openings",
+    link: '/galleryimages/inaguration'
+  },
+  {
+    category: "Corporate Events",
+    name: "Academic Celebrations",
+    description: "Decorated with Dreams, Designed for Memories",
+    link: '/galleryimages/academic-celebrations'
+  },
+  {
+    category: "Corporate Events",
+    name: "Team Building Events",
+    description: "Activities aimed at strengthening collaboration and camaraderie among team members.",
+    link: '/galleryimages/teambuildingevents'
+  },
+
+  // {
+  //   category: "Corporate Events",
+  //   name: "Award Ceremonies",
+  //   description: "Elegant events to recognize and celebrate outstanding achievements within the company.",
+  //   link:'/galleryimages/awardceremonies'
+  // },
+  // {
+  //   category: "Corporate Events",
+  //   name: "Company Anniversaries",
+  //   description: "Special celebrations to honor milestones and achievements in the company’s history.",
+  //   link:'/galleryimages/corporateevents'
+  // },
+  // {
+  //   category: "Corporate Events",
+  //   name: "Networking Events",
+  //   description: "Opportunities for professionals to connect, share ideas, and build relationships.",
+  //   link:'/galleryimages/corporateevents'
+  // },
+  {
+    category: "Quizzy Beez",
+    name: "Trivia Nights",
+    description: "Vibrant venues perfect for hosting quiz nights and engaging with guests.",
+    link: '/galleryimages/cozyspots'
+  },
+  {
+    category: "Rentals",
+    name: "Event Essentials",
+    description: "A curated selection of high-quality rentals to elevate your gatherings and events.",
+    link: '/galleryimages/rentals'
+  }
+];
