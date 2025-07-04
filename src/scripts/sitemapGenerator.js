@@ -33,6 +33,7 @@ const blogData = [
   "Event Storytelling: Creating a Narrative Your Guests Will Remember",
   "Sustainable Event Planning: Eco-Friendly Practices in 2025",
   "5 Small Decor Touches That Make a Big Impact at Home Events",
+  "The roi of Experience: How to Measure the True Success of Your Dubai Corporate Event Beyond Just the Budget"
 ];
 
 // Gallery categories and image links
