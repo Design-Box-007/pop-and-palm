@@ -9,6 +9,7 @@ import Services from './pages/Services';
 import GalleryImages from './pages/GalleryImages';
 import Blogs from './pages/Blogs';
 import Blog from './pages/Blog';
+import ContactUs from './pages/ContactUs';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path='/services' element={<Services />} />
         <Route path='/blog' element={<Blogs />} />
         <Route path='/blog/:blogName' element={<Blog />} />
+        <Route path='/contact-us' element={<ContactUs />} />
       </Routes>
       <Footer />
     </div>
