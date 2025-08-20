@@ -24,6 +24,7 @@ import BlogImage16 from '../assets/Blogs/blog-16.jpg'
 import BlogImage17 from '../assets/Blogs/blog-17.jpg'
 import BlogImage18 from '../assets/Blogs/blog-18.jpg'
 import BlogImage19 from '../assets/Blogs/blog-19.jpg'
+import BlogImage20 from '../assets/Blogs/blog-20.png'
 
 
 import Blog5 from "./Blogs/Blog5";
@@ -42,6 +43,7 @@ import Blog16 from "./Blogs/Blog16";
 import Blog17 from "./Blogs/Blog17";
 import Blog18 from "./Blogs/Blog18";
 import Blog19 from "./Blogs/Blog19";
+import blog20 from "./Blogs/blog20";
 
 
 
@@ -157,14 +159,17 @@ export const blogData = [
         imgSrc: BlogImage18,
         blogContent: Blog18,
     },
-    
+
     {
         title: `The "Kidult" Trend: Where Whimsy Meets Wow for Adult Birthdays in Dubai`,
         description: `Are adult birthdays becoming... predictable? In a city as vibrant and visionary as Dubai, the answer is a resounding "no!" The era of the "kidult" is here – a thrilling movement where grownups celebrate like kids, and kids feel like adults.`,
         imgSrc: BlogImage19,
         blogContent: Blog19,
     },
-    
-
-
+    {
+        title: "Half a Year of Heartfelt Gatherings",
+        description: "Some nights were filled with sparkle, like a prom where teenagers danced as if time didn’t exist. Others were quieter",
+        imgSrc: BlogImage20,
+        blogContent: blog20
+    }
 ];
