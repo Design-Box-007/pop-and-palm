@@ -10,11 +10,10 @@ import GallerySection from "../components/GallerySection";
 import FAQAccordion from "../components-2/FAQ/FAQ";
 import faqs from "../data/FAQ/data";
 import HeroSection from "../components-2/Hero/Hero";
-
+import EventHighlight from "../components-2/EventHighlight/EventHighlight"
 import MainEvent from "../components-2/Event/MainEvent";
 import AboutUs from "../components-2/AboutUs/AboutUs";
 import MainService from "../components-2/Service/Services";
-import EventHighlight from "../components-2/EventHighlight/EventHIghlight";
 
 const Home = () => {
   const location = useLocation();
@@ -60,7 +59,7 @@ const Home = () => {
         <MainEvent />
       </section>
 
-      <EventHighlight/>
+       <EventHighlight/>
 
       <FAQAccordion faqs={faqs} />
 
