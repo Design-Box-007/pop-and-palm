@@ -1,5 +1,6 @@
 import { MessageCircle, MessageCircleCode } from "lucide-react";
 import styles from "./AboutUs.module.css";
+import Counter from "../Counter/Counter";
 
 export default function AboutUs() {
   return (
@@ -24,7 +25,7 @@ export default function AboutUs() {
         <div className={styles.statsContainer}>
           <div className={styles.statItem}>
             <div className={styles.statNumber}>
-              10<span className={styles.plus}>+</span>
+              <Counter end={10} suffix="+" />
             </div>
             <div className={styles.statLabel}>Years of Experience</div>
           </div>
@@ -33,7 +34,7 @@ export default function AboutUs() {
 
           <div className={styles.statItem}>
             <div className={styles.statNumber}>
-              500<span className={styles.plus}>+</span>
+              <Counter end={500} suffix="+" />
             </div>
             <div className={styles.statLabel}>Events Delivered</div>
           </div>
@@ -42,7 +43,7 @@ export default function AboutUs() {
 
           <div className={styles.statItem}>
             <div className={styles.statNumber}>
-              200<span className={styles.plus}>+</span>
+              <Counter end={200} suffix="+" />
             </div>
             <div className={styles.statLabel}>Happy Clients</div>
           </div>
@@ -51,7 +52,7 @@ export default function AboutUs() {
 
           <div className={styles.statItem}>
             <div className={styles.statNumber}>
-              98<span className={styles.percent}>%</span>
+              <Counter end={98} suffix="%" />
             </div>
             <div className={styles.statLabel}>Client Satisfaction</div>
           </div>

@@ -1,14 +1,14 @@
+/* Base Navbar */
 .navbar {
   width: 100%;
   padding: 1rem 2rem;
-  background: transparent; /* shows hero background */
-  position: absolute;      /* sits on top of hero */
+  background: transparent;
+  position: absolute;
   top: 20px;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 50;
 }
-
 
 .container {
   display: flex;
@@ -18,35 +18,32 @@
   margin: 0 auto;
 }
 
+/* Logo */
 .logo {
   color: white;
   font-weight: bold;
   font-size: 1.25rem;
 }
 
+/* Nav links */
 .navLinks {
   display: none;
-  align-items: center;
   gap: 2rem;
-}
-
-@media (min-width: 768px) {
-  .navLinks {
-    display: flex;
-  }
 }
 
 .navLink {
   color: white;
   text-decoration: none;
+  font-weight: 500;
   transition: color 0.3s ease;
 }
-
 .navLink:hover {
   color: #d1d5db;
 }
 
+/* Get in Touch */
 .contactButton {
+  display: none;
   background-color: rgba(255, 255, 255, 0.9);
   color: #111827;
   border: none;
@@ -56,7 +53,135 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .contactButton:hover {
   background-color: white;
 }
+
+/* Hamburger button (mobile only) */
+.menuButton {
+  display: block;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 60;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .navLinks {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+  .contactButton {
+    display: inline-block;
+  }
+  .menuButton {
+    display: none;
+  }
+}
+
+/* ---------------- Mobile Menu ---------------- */
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%; /* half screen */
+  height: 100vh;
+  background: rgba(55, 65, 81, 0.7); /* gray blur */
+  backdrop-filter: blur(12px);
+  padding: 2rem 1.5rem;
+  gap: 1.5rem;
+  z-index: 40;
+  transition: transform 0.3s ease;
+  transform: translateX(100%);
+}
+
+.showMenu {
+  display: flex;
+  transform: translateX(0);
+}
+
+.mobileLink {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.mobileLink:hover {
+  color: #d1d5db;
+}
+
+.mobileButton {
+  background-color: white;
+  color: #111827;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3); /* light transparent dark */
+  z-index: 40;
+}
+
+/* Mobile menu half screen */
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  background: rgba(55, 65, 81, 0.7);
+  backdrop-filter: blur(12px);
+  padding: 2rem 1.5rem;
+  gap: 1.5rem;
+  z-index: 50;
+  transition: transform 0.3s ease;
+  transform: translateX(100%);
+}
+
+.showMenu {
+  transform: translateX(0);
+}
+
+/* Close button inside menu */
+.closeButton {
+  background: none;
+  border: none;
+  color: white;
+  align-self: flex-end;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+/* Links */
+.mobileLink {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.mobileLink:hover {
+  color: #d1d5db;
+}
+
+.mobileButton {
+  background-color: white;
+  color: #111827;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+

@@ -1,5 +1,6 @@
 import { ArrowRightCircle } from "lucide-react";
 import styles from "./Hero.module.css";
+import image from "../../assets/Pop and Palm/Home/Home Page image 2.png"
 
 export default function HeroSection() {
   return (

@@ -10,7 +10,7 @@
 .backgroundImage {
   position: absolute;
   inset: 0;
-  background-image: url("src/assets/Pop and Palm/Home/Home Page image 2.png");
+  background-image: url("../../assets/Pop and Palm/Home/Home Page image 2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -98,9 +98,9 @@
   margin-left: 5px;
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .title {
-    font-size: 36px;
+    font-size: 100px;
   }
 
   .titleSpan {
@@ -121,13 +121,12 @@
     padding: 0.6rem 1.2rem;
     font-size: 0.9rem;
   }
-}
+} */
 
-/* Mobile */
 /* Mobile */
 @media (max-width: 768px) {
   .heroSection {
-    min-height: 60vh;
+    min-height: 20vh;
     margin: 5px;
     display: flex;
     flex-direction: column;
@@ -137,12 +136,14 @@
   }
 
   .title {
-    font-size: 28px;
+    font-size: 48px;
     margin-top: 150px;
+    margin-bottom: 30px;
   }
 
   .titleSpan {
-    font-size: 45px;
+    font-size: 20px;
+    margin-top: 10px;
   }
 
   .subtitle {
@@ -173,22 +174,4 @@
   }
 }
 
-/* Small Phones */
-@media (max-width: 480px) {
-  .title {
-    font-size: 22px;
-  }
-
-  .titleSpan {
-    font-size: 32px;
-  }
-
-  .subtitle {
-    font-size: 14px;
-  }
-
-  .planButton {
-    padding: 0.5rem 1rem;
-    font-size: 0.8rem;
-  }
-}
+ 
