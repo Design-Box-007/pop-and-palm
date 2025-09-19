@@ -152,6 +152,7 @@ h6 {
   background-color: var(--background-color);
   height: 100vh;
   overflow-x: hidden;
+  position: relative;
 }
 
 .socialmedia-icons {

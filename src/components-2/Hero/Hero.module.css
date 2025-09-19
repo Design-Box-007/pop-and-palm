@@ -1,0 +1,194 @@
+.heroSection {
+  position: relative;
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.backgroundImage {
+  position: absolute;
+  inset: 0;
+  background-image: url("src/assets/Pop and Palm/Home/Home Page image 2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.overlay {
+  position: absolute;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  color: white;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 50px;
+  margin-bottom: 1.1rem;
+  text-wrap: balance;
+}
+
+.titleSpan {
+  display: block;
+  font-weight: 400;
+  font-size: 100px;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-bottom: 3rem;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-wrap: pretty;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  justify-items: center;
+}
+
+.bottomLeftText {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: white;
+  max-width: 30rem;
+}
+
+.bottomLeftText p {
+  font-size: 0.875rem;
+  color: white;
+  margin: 0;
+}
+
+.bottomRightButton {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.planButton {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.planButton:hover {
+  background-color: gainsboro;
+}
+
+.arrow {
+  color: #fec2aa;
+  margin-left: 5px;
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 36px;
+  }
+
+  .titleSpan {
+    font-size: 70px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    max-width: 500px;
+  }
+
+  .bottomLeftText {
+    max-width: 22rem;
+    font-size: 0.8rem;
+  }
+
+  .planButton {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile */
+/* Mobile */
+@media (max-width: 768px) {
+  .heroSection {
+    min-height: 60vh;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical center */
+    align-items: center; /* horizontal center */
+    text-align: center;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-top: 150px;
+  }
+
+  .titleSpan {
+    font-size: 45px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  /* Remove absolute positioning so text can center */
+  .bottomLeftText,
+  .bottomRightButton {
+    position: static;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .planButton {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 25px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .title {
+    font-size: 22px;
+  }
+
+  .titleSpan {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .planButton {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}
