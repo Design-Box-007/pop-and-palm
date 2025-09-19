@@ -1,6 +1,5 @@
 .aboutSection {
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin: 60px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,3 +77,28 @@
   background-color: #fec2aa;
   flex-shrink: 0;
 }
+
+@media (max-width: 768px){
+.heading{
+  font-size: 40px;
+}
+
+.description{
+  font-size: 15px;
+}
+.statsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.divider {
+  transform: rotate(90deg);
+}
+.statLabel{
+  font-size: 20px;
+}
+.statsContainer{
+  margin: 0;
+  gap: 0;
+}
+ }

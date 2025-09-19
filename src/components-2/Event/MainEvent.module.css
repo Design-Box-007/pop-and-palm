@@ -75,11 +75,49 @@
   padding: 0.3rem 0.6rem;
   border-radius: 999px;
   font-size: 0.8rem;
-  
 }
 
-
-.subTags{
+.subTags {
   display: flex;
   gap: 10px;
+}
+
+@media (max-width: 768px) {
+
+  .header h2 {
+    font-size: 40px;
+  }
+
+  .header p{
+    font-size: 14px;
+  }
+
+  .cardTitle{
+    font-size: 30px;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+  .colWide,
+  .colNarrow {
+    grid-column: unset; /* remove grid span */
+    width: 100%;
+    height: auto; /* reset fixed width */
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
 }
