@@ -97,7 +97,6 @@ const servicePageData = [
       description:
         "Our corporate events are meticulously crafted to foster connections, encourage collaboration, and celebrate company achievements. We provide customized solutions that include elegant decor, gourmet catering, and engaging activities tailored to enhance your corporate culture. Whether you’re hosting a networking event, a team-building retreat, or a milestone celebration, we focus on creating a professional yet enjoyable atmosphere that leaves a lasting impression on your attendees.",
       subDescription: "Your Celebration, Our Expertise",
-
       buttonLink: "#", // default link
     },
 

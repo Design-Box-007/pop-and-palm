@@ -5,9 +5,8 @@
   font-family: 'Playfair Display', serif; /* For the main title */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: black;
-  padding: 30px 30px; /* Adjust padding as needed */
-  margin: 0 auto;
+  color: black; 
+  padding: 50px 20px;
 }
 
 .cardGrid {

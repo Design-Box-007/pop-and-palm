@@ -14,13 +14,16 @@ import ContactUs from "./pages/ContactUs";
 import Navbar from "./components-2/Navbar/Nabar";
 import Service from "./pages/Service";
 import ScrollToTop from "./components-2/ScrollToTop/ScrollToTop";
+import useScrollRestoration from "./components-2/ScrollToTop/ScrollToTop";
+import useScrollToTop from "./components-2/ScrollToTop/ScrollToTop";
 
 function App() {
+  useScrollToTop();
   return (
     <div className="global-style">
       {/* <Header /> */}
       <Navbar />
-      <ScrollToTop/>
+      {/* <ScrollToTop/> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/gallery/:category?" element={<Gallery />} />
@@ -32,7 +35,7 @@ function App() {
         <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
       {/* <Footer /> */}
-      <Footer/>
+      <Footer />
     </div>
   );
 }

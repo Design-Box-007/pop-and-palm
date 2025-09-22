@@ -3,6 +3,7 @@ import React from "react";
 
 import CTAImage from "../../assets/Pop and Palm/Home/Home Page image 1.png";
 import { ArrowRightCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CTA = () => {
   return (
@@ -29,7 +30,11 @@ const CTA = () => {
             We’ll handle the details, you enjoy the moments.
           </p>
 
-          <button className={styles.cta}>Start Planning Today <ArrowRightCircle/> </button>
+          <Link to={"/services"}>
+            <button className={styles.cta}>
+              Start Planning Today <ArrowRightCircle />{" "}
+            </button>
+          </Link>
         </div>
       </div>
     </section>

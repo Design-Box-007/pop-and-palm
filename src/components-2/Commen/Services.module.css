@@ -1,42 +1,23 @@
 /* App.module.css */
 /* General resets/fonts should be in index.css or global.css */
 
-.servicesSection {
-  font-family: "Playfair Display", serif; /* For the main title */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: black;
-  padding: 30px 20px; /* Adjust padding as needed */
-  margin: 0 auto;
+.servicesSection{
+  padding: 50px 20px;
 }
 
 .cardGrid {
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
-    minmax(320px, 1fr)
+    minmax(350px, 1fr)
   ); /* Responsive grid */
   gap: 30px; /* Space between cards */
   margin-top: 50px;
-}
-
-/* Responsive adjustments for the grid */
-@media (min-width: 768px) {
-  .cardGrid {
-    grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
-    gap: 40px;
-  }
-  .servicesSection {
-    padding: 10px 20px;
-  }
 }
 
 @media (min-width: 1024px) {
   .cardGrid {
     grid-template-columns: repeat(2, 1fr); /* Three columns on large screens */
     gap: 20px;
-  }
-  .servicesSection {
-    padding: 30px 30px;
   }
 }

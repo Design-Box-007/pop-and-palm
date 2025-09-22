@@ -1,0 +1,112 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #0d0d0d;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.glitch {
+  font-size: 8rem;
+  font-weight: bold;
+  position: relative;
+  animation: flicker 2s infinite alternate;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+}
+
+.glitch::before {
+  left: 2px;
+  text-shadow: -2px 0 red;
+  animation: glitchTop 2s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+  left: -2px;
+  text-shadow: -2px 0 blue;
+  animation: glitchBottom 1.5s infinite linear alternate-reverse;
+}
+
+@keyframes glitchTop {
+  0% {
+    clip: rect(0, 900px, 0, 0);
+  }
+  20% {
+    clip: rect(0, 900px, 60px, 0);
+  }
+  40% {
+    clip: rect(0, 900px, 20px, 0);
+  }
+  60% {
+    clip: rect(0, 900px, 80px, 0);
+  }
+  80% {
+    clip: rect(0, 900px, 30px, 0);
+  }
+  100% {
+    clip: rect(0, 900px, 0, 0);
+  }
+}
+
+@keyframes glitchBottom {
+  0% {
+    clip: rect(0, 900px, 0, 0);
+  }
+  25% {
+    clip: rect(40px, 900px, 80px, 0);
+  }
+  50% {
+    clip: rect(10px, 900px, 50px, 0);
+  }
+  75% {
+    clip: rect(30px, 900px, 90px, 0);
+  }
+  100% {
+    clip: rect(0, 900px, 0, 0);
+  }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.message {
+  font-size: 1.2rem;
+  margin: 1rem 0 2rem;
+  color: #bbb;
+}
+
+.homeBtn {
+  padding: 12px 24px;
+  background: #ff4c60;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.homeBtn:hover {
+  background: #ff1f3c;
+  transform: scale(1.05);
+}
