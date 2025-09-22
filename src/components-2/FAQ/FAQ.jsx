@@ -16,7 +16,7 @@ function FAQAccordion({ faqs }) {
 
       <div className={styles.list}>
         {faqs.map((faq, index) => (
-          <div className={styles.item}>
+          <div className={styles.item} key={faq.id || index}>
             <button className={styles.button} onClick={() => toggleFAQ(index)}>
               {faq.question}
               {openIndex === index ? (

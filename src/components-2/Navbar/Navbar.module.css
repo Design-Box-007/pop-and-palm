@@ -18,6 +18,10 @@
   margin: 0 auto;
 }
 
+.serviceActive{
+  color: black;
+}
+
 /* Logo */
 .logo {
   color: white;
@@ -44,11 +48,11 @@
 /* Get in Touch */
 .contactButton {
   display: none;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: white;
   color: #111827;
   border: none;
   padding: 0.5rem 1rem;
-  border-radius: 0.375rem;
+  border-radius: 20px;
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s ease;

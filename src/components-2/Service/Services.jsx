@@ -1,94 +1,51 @@
-// App.js
 import React from "react";
+import KidsBirthdayPartiesServiceImage from "../../assets/ServicePageImages/KidsBirthdayPartiesServiceImage.jpg";
+import CorporateEventsServiceImage from "../../assets/ServicePageImages/CorporateEventsServiceImage.jpg";
+import RentalServiceImage from "../../assets/ServicePageImages/RentalServiceImage.jpg";
+import QuizzyBeezServiceImage from "../../assets/ServicePageImages/QuizzyBeez.svg";
 
-import styles from "./Services.module.css"; // Global App styles if needed, or specific for this section
-
-// Import your images (replace with actual paths or placeholder URLs)
-import corporateEventsImg from "../../assets/Pop and Palm/Home/Home Page image 3.png";
-import weddingsImg from "../../assets/Pop and Palm/Home/Home Page image 4.png";
-import exhibitionsImg from "../../assets/Pop and Palm/Home/Home Page image 5.png";
-import luxuryExperiencesImg from "../../assets/Pop and Palm/Home/Home Page image 6.png";
-import brandActivationsImg from "../../assets/Pop and Palm/Home/Home Page image 7.png";
-import destinationEventsImg from "../../assets/Pop and Palm/Home/Home Page image 8.png";
-import ServicesHeader from "./ServicesHeader";
-import ServiceCard from "./ServicesCard"
- 
-
-function MainService() {
-  const services = [
+const servicesData = {
+  tagline: "Services We Offer",
+  title: "Tailored Event Solutions for Every Occasion",
+  description:
+    "Comprehensive solutions designed to make every event unforgettable.",
+  categories: [
     {
-      id: 1,
-      image: corporateEventsImg,
-      title: "Corporate Events",
+      title: "Private Events",
+      description:
+        "From whimsical themed decorations to mouth-watering cakes, we tailor each event to your needs. Enjoy entertainment options like clowns, magicians, and interactive games that will keep everyone engaged and laughing. Whether it’s a birthday party, a family gathering, or a special occasion, we ensure every detail is perfect for a memorable day.",
+      image: KidsBirthdayPartiesServiceImage,
+      link: "/services/Private Events", // Replace with actual image reference
       tags: ["Conferences", "Seminars", "Product Launches", "Award Nights"],
     },
     {
-      id: 2,
-      image: weddingsImg,
-      title: "Weddings & Private Parties",
-      tags: ["Weddings", "Engagements", "Birthday", "Anniversaries"],
+      title: "Corporate Events",
+      description:
+        "Our corporate events are meticulously crafted to foster connections, encourage collaboration, and celebrate company achievements. We provide customized solutions that include elegant decor, gourmet catering, and engaging activities tailored to enhance your corporate culture. Whether you’re hosting a networking event, a team-building retreat, or a milestone celebration, we focus on creating a professional yet enjoyable atmosphere that leaves a lasting impression on your attendees.",
+      image: CorporateEventsServiceImage,
+      link: "/services/Corporate Events", // Replace with actual image reference
+      tags: ["Conferences", "Seminars", "Product Launches", "Award Nights"],
+      // Replace with actual image reference
     },
     {
-      id: 3,
-      image: exhibitionsImg,
-      title: "Exhibitions & Trade Shows",
-      tags: [
-        "Booth Design",
-        "Exhibition Setup",
-        "Trade Shows",
-        "Brand Showcases",
-      ],
+      title: "Rentals",
+      description:
+        "We provide a wide range of stylish, high-quality furniture rentals to elevate your events. From comfortable seating and elegant tables to unique decorative items, our selection ensures that you have everything you need to create a memorable atmosphere. Enjoy the convenience of renting without the hassle of purchasing, allowing you to focus on what matters most—your guests and your occasion.",
+      image: RentalServiceImage,
+      link: "/services/Rentals", // Replace with actual image reference
+      tags: ["Conferences", "Seminars", "Product Launches", "Award Nights"],
+      // Replace with actual image reference
     },
     {
-      id: 4,
-      image: luxuryExperiencesImg,
-      title: "Luxury Experiences",
-      tags: [
-        "VIP Events",
-        "High-end Galas",
-        "Exclusive Launches",
-        "Private Dinners",
-      ],
+      title: "Quizzy Beez",
+      description:
+        "Dive into an exciting world of trivia with our Quizzy Beez events! These engaging trivia nights are designed to challenge participants' knowledge across a wide range of topics, ensuring fun for everyone involved. We create a lively atmosphere with themed decorations that transport you to different worlds, and offer fun prizes to heighten the competition. Ideal for friends, families, or colleagues, our interactive activities foster camaraderie and spark friendly rivalry, making every event a unique experience.",
+      image: QuizzyBeezServiceImage,
+      link: "/services/Quizzy Beez", // Replace with actual image reference
+      tags: ["Conferences", "Seminars", "Product Launches", "Award Nights"],
+      // Replace with actual image reference
     },
-    {
-      id: 5,
-      image: brandActivationsImg,
-      title: "Brand Activations",
-      tags: [
-        "Pop-up Events",
-        "Product Demos",
-        "Street Marketing",
-        "Experience Zones",
-      ],
-    },
-    {
-      id: 6,
-      image: destinationEventsImg,
-      title: "Destination Events",
-      tags: [
-        "Destination Weddings",
-        "Corporate Retreats",
-        "Corporate Retreats",
-        "Travel Planning",
-      ],
-    },
-  ];
+  ],
+};
 
-  return (
-    <div className={styles.servicesSection}>
-      <ServicesHeader
-        preTitle="Services We Offer"
-        title="Tailored Event Solutions for Every Occasion"
-        subtitle="Comprehensive solutions designed to make every event unforgettable."
-      />
-
-      <div className={styles.cardGrid}>
-        {services.map((service) => (
-          <ServiceCard key={service.id} service={service} />
-        ))}
-      </div>
-    </div>
-  );
-}
-
-export default MainService;
+export default servicesData;

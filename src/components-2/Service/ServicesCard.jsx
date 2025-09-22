@@ -1,39 +1,43 @@
-// components/ServiceCard.js
-
-import { ArrowBigRightDash, ArrowRightCircleIcon } from "lucide-react";
+import { Link } from "react-router-dom";
+import icons from "../../Icon/Icon";
 import styles from "./ServicesCard.module.css";
 
-function ServiceCard({ service }) {
+function ServiceCard({ service, showAsDescription = false }) {
   const { image, title, tags } = service;
 
   return (
     <div className={styles.card}>
       <div className={styles.imageWrapper}>
-        <img src={image} alt={title} className={styles.image} />
+        <Link to={`services/${title}`}>
+          <img src={image} alt={title} className={styles.image} />
+        </Link>
       </div>
+
       <div className={styles.content}>
         <div className={styles.titleArrow}>
-        <h3 className={styles.title}>{title}</h3>
-        <span><ArrowRightCircleIcon/></span>
+          <h3 className={styles.title}>{title}</h3>
+          <span>
+            <Link to={`services/${title}`}>
+              <img src={icons.icon1} alt="icon" />
+            </Link>
+          </span>
         </div>
-        <div className={styles.tagsContainer}>
-          <div className={styles.tags}>
-            {tags.map((tag, index) => (
-              <span key={index} className={styles.tag}>
-                {tag}
-              </span>
-            ))}
-          </div>
-          {/* <button
-            className={styles.toggleButton}
-            onClick={toggleExpand}
-            aria-expanded={isExpanded}
-            aria-controls={`tags-${service.id}`}
-            aria-label={isExpanded ? 'Collapse tags' : 'Expand tags'}
-          >
-            {isExpanded ? <FaMinus /> : <FaPlus />}
-          </button> */}
-        </div>
+
+        {tags &&
+          tags.length > 0 &&
+          (showAsDescription ? (
+            <div className={styles.description}>{tags.join(", ")}</div>
+          ) : (
+            <div className={styles.tagsContainer}>
+              <div className={styles.tags}>
+                {tags.map((tag, index) => (
+                  <span key={index} className={styles.tag}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
       </div>
     </div>
   );

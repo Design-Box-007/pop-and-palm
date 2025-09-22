@@ -30,7 +30,7 @@
   line-height: 1.6;
   color: #333333;
   max-width: 1100px;
-  margin: 0 auto 80px auto;
+  margin: 0 auto auto;
   font-weight: 400;
 }
 
@@ -78,6 +78,12 @@
   flex-shrink: 0;
 }
 
+.vector{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
 @media (max-width: 768px){
 .heading{
   font-size: 40px;
@@ -100,5 +106,8 @@
 .statsContainer{
   margin: 0;
   gap: 0;
+}
+.vector{
+  display: none;
 }
  }
