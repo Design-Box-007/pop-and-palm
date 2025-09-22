@@ -18,8 +18,18 @@
   margin: 0 auto;
 }
 
-.serviceActive{
+.navbar {
+  color: white; /* or whatever default color */
+}
+
+/* when on /services */
+.blackText {
   color: black;
+}
+
+/* make sure links inherit the color */
+.navLink {
+  color: inherit;
 }
 
 /* Logo */
@@ -188,4 +198,3 @@
   font-weight: 500;
   cursor: pointer;
 }
-

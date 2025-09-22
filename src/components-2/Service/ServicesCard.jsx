@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
 import icons from "../../Icon/Icon";
 import styles from "./ServicesCard.module.css";
+import { HashLink } from "react-router-hash-link";
+
+const handleBlogRedirect = () => {
+  window.scrollTo(0, 0);
+  console.log("Scrolled to top"); // Log a message to confirm the function is called
+};
 
 function ServiceCard({ service, showAsDescription = false }) {
   const { image, title, tags } = service;
@@ -8,18 +14,18 @@ function ServiceCard({ service, showAsDescription = false }) {
   return (
     <div className={styles.card}>
       <div className={styles.imageWrapper}>
-        <Link to={`services/${title}`}>
-          <img src={image} alt={title} className={styles.image} />
-        </Link>
+        <HashLink smooth to={`services/${title}#top`}>
+          <img src={image} alt={title} className={styles.image} onClick={handleBlogRedirect}/>
+        </HashLink>
       </div>
 
       <div className={styles.content}>
         <div className={styles.titleArrow}>
           <h3 className={styles.title}>{title}</h3>
           <span>
-            <Link to={`services/${title}`}>
-              <img src={icons.icon1} alt="icon" />
-            </Link>
+            <HashLink smooth to={`services/${title}#top`}>
+              <img src={icons.icon1} alt="icon" className={styles.icon} onClick={handleBlogRedirect}/>
+            </HashLink>
           </span>
         </div>
 

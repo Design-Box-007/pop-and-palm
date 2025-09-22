@@ -8,6 +8,7 @@ import EventsSection from "../components-2/Event/MainEvent";
 import FAQAccordion from "../components-2/FAQ/FAQ";
 import { useParams } from "react-router-dom";
 import formatToHyphenated from "../utils/nameFormat";
+import NotFound from "../components-2/NotFound/NotFound";
 
 const Service = () => {
   const params = useParams();
@@ -15,10 +16,15 @@ const Service = () => {
     (p) =>
       formatToHyphenated(p.title) === formatToHyphenated(params.serviceName)
   );
-  if (!data) return <div>not found</div>;
+  if (!data)
+    return (
+      <div>
+        <NotFound />
+      </div>
+    );
 
   return (
-    <div>
+    <div id="top">
       <HeroSection
         title={data.title}
         image={data.image}

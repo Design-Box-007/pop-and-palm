@@ -1,10 +1,13 @@
 import React from "react";
 import styles from "./MainEvent.module.css";
-import image1 from "../../assets/Pop and Palm/Home/Home Page image 9.png"
-import image2 from "../../assets/Pop and Palm/Home/Home Page image 10.png"
-import image3 from "../../assets/Pop and Palm/Home/Home Page image 11.png"
-import image4 from "../../assets/Pop and Palm/Home/Home Page image 12.png"
+ 
+import image1 from "../../assets/Pop and Palm/Home/Home Page image 9.png";
+import image2 from "../../assets/Pop and Palm/Home/Home Page image 10.png";
+import image3 from "../../assets/Pop and Palm/Home/Home Page image 11.png";
+import image4 from "../../assets/Pop and Palm/Home/Home Page image 12.png";
 import { ArrowRightCircle } from "lucide-react";
+import AnimatedWrapper3 from "../Animation/AnimatedWrapper3";
+
 const events = [
   {
     title: "Corporate Innovation Summit",
@@ -32,28 +35,26 @@ const events = [
   },
 ];
 
-const EventCard = ({ title, img, tags }) => {
-  return (
-    <div className={styles.card}>
-      <img src={img} alt={title} className={styles.cardImage} />
-      <div className={styles.cardOverlay}>
-        <h3 className={styles.cardTitle}>{title}</h3>
-        <div className={styles.tags}>
-          <div className={styles.subTags}>
+const EventCard = ({ title, img, tags }) => (
+  <div className={styles.card}>
+    <img src={img} alt={title} className={styles.cardImage} />
+    <div className={styles.cardOverlay}>
+      <h3 className={styles.cardTitle}>{title}</h3>
+      <div className={styles.tags}>
+        <div className={styles.subTags}>
           {tags.map((tag, i) => (
             <span key={i} className={styles.tag}>
               {tag}
             </span>
           ))}
-           </div>
-          <span>
-            <ArrowRightCircle size={40} className={styles.arrow}/>
-          </span>
         </div>
+        <span>
+          <ArrowRightCircle size={40} className={styles.arrow} />
+        </span>
       </div>
     </div>
-  );
-};
+  </div>
+);
 
 export default function EventsSection() {
   return (
@@ -68,16 +69,24 @@ export default function EventsSection() {
 
       <div className={styles.grid}>
         <div className={styles.colWide}>
-          <EventCard {...events[0]} />
+          <AnimatedWrapper3 direction="left">
+            <EventCard {...events[0]} />
+          </AnimatedWrapper3>
         </div>
         <div className={styles.colNarrow}>
-          <EventCard {...events[1]} />
+          <AnimatedWrapper3 direction="right">
+            <EventCard {...events[1]} />
+          </AnimatedWrapper3>
         </div>
         <div className={styles.colNarrow}>
-          <EventCard {...events[2]} />
+          <AnimatedWrapper3 direction="left">
+            <EventCard {...events[2]} />
+          </AnimatedWrapper3>
         </div>
         <div className={styles.colWide}>
-          <EventCard {...events[3]} />
+          <AnimatedWrapper3 direction="right">
+            <EventCard {...events[3]} />
+          </AnimatedWrapper3>
         </div>
       </div>
     </section>

@@ -8,6 +8,8 @@ import {
 } from "react-icons/fa6";
 import { FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export default function Footer() {
   return (
@@ -22,16 +24,16 @@ export default function Footer() {
           </p>
           <div className={styles.socials}>
             <a href="#">
-              <FaInstagram color="white" size={25}/>
+              <FaInstagram color="white" size={25} />
             </a>
             <a href="#">
-              <FaLinkedinIn color="white" size={25}/>
+              <FaLinkedinIn color="white" size={25} />
             </a>
             <a href="#">
-              <FaFacebookF color="white" size={25}/>
+              <FaFacebookF color="white" size={25} />
             </a>
             <a href="#">
-              <FaXTwitter color="white" size={25}/>
+              <FaXTwitter color="white" size={25} />
             </a>
           </div>
         </div>
@@ -42,16 +44,24 @@ export default function Footer() {
             <h3 className={styles.heading}>Company</h3>
             <ul className={styles.links}>
               <li>
-                <a href="#">About Us</a>
+                <Link to="#about">About Us</Link>
               </li>
               <li>
-                <a href="#">Highlights</a>
+                <HashLink smooth to="/gallery#top">
+                  Highlights
+                </HashLink>
               </li>
               <li>
                 <a href="#">Testimonials</a>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <Link
+                  to="https://us.bigin.online/org868107012/forms/enquiry-form"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
@@ -96,22 +106,21 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-      
       </div>
-        <div className={styles.bottom}>
-          <p>© 2025 Erwa. All rights reserved.</p>
-          <div className={styles.contact}>
-            <span>
-              <FaMapMarkerAlt /> Based in Dubai, UAE
-            </span>
-            <span>
-              <FaPhoneAlt /> +971 50 123 4567
-            </span>
-            <span>
-              <MdEmail /> info@erwa.com
-            </span>
-          </div>
+      <div className={styles.bottom}>
+        <p>© 2025 Erwa. All rights reserved.</p>
+        <div className={styles.contact}>
+          <span>
+            <FaMapMarkerAlt /> Based in Dubai, UAE
+          </span>
+          <span>
+            <FaPhoneAlt /> +971 50 123 4567
+          </span>
+          <span>
+            <MdEmail /> info@erwa.com
+          </span>
         </div>
+      </div>
     </footer>
   );
 }

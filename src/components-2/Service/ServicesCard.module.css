@@ -30,11 +30,15 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.5s ease;
+  transition: transform 0.7s ease;
 }
 
 .card:hover .image {
-  transform: scale(1.05); /* Slight zoom on hover */
+  transform: scale(1.03); /* Slight zoom on hover */
+}
+
+.icon{
+  width: 40px;
 }
 
 .content {
@@ -46,7 +50,6 @@
 }
 
 .title {
-  font-family: "Playfair Display", serif; /* Match header font */
   font-size: 1.6em;
   font-weight: 600;
   margin-bottom: 20px;
@@ -80,10 +83,8 @@
   color: black;
   padding: 3px 9px;
   border-radius: 25px; /* More rounded pill shape */
-  font-size: 10px;
-  font-weight: 200;
+  font-size: 15px;
   white-space: nowrap;
-  font-family: "Montserrat", sans-serif;
 }
 
 .titleArrow {
@@ -92,12 +93,9 @@
   justify-content: space-between;
 }
 
-.titleArrow span {
-  color: #fec2aa;
-}
 
 /* Responsive adjustments for cards */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .title {
     font-size: 1.4em;
   }

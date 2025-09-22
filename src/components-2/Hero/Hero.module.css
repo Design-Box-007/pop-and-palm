@@ -7,6 +7,7 @@
   margin: 10px;
 }
 
+ 
 .backgroundImage {
   position: absolute;
   inset: 0;
@@ -15,7 +16,7 @@
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 20px;
-  filter: brightness(75%);
+  filter: brightness(80%);
 }
 
 .overlay {

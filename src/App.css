@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap");
 
 @font-face {
-  font-family: 'Boska-Variable';
-  src: url('./assets/font/Boska-Variable.woff2') format('woff2'),
-    url('./assets/font/Boska-Variable.woff') format('woff'),
-    url('./assets/font/Boska-Variable.ttf') format('truetype');
+  font-family: "Boska-Variable";
+  src: url("./assets/font/Boska-Variable.woff2") format("woff2"),
+    url("./assets/font/Boska-Variable.woff") format("woff"),
+    url("./assets/font/Boska-Variable.ttf") format("truetype");
   font-weight: 200 900;
   font-display: swap;
   font-style: normal;
@@ -20,8 +20,6 @@ body {
   /* Ensure body takes full height */
 }
 
-
-
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -32,12 +30,36 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Boska-Variable', sans-serif;
+  font-family: "Boska-Variable", sans-serif;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar {
+  width: 12px; /* width of vertical scrollbar */
+  height: 12px; /* height of horizontal scrollbar */
+}
+
+/* Scrollbar Thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #ff6600; /* color of the scroll thumb */
+  border-radius: 6px; /* rounded corners */
+  border: 3px solid #f0f0f0; /* optional: padding around thumb */
+}
+
+/* Scrollbar Track (the background) */
+::-webkit-scrollbar-track {
+  background: white; /* color of the track */
+  border-radius: 6px;
+}
+
+/* Optional: hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff3300;
 }
 
 .and-symbol {
   font-family: "Playfair Display", serif;
-  color: var(--optional-color)
+  color: var(--optional-color);
 }
 
 .title {
@@ -139,12 +161,12 @@ h6 {
 }
 
 :root {
-  --background-color: #FFF2EC;
+  --background-color: #fff2ec;
   --primary-color: #347440;
-  --secondary-color: #FFC3AB;
-  --border-color: #DDAAAA;
-  --input-background: #F3F1ED;
-  --optional-color: #DAA547;
+  --secondary-color: #ffc3ab;
+  --border-color: #ddaaaa;
+  --input-background: #f3f1ed;
+  --optional-color: #daa547;
   --black-color: #222222;
 }
 
@@ -228,7 +250,6 @@ h6 {
   /* Prevents blocking interactions */
 }
 
-
 .leaf-right,
 .leaf-left {
   position: absolute;
@@ -242,7 +263,6 @@ h6 {
 }
 
 .leaf-left {
-
   top: 50%;
   bottom: 0;
   right: 0;
@@ -250,7 +270,6 @@ h6 {
 
 .hero-title-wrapper {
   position: relative;
-
 }
 
 .hero-subtitle-wrapper,
@@ -288,7 +307,7 @@ h6 {
   white-space: nowrap;
   /* Set the SVG image as the text fill */
   /* background: var(--primary-color); */
-  background-image: url('./assets/TextImage.svg');
+  background-image: url("./assets/TextImage.svg");
   background-size: cover;
   /* Ensures the SVG covers the text area */
   -webkit-background-clip: text;
@@ -298,7 +317,6 @@ h6 {
   color: transparent;
   /* Make the text color transparent to show the background image */
 }
-
 
 .hero-image-container {
   position: absolute;
@@ -316,7 +334,6 @@ h6 {
 }
 
 @media (max-width: 768px) {
-
   .hero-subtitle,
   .hero-title {
     font-size: 48px;
@@ -329,7 +346,6 @@ h6 {
 }
 
 @media (max-width: 480px) {
-
   .hero-subtitle,
   .hero-title {
     font-size: 18px;
@@ -383,7 +399,6 @@ h6 {
   z-index: 3;
 }
 
-
 /* Services section */
 
 .services-section {
@@ -436,7 +451,6 @@ h6 {
   /* Adjust thickness and color */
 }
 
-
 .service-hr {
   position: absolute;
   border: 0;
@@ -448,7 +462,6 @@ h6 {
   padding: 0;
   /* Removes default padding that might affect the width */
 }
-
 
 /* Gallery Section */
 
@@ -478,7 +491,6 @@ h6 {
   bottom: 0;
   right: 0;
 }
-
 
 /* Testimonial Section */
 
@@ -548,7 +560,6 @@ h6 {
   border-radius: 10px;
 }
 
-
 .indicators {
   position: relative;
   display: flex;
@@ -599,7 +610,7 @@ h6 {
 
 .contact-input {
   background-color: var(--input-background);
-  border: 1px solid #D8D8DA;
+  border: 1px solid #d8d8da;
   border-radius: 6px;
   padding: 10px;
 }
@@ -628,7 +639,6 @@ h6 {
   color: var(--secondary-color);
   background: white;
 }
-
 
 /* Footer Section */
 
@@ -678,7 +688,6 @@ h6 {
   font-weight: bold;
 }
 
-
 @media (max-width: 767px) {
   .footer-links {
     gap: 10px;
@@ -690,7 +699,6 @@ h6 {
     align-items: start;
   }
 }
-
 
 .gallerypage {
   position: relative;
@@ -709,7 +717,6 @@ h6 {
   width: 25%;
   right: 0;
   top: 100px;
-
 }
 
 .left-bottom {
@@ -718,7 +725,6 @@ h6 {
   left: 0;
   bottom: 0;
 }
-
 
 .gallerypage-title {
   font-size: 80px;
@@ -734,7 +740,6 @@ h6 {
   font-weight: 200;
 }
 
-
 .gallerypage-categories {
   display: flex;
   gap: 20px;
@@ -749,14 +754,11 @@ h6 {
 }
 
 .gallery-image {
-
   object-fit: cover;
   width: 100%;
   height: 100%;
   border-radius: 10px;
-
 }
-
 
 .gallerypage-category {
   color: var(--primary-color);
@@ -864,7 +866,6 @@ h6 {
   width: 100%;
 }
 
-
 .gallerypage-card:hover .gallerypage-leftimage-content {
   right: 0;
   /* Slide in to visible area on hover */
@@ -877,7 +878,6 @@ h6 {
 
 /* Media query to disable animations on mobile */
 @media (max-width: 767px) {
-
   .gallerypage-leftimage,
   .gallerypage-rightimage {
     transition: none;
@@ -910,9 +910,6 @@ h6 {
   }
 }
 
-
-
-
 .gallerypage-image-container {
   position: relative;
   object-fit: cover;
@@ -939,13 +936,9 @@ h6 {
   font-weight: 200;
 }
 
-
-
 @media (max-width: 767px) {
   .right-top {
-
     width: 50%;
-
   }
 
   .left-bottom {
@@ -956,10 +949,7 @@ h6 {
     font-size: 32px;
     /* Smaller font size for mobile screens */
   }
-
 }
-
-
 
 /* SERVICES PAGE SECTION  */
 
@@ -1006,7 +996,6 @@ h6 {
   border-radius: 10px;
 }
 
-
 /* Blogs section */
 
 .blog {
@@ -1043,7 +1032,7 @@ h6 {
   padding: 15px;
   color: white;
   backdrop-filter: blur(20px);
-  background: #0000001A;
+  background: #0000001a;
   margin: 1rem;
 
   .blog-content-tag {
@@ -1068,9 +1057,7 @@ h6 {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 1%;
-
   }
-
 }
 
 .blog-grid-container-title {
@@ -1156,7 +1143,6 @@ h6 {
   margin-top: 2.5rem;
 }
 
-
 .blog-grid-container-cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(250px, 1fr));
@@ -1227,8 +1213,6 @@ h6 {
   width: 100%;
 }
 
-
-
 .blog-title {
   font-family: Poppins;
   font-weight: 400;
@@ -1263,9 +1247,7 @@ h6 {
   }
 }
 
-
 @media (max-width: 768px) {
-
   .blog-end-cta {
     flex-direction: column;
     text-align: center;
