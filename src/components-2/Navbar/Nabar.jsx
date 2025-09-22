@@ -30,14 +30,14 @@ export default function Navbar() {
           >
             Home
           </Link>
-          <Link
-            to="/about"
+          <a
+            href="/#/#about"
             className={`${styles.navLink} ${
-              isActive("/about") ? styles.active : ""
+              isActive("#about") ? styles.active : ""
             }`}
           >
             About Us
-          </Link>
+          </a>
           <Link
             to="/services"
             className={`${styles.navLink} ${
