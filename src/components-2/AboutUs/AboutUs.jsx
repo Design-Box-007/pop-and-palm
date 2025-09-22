@@ -7,7 +7,7 @@ import vector2 from "../../assets/Pop and Palm/Home Page Vector/Vector 7.svg";
 
 export default function AboutUs() {
   return (
-    <section className={styles.aboutSection}>
+    <section className={styles.aboutSection} id="about">
       <div className={styles.container}>
         <div className={styles.badge}>
           <span>
