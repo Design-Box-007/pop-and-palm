@@ -1,0 +1,159 @@
+.footer {
+  background-color: #fcbca4;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 16px;
+  font-family: sans-serif;
+  margin: 20px 20px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.right {
+  display: flex;
+  gap: 3rem;
+}
+
+.left {
+  max-width: 400px;
+}
+
+.logo {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.description {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.heading {
+  font-weight: 600;
+  margin-bottom: 1.4rem;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links li {
+  margin-bottom: 0.5rem;
+}
+
+.links a {
+  font-size: 0.9rem;
+  color: white;
+  opacity: 0.9;
+  text-decoration: none;
+  line-height: 30px;
+}
+
+.links a:hover {
+  opacity: 1;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.85rem;
+}
+.bottom p {
+  font-size: 20px;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  font-size: 20px;
+}
+
+.contact span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px;
+    min-height: auto;
+    border-radius: 12px;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .right {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .left {
+    max-width: 100%;
+  }
+
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .socials {
+    font-size: 1rem;
+  }
+
+  .heading {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .links a {
+    font-size: 0.85rem;
+    line-height: 25px;
+  }
+
+  .bottom {
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .contact {
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 18px;
+  }
+
+  .contact span {
+    gap: 0.3rem;
+  }
+}

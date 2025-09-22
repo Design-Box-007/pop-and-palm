@@ -3,9 +3,16 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import styles from "./Navbar.module.css";
+import icons from "../../Icon/Icon";
+import { Link, useLocation } from "react-router-dom";
+import { Nav } from "react-bootstrap";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation(); // ✅ Get current path
+
+  // Helper function to check if link is active
+  const isActive = (path) => location.pathname === path;
 
   return (
     <nav className={styles.navbar}>
@@ -15,14 +22,61 @@ export default function Navbar() {
 
         {/* Center: Links (desktop only) */}
         <div className={styles.navLinks}>
-          <a href="#" className={styles.navLink}>Home</a>
-          <a href="#" className={styles.navLink}>About</a>
-          <a href="#" className={styles.navLink}>Services</a>
-          <a href="#" className={styles.navLink}>Contact</a>
+          <Link
+            to="/"
+            className={`${styles.navLink} ${
+              isActive("/") ? styles.active : ""
+            }`}
+          >
+            Home
+          </Link>
+          <Link
+            to="/about"
+            className={`${styles.navLink} ${
+              isActive("/about") ? styles.active : ""
+            }`}
+          >
+            About Us
+          </Link>
+          <Link
+            to="/services"
+            className={`${styles.navLink} ${
+              isActive("/services") ? styles.serivce : ""
+            }`}
+          >
+            Services
+          </Link>
+          <Link
+            to="/gallery"
+            className={`${styles.navLink} ${
+              isActive("/gallery") ? styles.active : ""
+            }`}
+          >
+            Highlights
+          </Link>
+          <Link
+            to="/blog"
+            className={`${styles.navLink} ${
+              isActive("/blog") ? styles.active : ""
+            }`}
+          >
+            Blog
+          </Link>
         </div>
 
         {/* Right: Get in Touch (desktop only) */}
-        <button className={styles.contactButton}>Get in Touch</button>
+        <button className={styles.contactButton}>
+          <Nav.Link
+            href="https://us.bigin.online/org868107012/forms/enquiry-form"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Contact{" "}
+            <span>
+              <img src={icons.icon1} alt="contact" />
+            </span>
+          </Nav.Link>
+        </button>
 
         {/* Mobile Menu Toggle */}
         <button
@@ -36,20 +90,56 @@ export default function Navbar() {
 
       {/* Overlay backdrop (click to close) */}
       {isOpen && (
-        <div
-          className={styles.backdrop}
-          onClick={() => setIsOpen(false)}
-        />
+        <div className={styles.backdrop} onClick={() => setIsOpen(false)} />
       )}
 
       {/* Mobile Menu */}
       <div className={`${styles.mobileMenu} ${isOpen ? styles.showMenu : ""}`}>
-        <a href="#" className={styles.mobileLink} onClick={() => setIsOpen(false)}>Home</a>
-        <a href="#" className={styles.mobileLink} onClick={() => setIsOpen(false)}>About</a>
-        <a href="#" className={styles.mobileLink} onClick={() => setIsOpen(false)}>Services</a>
-        <a href="#" className={styles.mobileLink} onClick={() => setIsOpen(false)}>Contact</a>
-        <button className={styles.mobileButton} onClick={() => setIsOpen(false)}>
-          Get in Touch
+        <Link
+          to="/"
+          className={`${styles.mobileLink} ${
+            isActive("/") ? styles.active : ""
+          }`}
+          onClick={() => setIsOpen(false)}
+        >
+          Home
+        </Link>
+        <Link
+          to="/about"
+          className={`${styles.mobileLink} ${
+            isActive("/about") ? styles.active : ""
+          }`}
+          onClick={() => setIsOpen(false)}
+        >
+          About
+        </Link>
+        <Link
+          to="/services"
+          className={`${styles.mobileLink} ${
+            isActive("/services") ? styles.active : ""
+          }`}
+          onClick={() => setIsOpen(false)}
+        >
+          Services
+        </Link>
+        <Link
+          to="/contact"
+          className={`${styles.mobileLink} ${
+            isActive("/contact") ? styles.active : ""
+          }`}
+          onClick={() => setIsOpen(false)}
+        >
+          Contact
+        </Link>
+
+        <button
+          className={styles.mobileButton}
+          onClick={() => setIsOpen(false)}
+        >
+          Contact{" "}
+          <span>
+            <img src={icons.icon1} alt="contact" />
+          </span>
         </button>
       </div>
     </nav>

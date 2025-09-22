@@ -13,9 +13,15 @@ import HeroSection from "../components-2/Hero/Hero";
 import EventHighlight from "../components-2/EventHighlight/EventHighlight";
 import MainEvent from "../components-2/Event/MainEvent";
 import AboutUs from "../components-2/AboutUs/AboutUs";
-import MainService from "../components-2/Service/Services";
 import CTA from "../components-2/CTA/CTA";
 import Diaries from "../components-2/Diaries/Diaries";
+import Private from "../components-2/PrivateEvent/Private";
+import ProcessSection from "../components-2/Process/Process";
+import icons from "../Icon/Icon";
+import heroImage from "../assets/Pop and Palm/Home/Home Page image 2.png";
+import MainService from "../components-2/Commen/Services";
+import serviceData from "../components-2/Service/Services";
+import servicePageData from "../data/servicesData";
 
 const Home = () => {
   const location = useLocation();
@@ -53,7 +59,12 @@ const Home = () => {
 
       <section>
         {/* <ServicesSection /> */}
-        <MainService />
+        <MainService
+          tagline="Services We Offer"
+          title="Tailored Event Solutions for Every Occasion"
+          description="Comprehensive solutions designed to make every event unforgettable."
+          section={servicePageData}
+        />
       </section>
 
       <section>
@@ -63,11 +74,11 @@ const Home = () => {
 
       <EventHighlight />
 
-      <CTA/>
+      <CTA />
 
       <FAQAccordion faqs={faqs} />
 
-      <Diaries/>
+      <Diaries />
 
       {/* <TestimonialSection />
 

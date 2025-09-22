@@ -15,6 +15,7 @@
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 20px;
+  filter: brightness(75%);
 }
 
 .overlay {
@@ -87,6 +88,10 @@
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
 }
 
 .planButton:hover {
@@ -133,6 +138,7 @@
     justify-content: center; /* vertical center */
     align-items: center; /* horizontal center */
     text-align: center;
+   
   }
 
   .title {

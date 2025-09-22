@@ -1,12 +1,20 @@
 import { MessageCircle, MessageCircleCode } from "lucide-react";
 import styles from "./AboutUs.module.css";
 import Counter from "../Counter/Counter";
+import icons from "../../Icon/Icon";
+import vector1 from "../../assets/Pop and Palm/Home Page Vector/Vector 6.svg";
+import vector2 from "../../assets/Pop and Palm/Home Page Vector/Vector 7.svg";
 
 export default function AboutUs() {
   return (
     <section className={styles.aboutSection}>
       <div className={styles.container}>
-        <div className={styles.badge}>About Us</div>
+        <div className={styles.badge}>
+          <span>
+            <img src={icons.icon2} alt="icon" />
+          </span>{" "}
+          About Us
+        </div>
 
         <h1 className={styles.heading}>
           Turning Ideas into Extraordinary Experiences
@@ -21,6 +29,11 @@ export default function AboutUs() {
           design customized experiences that reflect your vision and deliver
           impact at every stage.
         </p>
+
+        <div className={styles.vector}>
+          <img src={vector1} alt="vector1" />
+          <img src={vector2} alt="vector2" />
+        </div>
 
         <div className={styles.statsContainer}>
           <div className={styles.statItem}>
