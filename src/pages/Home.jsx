@@ -74,17 +74,17 @@ const Home = () => {
 
       <EventHighlight />
 
-      <CTA />
+      {/* <CTA /> */}
 
       <FAQAccordion faqs={faqs} />
 
       <Diaries />
 
-      {/* <TestimonialSection />
+      {/* <TestimonialSection /> */}
 
       <section id="contact">
         <ContactSection />
-      </section> */}
+      </section>
     </>
   );
 };

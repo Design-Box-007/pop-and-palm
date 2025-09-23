@@ -23,10 +23,9 @@ export default function Navbar() {
 
   // The navbar is black on the blog, services, and gallery root pages.
   const isBlackNavbar =
-    location.pathname === "/blog" || // Checks for the exact /blog route
-    location.pathname.startsWith("/services") ||
-    location.pathname.startsWith("/gallery");
-
+    location.pathname === "/blog" || // Exact match for /blog
+    location.pathname === "/services" || // Exact match for /services
+    location.pathname.startsWith("/gallery"); // Keep "starts with" for gallery
   return (
     <nav
       className={`${styles.navbar} ${isBlackNavbar ? styles.blackNavbar : ""}`}

@@ -1,13 +1,14 @@
 import React from "react";
 import styles from "./EventHighlight.module.css";
-import eventImage from "../../assets/Pop and Palm/Home/Home Page image 8.png";
+import eventImage from "../../assets/Pop and Palm/Home/Home Page image 13.png";
+import profile from "../../assets/Pop and Palm/Home/Home Page image 17.jpg";
 import AnimatedWrapper from "../Animation/AnimatedWrapper1";
 // import avatar from "../../assets/Pop and Palm"; // replace with actual avatar
 
 export default function EventHighlight() {
   return (
     <section className={styles.section}>
-      <AnimatedWrapper type="fadeRight" delay={0.4}>
+      {/* <AnimatedWrapper type="fadeRight" delay={0.4}> */}
         {/* Top Header */}
         <div className={styles.topHeader}>
           <div>
@@ -45,7 +46,7 @@ export default function EventHighlight() {
             </p>
 
             <div className={styles.testimonial}>
-              <img src={eventImage} alt="CEO" className={styles.avatar} />
+              <img src={profile} alt="CEO" className={styles.avatar} />
               <div>
                 <p className={styles.quote}>
                   “They understood our vision instantly — and then exceeded it.
@@ -56,7 +57,7 @@ export default function EventHighlight() {
             </div>
           </div>
         </div>
-      </AnimatedWrapper>
+      {/* </AnimatedWrapper> */}
     </section>
   );
 }

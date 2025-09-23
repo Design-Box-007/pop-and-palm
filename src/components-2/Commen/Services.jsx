@@ -1,9 +1,9 @@
 import styles from "./Services.module.css";
 import ServicesHeader from "../Service/ServicesHeader";
 import ServiceCard from "../Service/ServicesCard";
-import AnimatedWrapper from "../Animation/AnimatedWrapper2";
 import AnimatedWrapper2 from "../Animation/AnimatedWrapper2";
- 
+// import vector1 from "../../assets/Pop and Palm/Home Page Vector/Vector 2.svg";
+// import vector2 from "../../assets/Pop and Palm/Home Page Vector/Vector 3.svg";
 
 function MainService({
   tagline,
@@ -36,6 +36,11 @@ function MainService({
           </AnimatedWrapper2>
         ))}
       </div>
+
+      {/* <div className={styles.vector}>
+        <img src={vector1} alt="vector1" />
+        <img src={vector2} alt="vector2" />
+      </div> */}
     </div>
   );
 }
