@@ -13,6 +13,9 @@
   .title {
     font-size: 25px; /* md:text-3xl */
   }
+  .faqHeader img {
+   display: none;
+  }
 }
 
 .list {
@@ -24,6 +27,7 @@
 .item {
   overflow: hidden;
   background-color: white;
+  z-index: 100;
 }
 
 .button {
@@ -50,4 +54,18 @@
   background-color: white; /* bg-gray-100 */
   color: #1f2937;
   border: 1px solid #fec2aa; /* text-gray-800 */
+}
+
+.faqHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  position: relative;
+}
+.faqHeader img {
+  position: absolute;
+  bottom: -50px; /* moves it into .list */
+  right: 0; /* adjust if you want it aligned */
+  width: 140px;
 }

@@ -10,7 +10,7 @@ const ContactSection = () => {
     return (
         <div className='contact-section'>
             <div className='contact-design-left'>
-                <img src={ContactDesignLeft} alt="ContactImage" />
+                {/* <img src={ContactDesignLeft} alt="ContactImage" /> */}
             </div>
             <LeftToRightReveal>
                 <div className='d-flex align-items-center'>

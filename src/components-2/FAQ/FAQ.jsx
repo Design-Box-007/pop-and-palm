@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { motion } from "framer-motion";
 import styles from "./FAQ.module.css";
+import image1 from "../../assets/Pop and Palm/Home Page Vector/Vector 1.svg"
 
 function FAQAccordion({ faqs }) {
   const [openIndex, setOpenIndex] = useState(null);
@@ -12,7 +13,10 @@ function FAQAccordion({ faqs }) {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Frequently Asked Questions</h2>
+      <div className={styles.faqHeader}>
+        <h2 className={styles.title}>Frequently Asked Questions</h2>
+        <img src={image1} alt="img" />
+      </div>
 
       <div className={styles.list}>
         {faqs.map((faq, index) => (

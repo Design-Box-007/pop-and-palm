@@ -9,7 +9,7 @@ const defaultData = {
   title: "Turning Moments into",
   tagline: "Unforgettable Experiences.",
   description:
-    "Delivering flawless corporate events, weddings, and exhibitions across the UAE.",
+    "From Corporate Excellence to Wedding Elegance – We Make It Happen.",
   subDescription:
     "From corporate conferences to private celebrations, we design and execute events that leave a lasting impact.",
   image: defaultImage,
