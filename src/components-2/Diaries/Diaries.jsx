@@ -4,12 +4,9 @@ import React from "react";
 import styles from "./Diaries.module.css"; // Global App styles if needed, or specific for this section
 
 // Import your images (replace with actual paths or placeholder URLs)
-import corporateEventsImg from "../../assets/Pop and Palm/Home/Home Page image 3.png";
-import weddingsImg from "../../assets/Pop and Palm/Home/Home Page image 4.png";
-import exhibitionsImg from "../../assets/Pop and Palm/Home/Home Page image 5.png";
-import luxuryExperiencesImg from "../../assets/Pop and Palm/Home/Home Page image 6.png";
-import brandActivationsImg from "../../assets/Pop and Palm/Home/Home Page image 7.png";
-import destinationEventsImg from "../../assets/Pop and Palm/Home/Home Page image 8.png";
+import corporateEventsImg from "../../assets/Pop and Palm/Home/Home Page image 14.png";
+import weddingsImg from "../../assets/Pop and Palm/Home/Home Page image 15.png";
+import exhibitionsImg from "../../assets/Pop and Palm/Home/Home Page image 16.png";
 import DiariesHeader from "./DiariesHeader";
 import DiariesCard from "./DiariesCard";
 
