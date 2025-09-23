@@ -130,3 +130,48 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .subtitle {
+    max-width: 100%;
+  }
+
+  .header h2 {
+    font-size: 3rem;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .steps {
+    gap: 1rem;
+  }
+
+  .step {
+    padding-bottom: 1rem;
+  }
+
+  .step h3 {
+    font-size: 2.5rem;
+  }
+
+  .number {
+    font-size: 2rem;
+  }
+
+  .images {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .image {
+    width: 100%;
+  }
+}

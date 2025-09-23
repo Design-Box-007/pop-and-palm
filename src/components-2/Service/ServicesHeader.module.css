@@ -4,7 +4,7 @@
 }
 
 .preTitle {
-  font-family: 'Montserrat', sans-serif; /* Smaller text, different font */
+  font-family: "Montserrat", sans-serif; /* Smaller text, different font */
   font-size: 0.9em;
   font-weight: 400;
   color: black;
@@ -18,15 +18,13 @@
 }
 
 .title {
-  font-family: 'Playfair Display', serif; /* Elegant serif font */
-  font-size: 4.2em; /* Large size */
-  font-weight: 400;
-  color: #222;
+  font-size: 48px; /* Large size */
+  font-weight: 500;
   line-height: 1.2;
 }
 
 .subtitle {
-  font-family: 'Montserrat', sans-serif; /* Match pre-title font */
+  font-family: "Montserrat", sans-serif; /* Match pre-title font */
   font-size: 1.1em;
   color: black;
   margin: 0 auto;
@@ -36,18 +34,12 @@
 /* Responsive adjustments for header */
 @media (max-width: 768px) {
   .title {
-    font-size: 2.5em;
+    font-size: 25px;
   }
   .subtitle {
-    font-size: 1em;
+    font-size: 14px;
   }
-}
-
-@media (max-width: 480px) {
-  .title {
-    font-size: 1.8em;
-  }
-  .preTitle {
-    font-size: 0.8em;
+  .header {
+    text-align: start;
   }
 }

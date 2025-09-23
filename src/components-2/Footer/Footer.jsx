@@ -10,6 +10,8 @@ import { FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import servicePageData from "../../data/servicesData";
+import formatToHyphenated from "../../utils/nameFormat";
 
 export default function Footer() {
   return (
@@ -44,7 +46,7 @@ export default function Footer() {
             <h3 className={styles.heading}>Company</h3>
             <ul className={styles.links}>
               <li>
-                <Link to="#about">About Us</Link>
+                <HashLink smooth to="/#about">About Us</HashLink>
               </li>
               <li>
                 <HashLink smooth to="/gallery#top">
@@ -52,7 +54,7 @@ export default function Footer() {
                 </HashLink>
               </li>
               <li>
-                <a href="#">Testimonials</a>
+                <HashLink smooth to="/services#top">Services</HashLink>
               </li>
               <li>
                 <Link
@@ -70,18 +72,13 @@ export default function Footer() {
           <div>
             <h3 className={styles.heading}>Events We Curate</h3>
             <ul className={styles.links}>
-              <li>
-                <a href="#">Weddings</a>
-              </li>
-              <li>
-                <a href="#">Corporate Events</a>
-              </li>
-              <li>
-                <a href="#">Launches & Activations</a>
-              </li>
-              <li>
-                <a href="#">Cultural Events</a>
-              </li>
+              {servicePageData.map((data, index) => (
+                <li key={index}>
+                  <HashLink smooth to={`services/${formatToHyphenated(data.title)}#top`}>
+                    {data.title}
+                  </HashLink>
+                </li>
+              ))}
             </ul>
           </div>
 

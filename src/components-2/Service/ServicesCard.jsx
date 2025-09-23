@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import icons from "../../Icon/Icon";
 import styles from "./ServicesCard.module.css";
 import { HashLink } from "react-router-hash-link";
+import formatToHyphenated from "../../utils/nameFormat";
 
 const handleBlogRedirect = () => {
   window.scrollTo(0, 0);
@@ -14,7 +15,7 @@ function ServiceCard({ service, showAsDescription = false }) {
   return (
     <div className={styles.card}>
       <div className={styles.imageWrapper}>
-        <HashLink smooth to={`services/${title}#top`}>
+        <HashLink smooth to={`/services/${ formatToHyphenated(title)}#top`}>
           <img src={image} alt={title} className={styles.image} onClick={handleBlogRedirect}/>
         </HashLink>
       </div>

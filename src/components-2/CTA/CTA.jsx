@@ -4,6 +4,11 @@ import React from "react";
 import CTAImage from "../../assets/Pop and Palm/Home/Home Page image 1.png";
 import { ArrowRightCircle } from "lucide-react";
 import { Link } from "react-router-dom";
+import BlurText from "../Animation/AnimatedWrapper4";
+
+const handleAnimationComplete = () => {
+  console.log("Animation completed!");
+};
 
 const CTA = () => {
   return (
@@ -15,13 +20,27 @@ const CTA = () => {
       <div className={styles.overlay}>
         <div className={styles.content}>
           <h1 className={styles.heading}>
-            Let’s Make Your <br />
-            Event Unforgettable
+            <BlurText
+              text={`Let’s Make Your Event Unforgettable`}
+              delay={150}
+              animateBy="words"
+              direction="top"
+              onAnimationComplete={handleAnimationComplete}
+            />
+            {/* Let’s Make Your <br />
+            Event Unforgettable */}
           </h1>
 
           <p className={styles.description}>
-            Whether it’s a wedding, a corporate gathering, or a private
-            celebration — we’re here to make planning simple and stress-free.
+            <BlurText
+              text="Whether it’s a wedding, a corporate gathering, or a private celebration — we’re here to make planning simple and stress-free."
+              delay={150}
+              animateBy="words"
+              direction="top"
+              onAnimationComplete={handleAnimationComplete}
+            />
+            {/* ; Whether it’s a wedding, a corporate gathering, or a private
+            celebration — we’re here to make planning simple and stress-free. */}
           </p>
         </div>
 
@@ -30,7 +49,7 @@ const CTA = () => {
             We’ll handle the details, you enjoy the moments.
           </p>
 
-          <Link to={"/services"}>
+          <Link to={"#"}>
             <button className={styles.cta}>
               Start Planning Today <ArrowRightCircle />{" "}
             </button>

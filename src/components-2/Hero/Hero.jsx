@@ -7,7 +7,7 @@ import AnimatedWrapper from "../Animation/AnimatedWrapper1";
 // Default hero data
 const defaultData = {
   title: "Turning Moments into",
-  tagline: "We Bring to Life",
+  tagline: "Unforgettable Experiences.",
   description:
     "Delivering flawless corporate events, weddings, and exhibitions across the UAE.",
   subDescription:
@@ -43,12 +43,11 @@ export default function HeroSection({ title, image, section = {} }) {
 
       {/* Content */}
       <AnimatedWrapper type="fadeUp" delay={0.2} className={styles.content}>
-        <h1 className={styles.title}>
-          {finalData.title}{" "}
-          <AnimatedWrapper type="fadeRight" delay={0.4}>
-            <span className={styles.titleSpan}>{finalData.tagline}</span>
-          </AnimatedWrapper>
-        </h1>
+        <h1 className={styles.title}>{finalData.title} </h1>
+
+        <AnimatedWrapper type="fadeRight" delay={0.4}>
+          <span className={styles.titleSpan}>{finalData.tagline}</span>
+        </AnimatedWrapper>
 
         <AnimatedWrapper type="fadeUp" delay={0.6}>
           <p className={styles.subtitle}>{finalData.description}</p>
@@ -56,32 +55,35 @@ export default function HeroSection({ title, image, section = {} }) {
       </AnimatedWrapper>
 
       {/* Bottom Section */}
-      <AnimatedWrapper
-        type="fadeup"
-        delay={1.2}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        className={styles.bottom}
-      >
-        <div className={styles.bottomLeftText}>
-          <p>{finalData.subDescription}</p>
-        </div>
-      </AnimatedWrapper>
 
-      <AnimatedWrapper
-        type="fadeUp"
-        delay={1.2}
-        className={styles.bottomRightButton}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        <a href={finalData.buttonLink} className={styles.planButton}>
-          Plan Your Event{" "}
-          <span>
-            <img src={icons.icon1} alt="icon" />
-          </span>
-        </a>
-      </AnimatedWrapper>
+      <div className={styles.bottomCon}>
+        <AnimatedWrapper
+          type="fadeup"
+          delay={1.2}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className={styles.bottom}
+        >
+          <div className={styles.bottomLeftText}>
+            <p>{finalData.subDescription}</p>
+          </div>
+        </AnimatedWrapper>
+
+        <AnimatedWrapper
+          type="fadeUp"
+          delay={1.2}
+          className={styles.bottomRightButton}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <a href={finalData.buttonLink} className={styles.planButton}>
+            Plan Your Event{" "}
+            <span>
+              <img src={icons.icon1} alt="icon" />
+            </span>
+          </a>
+        </AnimatedWrapper>
+      </div>
     </section>
   );
 }

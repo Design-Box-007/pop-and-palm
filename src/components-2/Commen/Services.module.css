@@ -13,6 +13,7 @@
   ); /* Responsive grid */
   gap: 30px; /* Space between cards */
   margin-top: 50px;
+  justify-content: center;
 }
 
 @media (min-width: 1024px) {

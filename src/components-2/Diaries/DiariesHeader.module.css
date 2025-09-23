@@ -6,8 +6,9 @@
   align-items: center;
 }
 
-.header button{
+.header button {
   display: flex;
+  align-items: center;
   gap: 10px;
   border: 1px solid gray;
   background: none;
@@ -15,13 +16,12 @@
   padding: 4px 15px;
 }
 
-.header span{
-   color: #FEC2AA; 
+.header span {
+  color: #fec2aa;
 }
 
 .preTitle {
-  font-family: 'Montserrat', sans-serif; /* Smaller text, different font */
-  font-size: 0.9em;
+  font-size: 48px;
   font-weight: 400;
   color: black;
   display: flex;
@@ -34,15 +34,15 @@
 }
 
 .title {
-  font-family: 'Playfair Display', serif; /* Elegant serif font */
-  font-size: 4.2em; /* Large size */
+  font-family: "Playfair Display", serif; /* Elegant serif font */
+  font-size: 48px; /* Large size */
   font-weight: 400;
   color: #222;
   line-height: 1.2;
 }
 
 .subtitle {
-  font-family: 'Montserrat', sans-serif; /* Match pre-title font */
+  font-family: "Montserrat", sans-serif; /* Match pre-title font */
   font-size: 1.1em;
   color: black;
   margin: 0 auto;
@@ -52,11 +52,9 @@
 /* Responsive adjustments for header */
 @media (max-width: 768px) {
   .title {
-    font-size: 1.8em;
+    font-size: 25px;
   }
   .preTitle {
-    font-size: 0.8em;
+    font-size: 25px;
   }
 }
-
- 

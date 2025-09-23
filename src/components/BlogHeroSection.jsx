@@ -14,7 +14,7 @@ const BlogHeroSection = () => {
                 <img src={galleryPageRightTop} alt="RightTop" width="100%" />
             </div>
             <section id="gallery">
-                <div className='d-flex flex-column justify-content-center align-items-center'>
+                <div className='d-flex flex-column justify-content-center align-items-center blogDetail'>
                     <LeftToRightReveal>
                         <h1 className='gallerypage-title text-center'>
                             Welcome to Our Blogs

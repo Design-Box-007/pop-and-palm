@@ -15,7 +15,7 @@ const GalleryImages = () => {
     const selectedImages = images[category] || []; // Fallback to an empty array if category not found
 
     return (
-        <section id="top" style={{ margin: "10px 20px" }}>
+        <section id="top" style={{ margin: "100px 20px" }}>
             <button
                 onClick={() => navigate(-1)} // Navigate back to the previous page
                 className='button-primary'
