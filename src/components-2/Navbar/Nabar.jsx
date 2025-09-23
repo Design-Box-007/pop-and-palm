@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
@@ -14,25 +12,29 @@ export default function Navbar() {
 
   const isActive = (path) => location.pathname === path;
 
-  // This is the key change: check for paths where the navbar should be white.
-  // It will be white on the homepage and on specific sub-pages.
+  // The navbar is white on the homepage, about pages, and blog sub-pages.
   const isWhiteNavbar =
     isActive("/") ||
-    location.pathname.startsWith("/services/") ||
-    location.pathname.startsWith("/about");
+    location.pathname.startsWith("/about") ||
+    location.pathname.startsWith("/blog/"); // Checks specifically for blog sub-pages
 
   const toggleMenu = () => setIsOpen(!isOpen);
-
   const closeMenu = () => setIsOpen(false);
+
+  // The navbar is black on the blog, services, and gallery root pages.
+  const isBlackNavbar =
+    location.pathname === "/blog" || // Checks for the exact /blog route
+    location.pathname.startsWith("/services") ||
+    location.pathname.startsWith("/gallery");
 
   return (
     <nav
-      className={`${styles.navbar} ${!isWhiteNavbar ? styles.blackNavbar : ""}`}
+      className={`${styles.navbar} ${isBlackNavbar ? styles.blackNavbar : ""}`}
     >
       <div className={styles.container}>
         {/* Left: Logo */}
         <div
-          className={`${styles.logo} ${!isWhiteNavbar ? styles.blackLogo : ""}`}
+          className={`${styles.logo} ${isBlackNavbar ? styles.blackLogo : ""}`}
         >
           Pop & Palm
         </div>
@@ -42,8 +44,9 @@ export default function Navbar() {
           <Link
             to="/"
             className={`${styles.navLink} ${
-              !isWhiteNavbar ? styles.blackLink : ""
+              isBlackNavbar ? styles.blackLink : ""
             } ${isActive("/") ? styles.active : ""}`}
+            onClick={closeMenu}
           >
             Home
           </Link>
@@ -51,34 +54,38 @@ export default function Navbar() {
             smooth
             to="/#about"
             className={`${styles.navLink} ${
-              !isWhiteNavbar ? styles.blackLink : ""
+              isBlackNavbar ? styles.blackLink : ""
             } ${location.hash === "#about" ? styles.active : ""}`}
+            onClick={closeMenu}
           >
             About Us
           </HashLink>
           <Link
             to="/services"
             className={`${styles.navLink} ${
-              !isWhiteNavbar ? styles.blackLink : ""
+              isBlackNavbar ? styles.blackLink : ""
             } ${
               location.pathname.startsWith("/services") ? styles.active : ""
             }`}
+            onClick={closeMenu}
           >
             Services
           </Link>
           <Link
             to="/gallery"
             className={`${styles.navLink} ${
-              !isWhiteNavbar ? styles.blackLink : ""
+              isBlackNavbar ? styles.blackLink : ""
             } ${location.pathname.startsWith("/gallery") ? styles.active : ""}`}
+            onClick={closeMenu}
           >
             Highlights
           </Link>
           <Link
             to="/blog"
             className={`${styles.navLink} ${
-              !isWhiteNavbar ? styles.blackLink : ""
+              isBlackNavbar ? styles.blackLink : ""
             } ${location.pathname.startsWith("/blog") ? styles.active : ""}`}
+            onClick={closeMenu}
           >
             Blog
           </Link>
@@ -101,7 +108,7 @@ export default function Navbar() {
         {/* Mobile Menu Toggle */}
         <button
           className={`${styles.menuButton} ${
-            !isWhiteNavbar ? styles.blackMenuButton : ""
+            isBlackNavbar ? styles.blackMenuButton : ""
           }`}
           onClick={toggleMenu}
           aria-label={isOpen ? "Close menu" : "Open menu"}
