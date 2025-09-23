@@ -7,6 +7,7 @@ import image3 from "../../assets/Pop and Palm/Home/Home Page image 11.png";
 import image4 from "../../assets/Pop and Palm/Home/Home Page image 12.png";
 import { ArrowRightCircle } from "lucide-react";
 import AnimatedWrapper3 from "../Animation/AnimatedWrapper3";
+import icons from "../../Icon/Icon";
 
 const events = [
   {
@@ -49,7 +50,7 @@ const EventCard = ({ title, img, tags }) => (
           ))}
         </div>
         <span>
-          <ArrowRightCircle size={40} className={styles.arrow} />
+          <img src={icons.icon4} alt="icon" />
         </span>
       </div>
     </div>

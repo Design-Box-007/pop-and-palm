@@ -20,7 +20,7 @@
   font-weight: 500;
   color: black;
   line-height: 1.2;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -32,6 +32,7 @@
   max-width: 1100px;
   margin: 0 auto auto;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 
 .statsContainer {
@@ -78,36 +79,78 @@
   flex-shrink: 0;
 }
 
-.vector{
+.vector {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
 }
 
-@media (max-width: 768px){
-.heading{
-  font-size: 40px;
+@media (max-width: 768px) {
+  .heading {
+    font-size: 25px;
+  }
+  .container {
+    text-align: start;
+  }
+
+  .description {
+    font-size: 13px;
+    text-align: justify;
+  }
+  .statsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .badge {
+    text-align: center;
+  }
+
+  .divider {
+    transform: rotate(90deg);
+  }
+  .statLabel {
+    font-size: 25px;
+  }
+  .statsContainer {
+    margin: 0;
+    gap: 0;
+  }
+  .vector img {
+    width: 80px;
+  }
 }
 
-.description{
-  font-size: 15px;
-}
-.statsContainer {
-  display: flex;
-  flex-direction: column;
-}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .heading {
+    font-size: 36px;
+  }
 
-.divider {
-  transform: rotate(90deg);
+  .description {
+    font-size: 16px;
+    max-width: 800px;
+  }
+
+  .statsContainer {
+    margin-left: 50px;
+    margin-right: 50px;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .statNumber {
+    font-size: 50px;
+  }
+
+  .plus,
+  .percent {
+    font-size: 50px;
+  }
+
+  .statLabel {
+    font-size: 24px;
+  }
+
+  .divider {
+    height: 70px;
+  }
 }
-.statLabel{
-  font-size: 20px;
-}
-.statsContainer{
-  margin: 0;
-  gap: 0;
-}
-.vector{
-  display: none;
-}
- }

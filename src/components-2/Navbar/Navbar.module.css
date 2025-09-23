@@ -1,48 +1,47 @@
-/* Base Navbar */
 .navbar {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 1rem 2rem;
-  background: transparent;
+  background-color: transparent;
+  color: white;
   position: absolute;
-  top: 20px;
+  top: 0;
   left: 0;
   right: 0;
-  z-index: 50;
+  z-index: 1000;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.blackNavbar {
+  color: black;
 }
 
 .container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  max-width: 80rem;
-  margin: 0 auto;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
 }
 
-.navbar {
-  color: white; /* or whatever default color */
+.logo {
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
 }
 
-/* when on /services */
-.blackText {
+.blackLogo {
   color: black;
 }
 
-/* make sure links inherit the color */
-.navLink {
-  color: inherit;
-}
-
-/* Logo */
-.logo {
-  color: white;
-  font-weight: bold;
-  font-size: 1.25rem;
-}
-
-/* Nav links */
+/* Desktop Navigation */
 .navLinks {
-  display: none;
+  display: flex;
   gap: 2rem;
+  align-items: center;
 }
 
 .navLink {
@@ -51,150 +50,136 @@
   font-weight: 500;
   transition: color 0.3s ease;
 }
-.navLink:hover {
-  color: #d1d5db;
+
+.blackLink {
+  color: black;
 }
 
-/* Get in Touch */
 .contactButton {
-  display: none;
-  background-color: white;
-  color: #111827;
   border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
+  padding: 10px 20px;
+  border-radius: 999px;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
 }
 .contactButton:hover {
-  background-color: white;
+  background-color: gainsboro;
 }
 
-/* Hamburger button (mobile only) */
+.contactButton a {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contactButton img {
+  height: 1.2em;
+  width: auto;
+}
+
+/* Mobile Styles */
 .menuButton {
-  display: block;
+  display: none;
   background: none;
   border: none;
-  color: white;
   cursor: pointer;
-  z-index: 60;
-}
-
-/* Desktop layout */
-@media (min-width: 768px) {
-  .navLinks {
-    display: flex;
-    justify-content: center;
-    flex: 1;
-  }
-  .contactButton {
-    display: inline-block;
-  }
-  .menuButton {
-    display: none;
-  }
-}
-
-/* ---------------- Mobile Menu ---------------- */
-.mobileMenu {
-  display: none;
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 50%; /* half screen */
-  height: 100vh;
-  background: rgba(55, 65, 81, 0.7); /* gray blur */
-  backdrop-filter: blur(12px);
-  padding: 2rem 1.5rem;
-  gap: 1.5rem;
-  z-index: 40;
-  transition: transform 0.3s ease;
-  transform: translateX(100%);
-}
-
-.showMenu {
-  display: flex;
-  transform: translateX(0);
-}
-
-.mobileLink {
   color: white;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
-}
-.mobileLink:hover {
-  color: #d1d5db;
+  z-index: 1001;
 }
 
-.mobileButton {
-  background-color: white;
-  color: #111827;
-  border: none;
-  padding: 0.75rem 1rem;
-  border-radius: 0.375rem;
-  font-weight: 500;
-  cursor: pointer;
+.blackMenuButton {
+  color: black;
 }
 
+/* Backdrop for the mobile menu */
 .backdrop {
   position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.3); /* light transparent dark */
-  z-index: 40;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 999;
 }
 
-/* Mobile menu half screen */
+/* Updated mobile menu for smooth animation */
 .mobileMenu {
-  display: flex;
-  flex-direction: column;
   position: fixed;
   top: 0;
   right: 0;
-  width: 50%;
-  height: 100vh;
-  background: rgba(55, 65, 81, 0.7);
-  backdrop-filter: blur(12px);
-  padding: 2rem 1.5rem;
-  gap: 1.5rem;
-  z-index: 50;
-  transition: transform 0.3s ease;
-  transform: translateX(100%);
+  width: 100%;
+  height: 70vh;
+  margin-top: 20px;
+  background-color: transparent; /* Changed to transparent */
+  backdrop-filter: blur(8px); /* Added blur effect */
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1.5rem;
+  transform: translateX(100%); /* Initial state: off-screen to the right */
+  transition: transform 0.4s ease-in-out;
+  color: white; /* Ensures text is visible against the blurred background */
+  align-items: center;
+  justify-content: center;
 }
 
-.showMenu {
-  transform: translateX(0);
+.mobileMenu.showMenu {
+  transform: translateX(0); /* Final state: slides into view */
 }
 
-/* Close button inside menu */
-.closeButton {
-  background: none;
-  border: none;
-  color: white;
-  align-self: flex-end;
-  cursor: pointer;
-  margin-bottom: 1rem;
-}
-
-/* Links */
+/* Adjustments for the links inside the new mobile menu */
 .mobileLink {
   color: white;
   text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 20px;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  text-align: center;
+  transition: color 0.3s ease;
 }
+
+.mobileLink:last-of-type {
+  border-bottom: none;
+}
+
 .mobileLink:hover {
-  color: #d1d5db;
+  color: #f97316;
 }
 
 .mobileButton {
-  background-color: white;
-  color: #111827;
+  background-color: #f97316;
+  color: white;
   border: none;
-  padding: 0.75rem 1rem;
-  border-radius: 0.375rem;
-  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
   cursor: pointer;
+  margin-top: 2rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navLinks,
+  .contactButton {
+    display: none;
+  }
+
+  .menuButton {
+    display: block;
+  }
+  .logo {
+    font-size: 20px;
+  }
 }

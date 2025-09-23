@@ -13,8 +13,7 @@ import NotFound from "../components-2/NotFound/NotFound";
 const Service = () => {
   const params = useParams();
   const data = servicePageData.find(
-    (p) =>
-      formatToHyphenated(p.title) === formatToHyphenated(params.serviceName)
+    (p) => formatToHyphenated(p.title) === params.serviceName
   );
   if (!data)
     return (

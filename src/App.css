@@ -33,33 +33,23 @@ h6 {
   font-family: "Boska-Variable", sans-serif;
 }
 
-/* Scrollbar Track */
-::-webkit-scrollbar {
-  width: 12px; /* width of vertical scrollbar */
-  height: 12px; /* height of horizontal scrollbar */
-}
-
-/* Scrollbar Thumb (the draggable part) */
-::-webkit-scrollbar-thumb {
-  background-color: #ff6600; /* color of the scroll thumb */
-  border-radius: 6px; /* rounded corners */
-  border: 3px solid #f0f0f0; /* optional: padding around thumb */
-}
-
-/* Scrollbar Track (the background) */
-::-webkit-scrollbar-track {
-  background: white; /* color of the track */
-  border-radius: 6px;
-}
-
-/* Optional: hover effect */
-::-webkit-scrollbar-thumb:hover {
-  background-color: #ff3300;
-}
-
 .and-symbol {
   font-family: "Playfair Display", serif;
   color: var(--optional-color);
+}
+
+.scroll-reveal {
+  margin: 20px 0;
+}
+
+.scroll-reveal-text {
+  font-size: clamp(1.6rem, 4vw, 3rem);
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.word {
+  display: inline-block;
 }
 
 .title {
@@ -908,6 +898,16 @@ h6 {
     flex-direction: column;
     text-align: center;
   }
+  .gallerypage {
+    top: 0px;
+  }
+
+  .blogDetail {
+    margin-right: 40px;
+  }
+  .blog-image-container {
+    margin-top: 100px;
+  }
 }
 
 .gallerypage-image-container {
@@ -1011,11 +1011,13 @@ h6 {
   display: flex;
   overflow: hidden;
   border-radius: 16px;
+  margin-top: 100px;
+  justify-content: center;
 }
 
 .blog-image {
   object-fit: cover;
-  width: 100%;
+  width: 70%;
   height: 100%;
   border-radius: 16px;
 }
@@ -1090,6 +1092,9 @@ h6 {
   .blog-hero-description {
     font-size: 14px;
     line-height: 22px;
+  }
+  .blog-image-container {
+    margin-top: 100px;
   }
 }
 

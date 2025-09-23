@@ -2,46 +2,66 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import styles from "./Navbar.module.css";
-import icons from "../../Icon/Icon";
 import { Link, useLocation } from "react-router-dom";
 import { Nav } from "react-bootstrap";
+import styles from "./Navbar.module.css";
+import icons from "../../Icon/Icon";
+import { HashLink } from "react-router-hash-link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation(); // ✅ Get current path
+  const location = useLocation();
 
-  // Helper function to check if link is active
   const isActive = (path) => location.pathname === path;
 
+  // This is the key change: check for paths where the navbar should be white.
+  // It will be white on the homepage and on specific sub-pages.
+  const isWhiteNavbar =
+    isActive("/") ||
+    location.pathname.startsWith("/services/") ||
+    location.pathname.startsWith("/about");
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
+  const closeMenu = () => setIsOpen(false);
+
   return (
-    <nav className={styles.navbar}>
+    <nav
+      className={`${styles.navbar} ${!isWhiteNavbar ? styles.blackNavbar : ""}`}
+    >
       <div className={styles.container}>
         {/* Left: Logo */}
-        <div className={styles.logo}>Pop & Palm</div>
+        <div
+          className={`${styles.logo} ${!isWhiteNavbar ? styles.blackLogo : ""}`}
+        >
+          Pop & Palm
+        </div>
 
-        {/* Center: Links (desktop only) */}
+        {/* Center: Desktop Links */}
         <div className={styles.navLinks}>
           <Link
             to="/"
             className={`${styles.navLink} ${
-              isActive("/") ? styles.active : ""
-            }`}
+              !isWhiteNavbar ? styles.blackLink : ""
+            } ${isActive("/") ? styles.active : ""}`}
           >
             Home
           </Link>
-          <a
-            href="/#/#about"
+          <HashLink
+            smooth
+            to="/#about"
             className={`${styles.navLink} ${
-              isActive("#about") ? styles.active : ""
-            }`}
+              !isWhiteNavbar ? styles.blackLink : ""
+            } ${location.hash === "#about" ? styles.active : ""}`}
           >
             About Us
-          </a>
+          </HashLink>
           <Link
             to="/services"
             className={`${styles.navLink} ${
-              isActive("/services") ? styles.serivce : ""
+              !isWhiteNavbar ? styles.blackLink : ""
+            } ${
+              location.pathname.startsWith("/services") ? styles.active : ""
             }`}
           >
             Services
@@ -49,22 +69,22 @@ export default function Navbar() {
           <Link
             to="/gallery"
             className={`${styles.navLink} ${
-              isActive("/gallery") ? styles.active : ""
-            }`}
+              !isWhiteNavbar ? styles.blackLink : ""
+            } ${location.pathname.startsWith("/gallery") ? styles.active : ""}`}
           >
             Highlights
           </Link>
           <Link
             to="/blog"
             className={`${styles.navLink} ${
-              isActive("/blog") ? styles.active : ""
-            }`}
+              !isWhiteNavbar ? styles.blackLink : ""
+            } ${location.pathname.startsWith("/blog") ? styles.active : ""}`}
           >
             Blog
           </Link>
         </div>
 
-        {/* Right: Get in Touch (desktop only) */}
+        {/* Right: Contact Button (desktop only) */}
         <button className={styles.contactButton}>
           <Nav.Link
             href="https://us.bigin.online/org868107012/forms/enquiry-form"
@@ -80,8 +100,10 @@ export default function Navbar() {
 
         {/* Mobile Menu Toggle */}
         <button
-          className={styles.menuButton}
-          onClick={() => setIsOpen(!isOpen)}
+          className={`${styles.menuButton} ${
+            !isWhiteNavbar ? styles.blackMenuButton : ""
+          }`}
+          onClick={toggleMenu}
           aria-label={isOpen ? "Close menu" : "Open menu"}
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -89,9 +111,7 @@ export default function Navbar() {
       </div>
 
       {/* Overlay backdrop (click to close) */}
-      {isOpen && (
-        <div className={styles.backdrop} onClick={() => setIsOpen(false)} />
-      )}
+      {isOpen && <div className={styles.backdrop} onClick={closeMenu} />}
 
       {/* Mobile Menu */}
       <div className={`${styles.mobileMenu} ${isOpen ? styles.showMenu : ""}`}>
@@ -100,47 +120,59 @@ export default function Navbar() {
           className={`${styles.mobileLink} ${
             isActive("/") ? styles.active : ""
           }`}
-          onClick={() => setIsOpen(false)}
+          onClick={closeMenu}
         >
           Home
         </Link>
         <Link
-          to="/about"
+          to="/#about"
           className={`${styles.mobileLink} ${
-            isActive("/about") ? styles.active : ""
+            location.hash === "#about" ? styles.active : ""
           }`}
-          onClick={() => setIsOpen(false)}
+          onClick={closeMenu}
         >
-          About
+          About Us
         </Link>
         <Link
           to="/services"
           className={`${styles.mobileLink} ${
-            isActive("/services") ? styles.active : ""
+            location.pathname.startsWith("/services") ? styles.active : ""
           }`}
-          onClick={() => setIsOpen(false)}
+          onClick={closeMenu}
         >
           Services
         </Link>
         <Link
-          to="/contact"
+          to="/gallery"
           className={`${styles.mobileLink} ${
-            isActive("/contact") ? styles.active : ""
+            location.pathname.startsWith("/gallery") ? styles.active : ""
           }`}
-          onClick={() => setIsOpen(false)}
+          onClick={closeMenu}
         >
-          Contact
+          Highlights
+        </Link>
+        <Link
+          to="/blog"
+          className={`${styles.mobileLink} ${
+            location.pathname.startsWith("/blog") ? styles.active : ""
+          }`}
+          onClick={closeMenu}
+        >
+          Blog
         </Link>
 
-        <button
-          className={styles.mobileButton}
-          onClick={() => setIsOpen(false)}
+        <Nav.Link
+          href="https://us.bigin.online/org868107012/forms/enquiry-form"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Contact{" "}
-          <span>
-            <img src={icons.icon1} alt="contact" />
-          </span>
-        </button>
+          <button className={styles.mobileButton} onClick={closeMenu}>
+            Contact{" "}
+            <span>
+              <img src={icons.icon1} alt="contact" />
+            </span>
+          </button>
+        </Nav.Link>
       </div>
     </nav>
   );

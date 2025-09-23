@@ -8,7 +8,7 @@
 }
 
 .header h2 {
-  font-size: 4rem;
+  font-size: 48px;
   margin-bottom: 0.5rem;
 }
 
@@ -45,6 +45,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  filter: brightness(70%);
 }
 
 .cardOverlay {
@@ -83,16 +84,18 @@
 }
 
 @media (max-width: 768px) {
-
   .header h2 {
-    font-size: 40px;
+    font-size: 25px;
   }
 
-  .header p{
+  .header p {
     font-size: 14px;
   }
+  .header {
+    text-align: start;
+  }
 
-  .cardTitle{
+  .cardTitle {
     font-size: 30px;
   }
   .grid {
@@ -100,7 +103,6 @@
     flex-direction: column;
     gap: 10px;
   }
-
 
   .colWide,
   .colNarrow {
@@ -119,5 +121,38 @@
     height: 100%;
     object-fit: cover;
     display: block;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header h2 {
+    font-size: 36px;
+  }
+
+  .header p {
+    font-size: 16px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .colWide {
+    grid-column: span 1;
+  }
+
+  .colNarrow {
+    grid-column: span 1;
+    width: auto;
+  }
+
+  .cardTitle {
+    font-size: 2rem;
+  }
+
+  .cardImage {
+    height: 300px;
+    object-fit: cover;
   }
 }

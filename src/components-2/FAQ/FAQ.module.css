@@ -1,23 +1,17 @@
 .container {
-   padding: 50px 20px;
+  padding: 50px 20px;
 }
 
 .title {
   font-weight: 500;
   color: black;
-  font-size: 1.5rem;
+  font-size: 48px;
   margin-bottom: 20px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .title {
-    font-size: 1.875rem; /* md:text-3xl */
-  }
-}
-
-@media (min-width: 1024px) {
-  .title {
-    font-size: 3rem; /* lg:text-5xl */
+    font-size: 25px; /* md:text-3xl */
   }
 }
 
@@ -49,13 +43,6 @@
 
 .icon {
   color: #fec2aa;
-}
-
-@media (min-width: 1024px) {
-  .button {
-    padding-left: 2.5rem; /* lg:px-10 */
-    padding-right: 2.5rem;
-  }
 }
 
 .answer {
