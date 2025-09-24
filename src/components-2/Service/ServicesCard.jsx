@@ -15,8 +15,13 @@ function ServiceCard({ service, showAsDescription = false }) {
   return (
     <div className={styles.card}>
       <div className={styles.imageWrapper}>
-        <HashLink smooth to={`/services/${ formatToHyphenated(title)}#top`}>
-          <img src={image} alt={title} className={styles.image} onClick={handleBlogRedirect}/>
+        <HashLink smooth to={`/services/${formatToHyphenated(title)}#top`}>
+          <img
+            src={image}
+            alt={title}
+            className={styles.image}
+            onClick={handleBlogRedirect}
+          />
         </HashLink>
       </div>
 
@@ -24,8 +29,13 @@ function ServiceCard({ service, showAsDescription = false }) {
         <div className={styles.titleArrow}>
           <h3 className={styles.title}>{title}</h3>
           <span>
-            <HashLink smooth to={`services/${title}#top`}>
-              <img src={icons.icon1} alt="icon" className={styles.icon} onClick={handleBlogRedirect}/>
+            <HashLink smooth to={`/services/${formatToHyphenated(title)}#top`}>
+              <img
+                src={icons.icon1}
+                alt="icon"
+                className={styles.icon}
+                onClick={handleBlogRedirect}
+              />
             </HashLink>
           </span>
         </div>

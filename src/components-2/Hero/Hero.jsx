@@ -33,15 +33,16 @@ export default function HeroSection({ title, image, section = {} }) {
         type="zoomIn"
         duration={2}
         className={styles.backgroundImage}
-      >
+      >   
         <div
           style={{ backgroundImage: `url(${finalData.image})` }}
           className={styles.backgroundImage}
         />
-      </AnimatedWrapper>
+      
 
       {/* Dark Overlay */}
       <div className={styles.overlay} />
+      </AnimatedWrapper>
 
       {/* Content */}
       <AnimatedWrapper type="fadeUp" delay={0.2} className={styles.content}>

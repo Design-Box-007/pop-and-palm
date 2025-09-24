@@ -107,6 +107,7 @@
 
 .planButton:hover {
   background-color: gainsboro;
+  color: black;
 }
 
 /* Mobile */
