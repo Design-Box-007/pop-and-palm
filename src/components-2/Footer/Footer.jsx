@@ -6,7 +6,13 @@ import {
   FaFacebookF,
   FaXTwitter,
 } from "react-icons/fa6";
-import { FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
+import {
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+  FaTiktok,
+  FaYoutube,
+  FaMediumM,
+} from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
@@ -37,6 +43,15 @@ export default function Footer() {
             <a href="#">
               <FaXTwitter color="white" size={25} />
             </a>
+            <a href="#">
+              <FaTiktok color="white" size={25} />
+            </a>
+            <a href="#">
+              <FaYoutube color="white" size={25} />
+            </a>
+            <a href="#">
+              <FaMediumM color="white" size={25} />
+            </a>
           </div>
         </div>
 
@@ -46,15 +61,19 @@ export default function Footer() {
             <h3 className={styles.heading}>Company</h3>
             <ul className={styles.links}>
               <li>
-                <HashLink smooth to="/#about">About Us</HashLink>
-              </li>
-              <li>
-                <HashLink smooth to="/gallery#top">
-                  Highlights
+                <HashLink smooth to="/#about">
+                  About Us
                 </HashLink>
               </li>
               <li>
-                <HashLink smooth to="/services#top">Services</HashLink>
+                <HashLink smooth to="/gallery#top">
+                  Gallery
+                </HashLink>
+              </li>
+              <li>
+                <HashLink smooth to="/services#top">
+                  Services
+                </HashLink>
               </li>
               <li>
                 <Link
@@ -74,7 +93,10 @@ export default function Footer() {
             <ul className={styles.links}>
               {servicePageData.map((data, index) => (
                 <li key={index}>
-                  <HashLink smooth to={`services/${formatToHyphenated(data.title)}#top`}>
+                  <HashLink
+                    smooth
+                    to={`services/${formatToHyphenated(data.title)}#top`}
+                  >
                     {data.title}
                   </HashLink>
                 </li>
@@ -105,16 +127,16 @@ export default function Footer() {
         {/* Bottom Section */}
       </div>
       <div className={styles.bottom}>
-        <p>© 2025 Erwa. All rights reserved.</p>
+        <p>© 2025 All rights reserved.</p>
         <div className={styles.contact}>
           <span>
             <FaMapMarkerAlt /> Based in Dubai, UAE
           </span>
           <span>
-            <FaPhoneAlt /> +971 50 123 4567
+            <FaPhoneAlt /> +971543278769
           </span>
           <span>
-            <MdEmail /> info@erwa.com
+            <MdEmail /> hello@popandpalmevents.com
           </span>
         </div>
       </div>

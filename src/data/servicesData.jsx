@@ -189,7 +189,7 @@ const servicePageData = [
     ],
   },
   {
-    title: "Rentals",
+    title: "Event Rentals",
     tags: ["Conferences", "Seminars", "Product Launches", "Award Nights"],
     image: RentalServiceImage,
     HeroData: {

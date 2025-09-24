@@ -3,6 +3,8 @@ import styles from "./Hero.module.css";
 import icons from "../../Icon/Icon";
 import defaultImage from "../../assets/Pop and Palm/Home/Home Page image 2.png";
 import AnimatedWrapper from "../Animation/AnimatedWrapper1";
+import { Link } from "react-router-dom";
+import { Nav } from "react-bootstrap";
 
 // Default hero data
 const defaultData = {
@@ -55,35 +57,29 @@ export default function HeroSection({ title, image, section = {} }) {
       </AnimatedWrapper>
 
       {/* Bottom Section */}
+      <AnimatedWrapper type="fadeUp" delay={1.2} className={styles.bottomCon}>
+        <div className={styles.bottomTextAndButton}>
+          <p className={styles.bottomText}>Let’s bring your vision to life</p>
+          <span>-</span>
 
-      <div className={styles.bottomCon}>
-        <AnimatedWrapper
-          type="fadeup"
-          delay={1.2}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className={styles.bottom}
-        >
-          <div className={styles.bottomLeftText}>
-            <p>{finalData.subDescription}</p>
-          </div>
-        </AnimatedWrapper>
-
-        <AnimatedWrapper
-          type="fadeUp"
-          delay={1.2}
-          className={styles.bottomRightButton}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <a href={finalData.buttonLink} className={styles.planButton}>
-            Plan Your Event{" "}
+          <Nav.Link
+            href="https://us.bigin.online/org868107012/forms/enquiry-form"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.planButton}
+          >
+            Plan Your Event
             <span>
               <img src={icons.icon1} alt="icon" />
             </span>
-          </a>
-        </AnimatedWrapper>
-      </div>
+          </Nav.Link>
+
+          <span className={styles.bottomText}>
+            today to start planning your perfect event.{" "}
+          </span>
+          {/* <a href={finalData.buttonLink} className={styles.planButton}></a> */}
+        </div>
+      </AnimatedWrapper>
     </section>
   );
 }

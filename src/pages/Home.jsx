@@ -80,7 +80,7 @@ const Home = () => {
 
       <Diaries />
 
-      {/* <TestimonialSection /> */}
+      <TestimonialSection />
 
       <section id="contact">
         <ContactSection />

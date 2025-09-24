@@ -69,22 +69,22 @@ export default function EventsSection() {
       </div>
 
       <div className={styles.grid}>
-        <div className={styles.colWide}>
+        <div className={styles.div1}>
           <AnimatedWrapper3 direction="left">
             <EventCard {...events[0]} />
           </AnimatedWrapper3>
         </div>
-        <div className={styles.colNarrow}>
+        <div className={styles.div2}>
           <AnimatedWrapper3 direction="right">
             <EventCard {...events[1]} />
           </AnimatedWrapper3>
         </div>
-        <div className={styles.colNarrow}>
+        <div className={styles.div3}>
           <AnimatedWrapper3 direction="left">
             <EventCard {...events[2]} />
           </AnimatedWrapper3>
         </div>
-        <div className={styles.colWide}>
+        <div className={styles.div4}>
           <AnimatedWrapper3 direction="right">
             <EventCard {...events[3]} />
           </AnimatedWrapper3>

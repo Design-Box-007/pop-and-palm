@@ -77,7 +77,7 @@ export default function Navbar() {
             } ${location.pathname.startsWith("/gallery") ? styles.active : ""}`}
             onClick={closeMenu}
           >
-            Highlights
+            Gallery
           </Link>
           <Link
             to="/blog"
@@ -155,7 +155,7 @@ export default function Navbar() {
           }`}
           onClick={closeMenu}
         >
-          Highlights
+          Gallery
         </Link>
         <Link
           to="/blog"
