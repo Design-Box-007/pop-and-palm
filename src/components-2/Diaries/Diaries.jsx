@@ -9,6 +9,8 @@ import weddingsImg from "../../assets/Pop and Palm/Home/Home Page image 15.png";
 import exhibitionsImg from "../../assets/Pop and Palm/Home/Home Page image 16.png";
 import DiariesHeader from "./DiariesHeader";
 import DiariesCard from "./DiariesCard";
+import { blogData } from "../../data/blogsData";
+import { BlogCard } from "./BlogCard1";
 
 function Diaries() {
   const diaries = [
@@ -37,14 +39,24 @@ function Diaries() {
 
   return (
     <div className={styles.servicesSection}>
-      <DiariesHeader
-        title={"Event Diaries"}
-      />
+      <DiariesHeader title={"Event Diaries"} />
 
       <div className={styles.cardGrid}>
-        {diaries.map((dia) => (
+        {/* {diaries.map((dia) => (
           <DiariesCard key={dia.id} diaries={dia} />
-        ))}
+        ))} */}
+
+        {[...blogData]
+          .reverse()
+          .slice(0, 3)
+          .map((blog, index) => (
+            <BlogCard
+              key={index}
+              imgSrc={blog.imgSrc}
+              title={blog.title}
+              description={blog.description}
+            />
+          ))}
       </div>
     </div>
   );

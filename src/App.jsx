@@ -14,7 +14,6 @@ import ContactUs from "./pages/ContactUs";
 import Navbar from "./components-2/Navbar/Nabar";
 import Service from "./pages/Service";
 import ScrollToTop from "./components-2/ScrollToTop/ScrollToTop";
-import useScrollRestoration from "./components-2/ScrollToTop/ScrollToTop";
 import useScrollToTop from "./components-2/ScrollToTop/ScrollToTop";
 
 function App() {
