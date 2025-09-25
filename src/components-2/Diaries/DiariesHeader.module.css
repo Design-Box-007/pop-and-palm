@@ -49,6 +49,10 @@
   line-height: 1.6;
 }
 
+.view{
+  text-decoration: none;
+}
+
 /* Responsive adjustments for header */
 @media (max-width: 768px) {
   .title {
