@@ -17,10 +17,12 @@ const servicePageData = [
     },
 
     aboutContent: {
-      title: "Why Private Events Matter",
+      title: "Our Services at a Glance",
       image: aboutImages.about1,
       description:
-        "Private events are more than just gatherings — they’re milestones that deserve to be remembered. Whether it’s a wedding, a birthday, or a family celebration, each event is an opportunity to tell your story. Our role is to transform your ideas into experiences filled with warmth, creativity, and seamless execution.",
+        "At Pop & Palm Events, we provide end-to-end event planning and styling services designed to make every occasion effortless and unforgettable. Explore our range of services below. ",
+      description2:
+        "We don’t just plan events — we design experiences. Explore our core services tailored to meet your every celebration need.",
     },
 
     EventSection: {
