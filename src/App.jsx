@@ -15,6 +15,7 @@ import Navbar from "./components-2/Navbar/Nabar";
 import Service from "./pages/Service";
 import ScrollToTop from "./components-2/ScrollToTop/ScrollToTop";
 import useScrollToTop from "./components-2/ScrollToTop/ScrollToTop";
+import MainAbout from "./components-2/AboutMain/MainAbout";
 
 function App() {
   useScrollToTop();
@@ -25,6 +26,7 @@ function App() {
       {/* <ScrollToTop/> */}
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<MainAbout />} />
         <Route path="/gallery/:category?" element={<Gallery />} />
         <Route path="/galleryimages/:category" element={<GalleryImages />} />
         <Route path="/services" element={<Services />} />

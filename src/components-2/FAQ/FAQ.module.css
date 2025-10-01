@@ -14,7 +14,7 @@
     font-size: 25px; /* md:text-3xl */
   }
   .faqHeader img {
-   display: none;
+    display: none;
   }
 }
 
@@ -43,6 +43,7 @@
   font-weight: 400;
   text-align: left;
   border: 2px solid #fec2aa;
+  border-radius: 10px;
 }
 
 .icon {
@@ -54,6 +55,7 @@
   background-color: white; /* bg-gray-100 */
   color: #1f2937;
   border: 1px solid #fec2aa; /* text-gray-800 */
+  border-radius: 10px;
 }
 
 .faqHeader {
