@@ -51,7 +51,7 @@ export default function Navbar() {
           </Link>
           <HashLink
             smooth
-            to="/#about"
+            to="/about"
             className={`${styles.navLink} ${
               isBlackNavbar ? styles.blackLink : ""
             } ${location.hash === "#about" ? styles.active : ""}`}
@@ -131,7 +131,7 @@ export default function Navbar() {
           Home
         </Link>
         <Link
-          to="/#about"
+          to="/about"
           className={`${styles.mobileLink} ${
             location.hash === "#about" ? styles.active : ""
           }`}

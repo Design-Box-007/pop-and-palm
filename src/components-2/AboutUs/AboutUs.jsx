@@ -5,18 +5,22 @@ import icons from "../../Icon/Icon";
 import vector1 from "../../assets/Pop and Palm/Home Page Vector/Vector 6.svg";
 import vector2 from "../../assets/Pop and Palm/Home Page Vector/Vector 7.svg";
 import AnimatedWrapper from "../Animation/AnimatedWrapper1";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export default function AboutUs() {
   return (
     <section className={styles.aboutSection} id="about">
       <div className={styles.container}>
         <AnimatedWrapper type="fadeUp" delay={0.2}>
-          <div className={styles.badge}>
-            <span>
-              <img src={icons.icon2} alt="icon" />
-            </span>{" "}
-            About Us
-          </div>
+          <HashLink smooth to={"/about#top"} className={styles.aboutlink}>
+            <div className={styles.badge}>
+              <span>
+                <img src={icons.icon2} alt="icon" />
+              </span>{" "}
+              About Us
+            </div>
+          </HashLink>
 
           <h1 className={styles.heading}>
             Turning Ideas into Extraordinary Experiences
