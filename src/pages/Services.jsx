@@ -108,7 +108,7 @@ const Services = () => {
                               onClick={scrollToTop}
                             >
                               <button className="button-primary">
-                                View Gallery &rarr;
+                                View Service&rarr;
                               </button>
                             </HashLink>
                             <a
