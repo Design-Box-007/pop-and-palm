@@ -9,8 +9,9 @@ import FAQAccordion from "../components-2/FAQ/FAQ";
 import { useParams } from "react-router-dom";
 import formatToHyphenated from "../utils/nameFormat";
 import NotFound from "../components-2/NotFound/NotFound";
-import MainService2 from "../components-2/Service2/Service2Main";
-
+import ServicesHeader from "../components-2/Service/ServicesHeader";
+import FlipCard from "../components-2/Service2/Service2";
+ 
 const Service = () => {
   const params = useParams();
   const data = servicePageData.find(
@@ -32,12 +33,23 @@ const Service = () => {
       />
       <Private data={data.aboutContent} />
 
-      <MainService2
-        tagline={data.EventSection.tagline}
-        title={data.EventSection.title}
-        description={data.EventSection.description}
-        section={data.EventSection.section} // Passing the array of data here
-      />
+      <section className="events-page">
+        <ServicesHeader
+          preTitle={data.EventSection.tagline}
+          title={data.EventSection.title}
+          subtitle={data.EventSection.description}
+        />
+
+        {data.EventSection.section.map((event, idx) => (
+          <FlipCard
+            key={idx}
+            title={event.title}
+            image={event.image}
+            flipData={event.flipData}
+          />
+        ))}
+      </section>
+
       <ProcessSection />
       <EventsSection />
       <FAQAccordion faqs={data.faq} />

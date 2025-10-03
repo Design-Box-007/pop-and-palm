@@ -31,8 +31,8 @@ const servicePageData = [
       section: [
         {
           title: "Life’s Milestones & Celebrations",
-          imagePlaceholder: HomeImages.image3,
-          backSideContent: [
+          image: HomeImages.image3,
+          flipData: [
             "Weddings & Engagement Parties",
             "Anniversary Celebrations",
             "Milestone Birthdays",
@@ -42,8 +42,8 @@ const servicePageData = [
         },
         {
           title: "Family & Kids’ Events",
-          imagePlaceholder: HomeImages.image4,
-          backSideContent: [
+          image: HomeImages.image4,
+          flipData: [
             "Themed Kids’ Birthday Parties",
             "Baby Showers & Gender Reveal Events",
             "Family Gatherings & Reunions",
@@ -52,8 +52,8 @@ const servicePageData = [
         },
         {
           title: "Home & Intimate Gatherings",
-          imagePlaceholder: HomeImages.image5,
-          backSideContent: [
+          image: HomeImages.image5,
+          flipData: [
             "Housewarming Parties",
             "Private Dinner Parties",
             "Garden / Poolside Events",
@@ -62,8 +62,8 @@ const servicePageData = [
         },
         {
           title: "Festive & Cultural Celebrations",
-          imagePlaceholder: HomeImages.image6,
-          backSideContent: [
+          image: HomeImages.image6,
+          flipData: [
             "Diwali, Eid, and Christmas Parties",
             "Cultural & Traditional Gatherings",
             "Festival-Themed Décor & Entertainment",
@@ -71,8 +71,8 @@ const servicePageData = [
         },
         {
           title: "Luxury & Bespoke Experiences",
-          imagePlaceholder: HomeImages.image7,
-          backSideContent: [
+          image: HomeImages.image7,
+          flipData: [
             "Luxury Picnics & Styled Setups",
             "Destination Events",
             "Exclusive Private Gatherings",
@@ -81,8 +81,8 @@ const servicePageData = [
         },
         {
           title: "Modern & Themed Events",
-          imagePlaceholder: HomeImages.image8,
-          backSideContent: [
+          image: HomeImages.image8,
+          flipData: [
             "Corporate & Private Theme Parties",
             "Movie Night or Game Night Setups",
             "Trendy Experiential Events",
@@ -148,8 +148,8 @@ const servicePageData = [
       section: [
         {
           title: "Corporate Celebrations & Milestones",
-          imagePlaceholder: HomeImages.image3,
-          backSideContent: [
+          image: HomeImages.image3,
+          flipData: [
             "Company Anniversaries",
             "Employee Appreciation Events",
             "Milestone Achievements & Celebrations",
@@ -157,8 +157,8 @@ const servicePageData = [
         },
         {
           title: "Awards & Recognition Events",
-          imagePlaceholder: HomeImages.image4,
-          backSideContent: [
+          image: HomeImages.image4,
+          flipData: [
             "Employee Awards Nights",
             "Performance Recognition Ceremonies",
             "Industry or Partner Awards Events",
@@ -166,8 +166,8 @@ const servicePageData = [
         },
         {
           title: "Product Launches & Brand Promotions",
-          imagePlaceholder: HomeImages.image5,
-          backSideContent: [
+          image: HomeImages.image5,
+          flipData: [
             "Product Launch Parties",
             "Brand Activation Events",
             "Press Conferences & Media Launches",
@@ -175,8 +175,8 @@ const servicePageData = [
         },
         {
           title: "Team Building & Corporate Retreats",
-          imagePlaceholder: HomeImages.image6,
-          backSideContent: [
+          image: HomeImages.image6,
+          flipData: [
             "Outdoor Adventure Retreats",
             "Indoor Team-Building Workshops",
             "Strategy & Leadership Retreats",
@@ -184,8 +184,8 @@ const servicePageData = [
         },
         {
           title: "Corporate Meetings & Conferences",
-          imagePlaceholder: HomeImages.image7,
-          backSideContent: [
+          image: HomeImages.image7,
+          flipData: [
             "Annual General Meetings (AGMs)",
             "Corporate Conferences & Seminars",
             "Board Meetings & Executive Summits",
@@ -193,8 +193,8 @@ const servicePageData = [
         },
         {
           title: "Client & VIP Events",
-          imagePlaceholder: HomeImages.image8,
-          backSideContent: [
+          image: HomeImages.image8,
+          flipData: [
             "VIP Dinners & Networking Events",
             "Client Appreciation Nights",
             "Exclusive Gala & Hospitality Events",
@@ -256,59 +256,63 @@ const servicePageData = [
       title: "Tailored Event Solutions for Every Occasion",
       description:
         "Comprehensive solutions designed to make every event unforgettable.",
-      categories: [
+      section: [
         {
-          image: HomeImages.image4,
-          title: "Corporate Events",
-          tags: ["Conferences", "Seminars", "Product Launches", "Award Nights"],
-        },
-        {
-          image: HomeImages.image4,
-          title: "Weddings & Private Parties",
-          tags: ["Weddings", "Engagements", "Birthday", "Anniversaries"],
-        },
-        {
-          image: HomeImages.image4,
-          title: "Exhibitions & Trade Shows",
-          tags: [
-            "Booth Design",
-            "Exhibition Setup",
-            "Trade Shows",
-            "Brand Showcases",
+          title: "Corporate Celebrations & Milestones",
+          image: HomeImages.image3,
+          flipData: [
+            "Company Anniversaries",
+            "Employee Appreciation Events",
+            "Milestone Achievements & Celebrations",
           ],
         },
         {
+          title: "Awards & Recognition Events",
           image: HomeImages.image4,
-          title: "Luxury Experiences",
-          tags: [
-            "VIP Events",
-            "High-end Galas",
-            "Exclusive Launches",
-            "Private Dinners",
+          flipData: [
+            "Employee Awards Nights",
+            "Performance Recognition Ceremonies",
+            "Industry or Partner Awards Events",
           ],
         },
         {
-          image: HomeImages.image4,
-          title: "Brand Activations",
-          tags: [
-            "Pop-up Events",
-            "Product Demos",
-            "Street Marketing",
-            "Experience Zones",
+          title: "Product Launches & Brand Promotions",
+          image: HomeImages.image5,
+          flipData: [
+            "Product Launch Parties",
+            "Brand Activation Events",
+            "Press Conferences & Media Launches",
           ],
         },
         {
-          image: HomeImages.image4,
-          title: "Destination Events",
-          tags: [
-            "Destination Weddings",
-            "Corporate Retreats",
-            "Travel Planning",
+          title: "Team Building & Corporate Retreats",
+          image: HomeImages.image6,
+          flipData: [
+            "Outdoor Adventure Retreats",
+            "Indoor Team-Building Workshops",
+            "Strategy & Leadership Retreats",
+          ],
+        },
+        {
+          title: "Corporate Meetings & Conferences",
+          image: HomeImages.image7,
+          flipData: [
+            "Annual General Meetings (AGMs)",
+            "Corporate Conferences & Seminars",
+            "Board Meetings & Executive Summits",
+          ],
+        },
+        {
+          title: "Client & VIP Events",
+          image: HomeImages.image8,
+          flipData: [
+            "VIP Dinners & Networking Events",
+            "Client Appreciation Nights",
+            "Exclusive Gala & Hospitality Events",
           ],
         },
       ],
     },
-
     faq: [
       {
         question: "Do you offer customized event planning packages?",
@@ -356,59 +360,63 @@ const servicePageData = [
       title: "Tailored Event Solutions for Every Occasion",
       description:
         "Comprehensive solutions designed to make every event unforgettable.",
-      categories: [
+      section: [
         {
-          image: HomeImages.image4,
-          title: "Corporate Events",
-          tags: ["Conferences", "Seminars", "Product Launches", "Award Nights"],
-        },
-        {
-          image: HomeImages.image4,
-          title: "Weddings & Private Parties",
-          tags: ["Weddings", "Engagements", "Birthday", "Anniversaries"],
-        },
-        {
-          image: HomeImages.image4,
-          title: "Exhibitions & Trade Shows",
-          tags: [
-            "Booth Design",
-            "Exhibition Setup",
-            "Trade Shows",
-            "Brand Showcases",
+          title: "Corporate Celebrations & Milestones",
+          image: HomeImages.image3,
+          flipData: [
+            "Company Anniversaries",
+            "Employee Appreciation Events",
+            "Milestone Achievements & Celebrations",
           ],
         },
         {
+          title: "Awards & Recognition Events",
           image: HomeImages.image4,
-          title: "Luxury Experiences",
-          tags: [
-            "VIP Events",
-            "High-end Galas",
-            "Exclusive Launches",
-            "Private Dinners",
+          flipData: [
+            "Employee Awards Nights",
+            "Performance Recognition Ceremonies",
+            "Industry or Partner Awards Events",
           ],
         },
         {
-          image: HomeImages.image4,
-          title: "Brand Activations",
-          tags: [
-            "Pop-up Events",
-            "Product Demos",
-            "Street Marketing",
-            "Experience Zones",
+          title: "Product Launches & Brand Promotions",
+          image: HomeImages.image5,
+          flipData: [
+            "Product Launch Parties",
+            "Brand Activation Events",
+            "Press Conferences & Media Launches",
           ],
         },
         {
-          image: HomeImages.image4,
-          title: "Destination Events",
-          tags: [
-            "Destination Weddings",
-            "Corporate Retreats",
-            "Travel Planning",
+          title: "Team Building & Corporate Retreats",
+          image: HomeImages.image6,
+          flipData: [
+            "Outdoor Adventure Retreats",
+            "Indoor Team-Building Workshops",
+            "Strategy & Leadership Retreats",
+          ],
+        },
+        {
+          title: "Corporate Meetings & Conferences",
+          image: HomeImages.image7,
+          flipData: [
+            "Annual General Meetings (AGMs)",
+            "Corporate Conferences & Seminars",
+            "Board Meetings & Executive Summits",
+          ],
+        },
+        {
+          title: "Client & VIP Events",
+          image: HomeImages.image8,
+          flipData: [
+            "VIP Dinners & Networking Events",
+            "Client Appreciation Nights",
+            "Exclusive Gala & Hospitality Events",
           ],
         },
       ],
     },
-
     faq: [
       {
         question: "Do you offer customized event planning packages?",

@@ -33,6 +33,24 @@ h6 {
   font-family: "Boska-Variable", sans-serif;
 }
 
+.events-page {
+  width: 100%;
+  padding: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.events-page > :first-child {
+  grid-column: 1 / -1; /* Header spans full width */
+  margin-bottom: 40px;
+}
+
+.flip-card {
+  height: 350px;
+}
+
 .and-symbol {
   font-family: "Playfair Display", serif;
   color: var(--optional-color);
