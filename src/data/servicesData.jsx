@@ -20,47 +20,73 @@ const servicePageData = [
       title: "Our Services at a Glance",
       image: aboutImages.about1,
       description:
-        "At Pop & Palm Events, we provide end-to-end event planning and styling services designed to make every occasion effortless and unforgettable. Explore our range of services below. ",
-      description2:
-        "We don’t just plan events — we design experiences. Explore our core services tailored to meet your every celebration need.",
+        "Private events in the UAE are all about creating unforgettable moments — from intimate family gatherings to grand celebrations that reflect style, culture, and personality. At Pop & Palm Events, we transform ordinary occasions into extraordinary experiences with creative décor, thoughtful details, and seamless execution. Whether it’s a romantic proposal, a themed birthday, a baby shower, or a festive celebration at home or in a venue, our team handles every element from concept to setup. We specialize in bringing your vision to life with customized themes, stunning backdrops, and beautifully styled spaces. With a passion for design and a focus on flawless coordination, Pop & Palm ensures that every event is stress-free, memorable, and truly one of a kind.",
     },
 
     EventSection: {
       tagline: "Events We Specalize",
       title: "Private Events Tailored to Your Story",
-      categories: [
+      description:
+        "Comprehensive solutions designed to make every event unforgettable.",
+      section: [
         {
-          image: HomeImages.image3,
-          title: "Weddings & Engagements",
-          tags: ["Romantic, timeless celebrations crafted to your vision."],
-        },
-        {
-          image: HomeImages.image4,
-          title: "Birthdays & Anniversaries",
-          tags: [
-            "From milestone birthdays to golden anniversaries, we make it special.",
+          title: "Life’s Milestones & Celebrations",
+          imagePlaceholder: HomeImages.image3,
+          backSideContent: [
+            "Weddings & Engagement Parties",
+            "Anniversary Celebrations",
+            "Milestone Birthdays",
+            "Proposal Setups & Romantic Dinners",
+            "Graduation Parties & Achievement Celebrations",
           ],
         },
         {
-          image: HomeImages.image5,
-          title: "Family Gatherings",
-          tags: ["Reunions, festive celebrations, or intimate dinners."],
+          title: "Family & Kids’ Events",
+          imagePlaceholder: HomeImages.image4,
+          backSideContent: [
+            "Themed Kids’ Birthday Parties",
+            "Baby Showers & Gender Reveal Events",
+            "Family Gatherings & Reunions",
+            "End-of-School / Back-to-School Celebrations",
+          ],
         },
         {
-          image: HomeImages.image6,
-          title: "Baby Showers",
-          tags: ["Heartwarming setups for life’s precious beginnings."],
+          title: "Home & Intimate Gatherings",
+          imagePlaceholder: HomeImages.image5,
+          backSideContent: [
+            "Housewarming Parties",
+            "Private Dinner Parties",
+            "Garden / Poolside Events",
+            "Seasonal Get-Togethers",
+          ],
         },
         {
-          image: HomeImages.image7,
-          title: "Naming Ceremonies",
-          tags: ["Heartwarming setups for life’s precious beginnings."],
+          title: "Festive & Cultural Celebrations",
+          imagePlaceholder: HomeImages.image6,
+          backSideContent: [
+            "Diwali, Eid, and Christmas Parties",
+            "Cultural & Traditional Gatherings",
+            "Festival-Themed Décor & Entertainment",
+          ],
         },
         {
-          image: HomeImages.image8,
-          title: "Themed Parties",
-          tags: [
-            "Creative, fun-filled experiences with custom décor and entertainment.",
+          title: "Luxury & Bespoke Experiences",
+          imagePlaceholder: HomeImages.image7,
+          backSideContent: [
+            "Luxury Picnics & Styled Setups",
+            "Destination Events",
+            "Exclusive Private Gatherings",
+            "VIP Experiences with Custom Décor",
+          ],
+        },
+        {
+          title: "Modern & Themed Events",
+          imagePlaceholder: HomeImages.image8,
+          backSideContent: [
+            "Corporate & Private Theme Parties",
+            "Movie Night or Game Night Setups",
+            "Trendy Experiential Events",
+            "Customized Themed Décor & Styling",
           ],
         },
       ],
@@ -68,24 +94,29 @@ const servicePageData = [
 
     faq: [
       {
-        question: "Do you offer customized event planning packages?",
+        question: "What types of private events do you organize?",
         answer:
-          "Yes! We tailor our services to meet your specific needs, whether it’s a small gathering or a large-scale celebration.",
+          "We plan and style weddings, proposals, birthdays, baby showers, engagements, housewarmings, yacht parties, and more.",
       },
       {
-        question: "Can you handle international destination events?",
+        question: "How early should I book my event?",
         answer:
-          "Absolutely. Our team has experience organizing events in various locations worldwide.",
+          "We recommend booking 3–4 weeks in advance to ensure availability and smooth planning.",
       },
       {
-        question: "Do you provide end-to-end event management?",
+        question: "Can the décor and theme be customized?",
         answer:
-          "Yes, from concept creation and venue selection to logistics and on-site coordination, we handle everything.",
+          "Yes! All themes, colours, and styling details are fully tailored to your vision and preferences.",
       },
       {
-        question: "How far in advance should I book your services?",
+        question: "Do you provide décor for home events too?",
         answer:
-          "We recommend booking at least 3–6 months in advance to ensure availability and smooth planning.",
+          "Absolutely. We set up events at villas, gardens, rooftops, private homes, or any venue you choose.",
+      },
+      {
+        question: "Do you manage the setup and coordination on the event day?",
+        answer:
+          "Yes, our team handles everything — from setup to final touches — so you can relax and enjoy the celebration.",
       },
     ],
   },
@@ -97,7 +128,7 @@ const servicePageData = [
       tagline: "We Bring to Life",
       tags: ["Conferences", "Seminars", "Product Launches", "Award Nights"],
       description:
-        "Our corporate events are meticulously crafted to foster connections, encourage collaboration, and celebrate company achievements. We provide customized solutions that include elegant decor, gourmet catering, and engaging activities tailored to enhance your corporate culture. Whether you’re hosting a networking event, a team-building retreat, or a milestone celebration, we focus on creating a professional yet enjoyable atmosphere that leaves a lasting impression on your attendees.",
+        "Making Every Corporate Event in UAE a Memorable Experience – Expert Event Management & Customized Décor",
       subDescription: "Your Celebration, Our Expertise",
       buttonLink: "#", // default link
     },
@@ -106,7 +137,7 @@ const servicePageData = [
       title: "Why Private Events Matter",
       image: aboutImages.about1,
       description:
-        "Private events are more than just gatherings — they’re milestones that deserve to be remembered. Whether it’s a wedding, a birthday, or a family celebration, each event is an opportunity to tell your story. Our role is to transform your ideas into experiences filled with warmth, creativity, and seamless execution.",
+        "Corporate events in the UAE are more than just gatherings - they’re powerful opportunities to strengthen relationships, celebrate success, and elevate your brand. At Pop & Palm Events, we design and manage corporate occasions with creativity, precision, and professionalism. From product launches and award ceremonies to team-building retreats and annual gala dinners, our team handles every detail to reflect your company’s vision and goals. We craft sophisticated themes, impactful stage designs, and seamless guest experiences that leave a lasting impression. With end-to-end planning and flawless execution, Pop & Palm ensures your corporate event is engaging, memorable, and perfectly aligned with your brand identity.",
     },
 
     EventSection: {
@@ -114,54 +145,59 @@ const servicePageData = [
       title: "Tailored Event Solutions for Every Occasion",
       description:
         "Comprehensive solutions designed to make every event unforgettable.",
-      categories: [
+      section: [
         {
-          image: HomeImages.image4,
-          title: "Corporate Events",
-          tags: ["Conferences", "Seminars", "Product Launches", "Award Nights"],
-        },
-        {
-          image: HomeImages.image4,
-          title: "Weddings & Private Parties",
-          tags: ["Weddings", "Engagements", "Birthday", "Anniversaries"],
-        },
-        {
-          image: HomeImages.image4,
-          title: "Exhibitions & Trade Shows",
-          tags: [
-            "Booth Design",
-            "Exhibition Setup",
-            "Trade Shows",
-            "Brand Showcases",
+          title: "Corporate Celebrations & Milestones",
+          imagePlaceholder: HomeImages.image3,
+          backSideContent: [
+            "Company Anniversaries",
+            "Employee Appreciation Events",
+            "Milestone Achievements & Celebrations",
           ],
         },
         {
-          image: HomeImages.image4,
-          title: "Luxury Experiences",
-          tags: [
-            "VIP Events",
-            "High-end Galas",
-            "Exclusive Launches",
-            "Private Dinners",
+          title: "Awards & Recognition Events",
+          imagePlaceholder: HomeImages.image4,
+          backSideContent: [
+            "Employee Awards Nights",
+            "Performance Recognition Ceremonies",
+            "Industry or Partner Awards Events",
           ],
         },
         {
-          image: HomeImages.image4,
-          title: "Brand Activations",
-          tags: [
-            "Pop-up Events",
-            "Product Demos",
-            "Street Marketing",
-            "Experience Zones",
+          title: "Product Launches & Brand Promotions",
+          imagePlaceholder: HomeImages.image5,
+          backSideContent: [
+            "Product Launch Parties",
+            "Brand Activation Events",
+            "Press Conferences & Media Launches",
           ],
         },
         {
-          image: HomeImages.image4,
-          title: "Destination Events",
-          tags: [
-            "Destination Weddings",
-            "Corporate Retreats",
-            "Travel Planning",
+          title: "Team Building & Corporate Retreats",
+          imagePlaceholder: HomeImages.image6,
+          backSideContent: [
+            "Outdoor Adventure Retreats",
+            "Indoor Team-Building Workshops",
+            "Strategy & Leadership Retreats",
+          ],
+        },
+        {
+          title: "Corporate Meetings & Conferences",
+          imagePlaceholder: HomeImages.image7,
+          backSideContent: [
+            "Annual General Meetings (AGMs)",
+            "Corporate Conferences & Seminars",
+            "Board Meetings & Executive Summits",
+          ],
+        },
+        {
+          title: "Client & VIP Events",
+          imagePlaceholder: HomeImages.image8,
+          backSideContent: [
+            "VIP Dinners & Networking Events",
+            "Client Appreciation Nights",
+            "Exclusive Gala & Hospitality Events",
           ],
         },
       ],
@@ -169,24 +205,30 @@ const servicePageData = [
 
     faq: [
       {
-        question: "Do you offer customized event planning packages?",
+        question: "What types of corporate events do you organize?",
         answer:
-          "Yes! We tailor our services to meet your specific needs, whether it’s a small gathering or a large-scale celebration.",
+          "We handle a wide range of corporate events including product launches, awards ceremonies, client dinners, team-building retreats, conferences, and company milestone celebrations.",
       },
       {
-        question: "Can you handle international destination events?",
+        question: "Can the event décor and theme be customized?",
         answer:
-          "Absolutely. Our team has experience organizing events in various locations worldwide.",
+          "Yes, every event is fully customizable. We tailor themes, stage setups, and décor to reflect your brand and vision.",
       },
       {
-        question: "Do you provide end-to-end event management?",
+        question: "Do you manage the setup and coordination on the event day?",
         answer:
-          "Yes, from concept creation and venue selection to logistics and on-site coordination, we handle everything.",
+          "Absolutely. Our team takes care of everything from setup to execution, ensuring a smooth and professional event.",
       },
       {
-        question: "How far in advance should I book your services?",
+        question: "Can you organize events at our office or external venues?",
         answer:
-          "We recommend booking at least 3–6 months in advance to ensure availability and smooth planning.",
+          "Yes, we provide services at offices, hotels, resorts, conference halls, or any venue of your choice.",
+      },
+      {
+        question:
+          "Do you handle large-scale corporate events as well as small gatherings?",
+        answer:
+          "Yes, we manage events of all sizes – from intimate VIP dinners to large-scale conferences and gala events.",
       },
     ],
   },
