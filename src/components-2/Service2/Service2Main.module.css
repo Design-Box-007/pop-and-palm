@@ -1,0 +1,41 @@
+/* App.module.css */
+/* General resets/fonts should be in index.css or global.css */
+
+.servicesSection {
+  padding: 50px 20px;
+  position: relative;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+  justify-content: center;
+  position: relative; /* so vector can align with this */
+  z-index: 1;
+}
+
+/* Vector container under cards */
+.vector {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  bottom: -100px; /* adjust how low it sits */
+  left: 0;
+  z-index: 0; /* ensures it stays behind */
+  pointer-events: none; /* so it doesn't block clicks */
+}
+
+.vector img {
+  max-width: 300px; /* control size */
+  height: auto;
+}
+
+@media (min-width: 1024px) {
+  .cardGrid {
+    grid-template-columns: repeat(3, 1fr); /* Three columns on large screens */
+    gap: 20px;
+  }
+}

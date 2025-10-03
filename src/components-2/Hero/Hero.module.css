@@ -20,8 +20,8 @@
 
 .overlay {
   position: absolute;
-  inset: 0; /* Changed to cover the entire hero section */
-  background-color: rgba(0, 0, 0, 0.4); /* Added a slight dark overlay */
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 20px;
 }
 
@@ -55,14 +55,14 @@
   text-wrap: pretty;
 }
 
-/* Updated styles for the new bottom section layout */
+ 
 .bottomCon {
-  position: absolute; /* Position it at the bottom of the section */
+  position: absolute;  
   bottom: 2rem;
-  width: 100%; /* Make it full width */
+  width: 100%;  
   z-index: 10;
   display: flex;
-  justify-content: center; /* Center the content horizontally */
+  justify-content: center; 
 }
 
 .bottomTextAndButton {
@@ -70,8 +70,8 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 15px; /* Spacing between the text and button */
-  max-width: 90%; /* To prevent stretching on very wide screens */
+  gap: 15px;
+  max-width: 90%;
   color: white;
   text-align: center;
 }
@@ -85,7 +85,7 @@
 .contactUsLink {
   color: white;
   text-decoration: underline;
-  white-space: nowrap; /* Prevents the link from wrapping */
+  white-space: nowrap; 
   font-weight: 500;
 }
 
