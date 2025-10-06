@@ -45,7 +45,7 @@ export default function AboutUs() {
           <div className={styles.statsContainer}>
             <div className={styles.statItem}>
               <div className={styles.statNumber}>
-                <Counter end={10} suffix="+" />
+                <Counter end={5} suffix="+" />
               </div>
               <div className={styles.statLabel}>Years of Experience</div>
             </div>
@@ -54,7 +54,7 @@ export default function AboutUs() {
 
             <div className={styles.statItem}>
               <div className={styles.statNumber}>
-                <Counter end={500} suffix="+" />
+                <Counter end={100} suffix="+" />
               </div>
               <div className={styles.statLabel}>Events Delivered</div>
             </div>
@@ -63,19 +63,19 @@ export default function AboutUs() {
 
             <div className={styles.statItem}>
               <div className={styles.statNumber}>
-                <Counter end={200} suffix="+" />
+                <Counter end={90} suffix="+" />
               </div>
-              <div className={styles.statLabel}>Happy Clients</div>
+              <div className={styles.statLabel}>Long Term Partnerships</div>
             </div>
 
-            <div className={styles.divider}></div>
+            {/* <div className={styles.divider}></div>
 
             <div className={styles.statItem}>
               <div className={styles.statNumber}>
                 <Counter end={98} suffix="%" />
               </div>
               <div className={styles.statLabel}>Client Satisfaction</div>
-            </div>
+            </div> */}
           </div>
         </AnimatedWrapper>
       </div>

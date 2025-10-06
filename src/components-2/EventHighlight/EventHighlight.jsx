@@ -6,6 +6,12 @@ import TestimonialNikitha from "../../assets/TestimonialNikitha.jpeg";
 import TestimonialVanusha from "../../assets/TestimonialVanusha.jpg";
 import TestimonialNilofar from "../../assets/TestimonialNilofar.jpeg";
 import profile from "../../assets/Pop and Palm/Home/Home Page image 17.jpg";
+import { BiRightArrow } from "react-icons/bi";
+import {
+  ArrowBigLeftDashIcon,
+  ArrowRight,
+  ArrowRightFromLine,
+} from "lucide-react";
 
 export default function EventHighlight() {
   const testimonials = [
@@ -92,32 +98,12 @@ export default function EventHighlight() {
 
           {/* Right Card */}
           <div className={styles.card}>
-            <span className={styles.smallLabel}>Product Reveal</span>
-            <h3 className={styles.cardTitle}>A Launch That Lit Up the Skyline</h3>
-            <div className={styles.subHeadingContainer}>
-              <p className={styles.subHeading}>
-                Product Launch – From Vision to Spotlight
-              </p>
-              <span className={styles.location}>Dubai</span>
-            </div>
-            <p className={styles.description}>
-              A bold tech startup wanted their first product launch to be
-              unforgettable. We transformed a rooftop into a branded stage under
-              the Dubai sky, impressing investors, media, and partners alike.
-            </p>
-            <div className={styles.testimonial}>
-              <img
-                src={profile}
-                alt={currentTestimonial.username}
-                className={styles.avatar}
-              />
-              <div>
-                <p className={styles.quote}>{currentTestimonial.description}</p>
-                <span className={styles.person}>
-                  {currentTestimonial.username}
-                </span>
-              </div>
-            </div>
+            <p className={styles.quote}>{currentTestimonial.description}</p>
+
+            <span className={styles.person}>
+              <ArrowRight />
+              {currentTestimonial.username}
+            </span>
           </div>
         </div>
 
