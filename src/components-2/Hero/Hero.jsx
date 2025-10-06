@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Hero.module.css";
 import icons from "../../Icon/Icon";
-import defaultImage from "../../assets/Pop and Palm/Home/Home Page image 2.png";
+import defaultImage from "../../assets/hero.png";
 import AnimatedWrapper from "../Animation/AnimatedWrapper1";
 import { Link } from "react-router-dom";
 import { Nav } from "react-bootstrap";

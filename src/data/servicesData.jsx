@@ -6,7 +6,7 @@ import QuizzyBeezServiceImage from "../assets/ServicePageImages/QuizzyBeez.svg";
 const servicePageData = [
   {
     title: "Private Events",
-    tags: ["Conferences", "Seminars", "Product Launches", "Award Nights"],
+    tags: ["Weddings", "Birthdays", "Anniversaries", "Parties"],
     image: KidsBirthdayPartiesServiceImage,
     HeroData: {
       tagline: "We Bring to Life",
@@ -122,11 +122,10 @@ const servicePageData = [
   },
   {
     title: "Corporate Events",
-    tags: ["Conferences", "Seminars", "Product Launches", "Award Nights"],
+    tags: ["Conferences", "Team Building", "Office Opening", "Award Ceremony"],
     image: CorporateEventsServiceImage,
     HeroData: {
       tagline: "We Bring to Life",
-      tags: ["Conferences", "Seminars", "Product Launches", "Award Nights"],
       description:
         "Making Every Corporate Event in UAE a Memorable Experience – Expert Event Management & Customized Décor",
       subDescription: "Your Celebration, Our Expertise",
@@ -234,7 +233,7 @@ const servicePageData = [
   },
   {
     title: "Event Rentals",
-    tags: ["Conferences", "Seminars", "Product Launches", "Award Nights"],
+    tags: ["Chairs", "Tables", "Lighting", "Décor"],
     image: RentalServiceImage,
     HeroData: {
       tagline: "Premium Event Rentals for Every Occasion",
@@ -351,7 +350,7 @@ const servicePageData = [
   {
     title: "Quizzy Beez",
     image: QuizzyBeezServiceImage,
-    tags: ["Conferences", "Seminars", "Product Launches", "Award Nights"],
+    tags: ["Trivia", "Challenges", "Competitions", "Workshops"],
     HeroData: {
       tagline: "We Bring to Life",
       description: "Engage. Entertain. Educate — The Quizzy Beeez Way!",
