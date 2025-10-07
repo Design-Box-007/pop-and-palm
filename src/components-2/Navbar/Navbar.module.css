@@ -139,6 +139,10 @@
   transform: translateX(0); /* Final state: slides into view */
 }
 
+.imgwhite{
+  filter: invert(1);
+}
+
 /* Adjustments for the links inside the new mobile menu */
 .mobileLink {
   color: white;
