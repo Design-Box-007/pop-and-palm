@@ -37,7 +37,7 @@
   font-family: "Playfair Display", serif; /* Elegant serif font */
   font-size: 48px; /* Large size */
   font-weight: 400;
-  color: #222;
+  color: var(--primary-color);
   line-height: 1.2;
 }
 
@@ -49,7 +49,7 @@
   line-height: 1.6;
 }
 
-.view{
+.view {
   text-decoration: none;
 }
 

@@ -5,6 +5,7 @@ import { Nav } from "react-bootstrap";
 import styles from "./Navbar.module.css";
 import icons from "../../Icon/Icon";
 import { HashLink } from "react-router-hash-link";
+import logo from "../../assets/new-logo-2.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,9 +34,9 @@ export default function Navbar() {
       <div className={styles.container}>
         {/* Left: Logo */}
         <div
-          className={`${styles.logo} ${isBlackNavbar ? styles.blackLogo : ""}`}
+          className={`${styles.logoDiv} ${isBlackNavbar ? styles.blackLogo : ""}`}
         >
-          Pop & Palm
+          <img src={logo} className={styles.imglogo} />
         </div>
 
         {/* Center: Desktop Links */}

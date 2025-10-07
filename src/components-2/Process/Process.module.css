@@ -9,6 +9,10 @@
   margin-bottom: 2rem;
   gap: 2rem;
 }
+
+.header h2 {
+  color: var(--primary-color);
+}
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -31,7 +35,7 @@
 .subtitle {
   max-width: 300px;
   font-size: 0.95rem;
-  color: #444;
+  font-style: italic;
 }
 
 .grid {

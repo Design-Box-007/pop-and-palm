@@ -21,14 +21,17 @@
   font-size: 48px; /* Large size */
   font-weight: 500;
   line-height: 1.2;
+  color: var(--primary-color);
 }
 
 .subtitle {
-  font-family: "Montserrat", sans-serif; /* Match pre-title font */
+ 
   font-size: 1.1em;
   color: black;
   margin: 0 auto;
   line-height: 1.6;
+  font-style: italic;
+  font-weight: 300;
 }
 
 /* Responsive adjustments for header */

@@ -1,10 +1,11 @@
 import React from "react";
 import aboutHeroimage from "../../assets/Pop and Palm/About Us/about-hero.jpg";
 import styles from "./About2.module.css";
+import AboutUSSection from "../../components/AboutUSSection";
 const About2 = () => {
   return (
     <div className={styles.about2}>
-      <div className={styles.aboutimg}>
+      {/* <div className={styles.aboutimg}>
         <img src={aboutHeroimage} alt="img" />
       </div>
       <div className={styles.para}>
@@ -20,7 +21,8 @@ const About2 = () => {
           execution.
         </p>
       </div>
-      <hr />
+      <hr /> */}
+      <AboutUSSection/>
       <div className={styles.container}>
         <div className={styles.card}>
           <h3>The Vision That Drives Us</h3>
