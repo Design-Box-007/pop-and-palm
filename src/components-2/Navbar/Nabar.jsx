@@ -17,7 +17,8 @@ export default function Navbar() {
   const isWhiteNavbar =
     isActive("/") ||
     location.pathname.startsWith("/about") ||
-    location.pathname.startsWith("/blog/"); // Checks specifically for blog sub-pages
+    location.pathname.startsWith("/blog/") ||
+    location.pathname.startsWith("/services/")
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
@@ -34,9 +35,11 @@ export default function Navbar() {
       <div className={styles.container}>
         {/* Left: Logo */}
         <div
-          className={`${styles.logoDiv} ${isBlackNavbar ? styles.blackLogo : ""}`}
+          className={`${styles.logoDiv} ${
+            isBlackNavbar ? styles.blackLogo : ""
+          }`}
         >
-          <img src={logo} className={styles.imglogo} />
+          <img src={logo} className={`${styles.imglogo} ${isWhiteNavbar ? styles.imgwhite : ""}`} />
         </div>
 
         {/* Center: Desktop Links */}
