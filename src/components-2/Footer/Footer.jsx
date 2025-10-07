@@ -18,6 +18,7 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import servicePageData from "../../data/servicesData";
 import formatToHyphenated from "../../utils/nameFormat";
+import logo from "../../assets/new-logo-2.png"
 
 export default function Footer() {
   return (
@@ -25,7 +26,7 @@ export default function Footer() {
       <div className={styles.container}>
         {/* Left Section */}
         <div className={styles.left}>
-          <h2 className={styles.logo}>Pop & Palm Events</h2>
+          <h2 className={styles.logo}><img src={logo} alt="logo" style={{width: "200px"}}/></h2>
           {/* <p className={styles.description}>
             Curating meaningful moments for brands, families, and communities
             across the UAE.

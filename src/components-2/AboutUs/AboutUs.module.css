@@ -27,7 +27,7 @@
 .heading {
   font-size: 48px;
   font-weight: 500;
-  color: black;
+  color: var(--primary-color);
   line-height: 1.2;
   margin-bottom: 20px;
   margin-left: auto;
