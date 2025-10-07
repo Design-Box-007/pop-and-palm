@@ -109,7 +109,7 @@ export default function Footer() {
             </div>
 
             {/* Information */}
-            <div>
+            {/* <div>
               <h3 className={styles.heading}>Information</h3>
               <ul className={styles.links}>
                 <li>
@@ -125,7 +125,7 @@ export default function Footer() {
                   <a href="#">Terms of Use</a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
 
