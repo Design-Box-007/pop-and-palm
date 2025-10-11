@@ -18,7 +18,7 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import servicePageData from "../../data/servicesData";
 import formatToHyphenated from "../../utils/nameFormat";
-import logo from "../../assets/new-logo-2.png"
+import logo from "../../assets/new-logo-2.png";
 
 export default function Footer() {
   return (
@@ -26,7 +26,9 @@ export default function Footer() {
       <div className={styles.container}>
         {/* Left Section */}
         <div className={styles.left}>
-          <h2 className={styles.logo}><img src={logo} alt="logo" style={{width: "200px"}}/></h2>
+          <h2 className={styles.logo}>
+            <img src={logo} alt="logo" style={{ width: "200px" }} />
+          </h2>
           {/* <p className={styles.description}>
             Curating meaningful moments for brands, families, and communities
             across the UAE.
@@ -61,7 +63,7 @@ export default function Footer() {
 
           <div className={styles.threeSection}>
             {/* company */}
-            <div>
+            {/* <div>
               <h3 className={styles.heading}>Company</h3>
               <ul className={styles.links}>
                 <li>
@@ -89,10 +91,10 @@ export default function Footer() {
                   </Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
 
             {/* Events */}
-            <div>
+            {/* <div>
               <h3 className={styles.heading}>Events We Curate</h3>
               <ul className={styles.links}>
                 {servicePageData.map((data, index) => (
@@ -106,7 +108,7 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> */}
 
             {/* Information */}
             {/* <div>

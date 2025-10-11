@@ -11,6 +11,8 @@ import DiariesHeader from "./DiariesHeader";
 import DiariesCard from "./DiariesCard";
 import { blogData } from "../../data/blogsData";
 import { BlogCard } from "./BlogCard1";
+import TopToBottomReveal from "../../components/TopToBottomReveal";
+import AnimatedWrapper from "../Animation/AnimatedWrapper1";
 
 function Diaries() {
   const diaries = [
@@ -38,27 +40,29 @@ function Diaries() {
   ];
 
   return (
-    <div className={styles.servicesSection}>
-      <DiariesHeader title={"Event Diaries"} />
+    <AnimatedWrapper type="fadeUp" delay={0.2}>
+      <div className={styles.servicesSection}>
+        <DiariesHeader title={"Event Diaries"} />
 
-      <div className={styles.cardGrid}>
-        {/* {diaries.map((dia) => (
+        <div className={styles.cardGrid}>
+          {/* {diaries.map((dia) => (
           <DiariesCard key={dia.id} diaries={dia} />
         ))} */}
 
-        {[...blogData]
-          .reverse()
-          .slice(0, 3)
-          .map((blog, index) => (
-            <BlogCard
-              key={index}
-              imgSrc={blog.imgSrc}
-              title={blog.title}
-              description={blog.description}
-            />
-          ))}
+          {[...blogData]
+            .reverse()
+            .slice(0, 3)
+            .map((blog, index) => (
+              <BlogCard
+                key={index}
+                imgSrc={blog.imgSrc}
+                title={blog.title}
+                description={blog.description}
+              />
+            ))}
+        </div>
       </div>
-    </div>
+    </AnimatedWrapper>
   );
 }
 
