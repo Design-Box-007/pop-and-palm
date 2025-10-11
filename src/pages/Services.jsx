@@ -54,12 +54,12 @@ const Services = () => {
   return (
     <section id="top">
       <section className="gallerypage" id="gallery">
-        <div className="left-bottom">
+        {/* <div className="left-bottom">
           <img src={galleryPageLeftBottom} alt="LeftBottom" width="100%" />
         </div>
         <div className="right-top">
           <img src={galleryPageRightTop} alt="RightTop" width="100%" />
-        </div>
+        </div> */}
         <div className="d-flex flex-column justify-content-center align-items-center">
           <LeftToRightReveal>
             <h1 className="gallerypage-title text-center">Services</h1>

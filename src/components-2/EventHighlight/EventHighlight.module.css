@@ -23,11 +23,11 @@
 }
 
 .subTitle {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: black;
   margin-top: 0.5rem;
-  font-style: italic;
   font-weight: 300;
+  font-family: "Bonheur Royale", cursive;
 }
 
 .mainContainer {
@@ -191,7 +191,7 @@
     font-size: 30px;
   }
   .subTitle {
-    font-size: 14px;
+    font-size: 1.5rem;
   }
   .content {
     grid-template-columns: 1fr;

@@ -711,13 +711,12 @@ h6 {
 .gallerypage {
   position: relative;
   width: 100vw;
-  height: 100vh;
-  top: -93px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   overflow: hidden;
+  margin-top: 10rem;
 }
 
 .right-top {

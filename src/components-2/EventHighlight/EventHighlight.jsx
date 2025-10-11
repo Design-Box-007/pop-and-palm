@@ -12,6 +12,8 @@ import {
   ArrowRight,
   ArrowRightFromLine,
 } from "lucide-react";
+import { motion } from "framer-motion";
+import VisibleReveal from "../../components/VisibleReveal";
 
 export default function EventHighlight() {
   const testimonials = [
@@ -74,62 +76,66 @@ export default function EventHighlight() {
   const currentTestimonial = testimonials[currentSlideIndex];
 
   return (
-    <section className={styles.section}>
-      {/* Top Header */}
-      <div className={styles.topHeader}>
-        <div>
-          <span className={styles.label}>✨ Our Event Highlights</span>
-          <h2 className={styles.title}>From Concept to Celebration.</h2>
-        </div>
-        <p className={styles.subTitle}>Proven Experiences. Trusted by Many.</p>
-      </div>
-
-      <div className={styles.mainContainer}>
-        {/* Content for the current slide */}
-        <div className={styles.content}>
-          {/* Left Image */}
-          <div className={styles.imageWrapper}>
-            <img
-              src={currentTestimonial.image}
-              alt={currentTestimonial.username}
-              className={styles.image}
-            />
+    <VisibleReveal>
+      <section className={styles.section}>
+        {/* Top Header */}
+        <div className={styles.topHeader}>
+          <div>
+            <span className={styles.label}>✨ Our Event Highlights</span>
+            <h2 className={styles.title}>From Concept to Celebration.</h2>
           </div>
-
-          {/* Right Card */}
-          <div className={styles.card}>
-            <p className={styles.quote}>{currentTestimonial.description}</p>
-
-            <span className={styles.person}>
-              <ArrowRight />
-              {currentTestimonial.username}
-            </span>
-          </div>
+          <p className={styles.subTitle}>
+            Proven Experiences. Trusted by Many.
+          </p>
         </div>
 
-        {/* Slider Controls and Progress Bar at the bottom */}
-        <div className={styles.sliderControls}>
-          <div className={styles.progressBars}>
-            {testimonials.map((_, index) => (
-              <div
-                key={index}
-                className={`${styles.progressBar} ${
-                  index === currentSlideIndex ? styles.active : ""
-                }`}
-                onClick={() => setCurrentSlideIndex(index)}
-              ></div>
-            ))}
+        <div className={styles.mainContainer}>
+          {/* Content for the current slide */}
+          <div className={styles.content}>
+            {/* Left Image */}
+            <div className={styles.imageWrapper}>
+              <img
+                src={currentTestimonial.image}
+                alt={currentTestimonial.username}
+                className={styles.image}
+              />
+            </div>
+
+            {/* Right Card */}
+            <div className={styles.card}>
+              <p className={styles.quote}>{currentTestimonial.description}</p>
+
+              <span className={styles.person}>
+                <ArrowRight />
+                {currentTestimonial.username}
+              </span>
+            </div>
           </div>
-          <div className={styles.navigationButtons}>
-            <button className={styles.navButton} onClick={handlePrev}>
-              &larr; Prev
-            </button>
-            <button className={styles.navButton} onClick={handleNext}>
-              Next &rarr;
-            </button>
+
+          {/* Slider Controls and Progress Bar at the bottom */}
+          <div className={styles.sliderControls}>
+            <div className={styles.progressBars}>
+              {testimonials.map((_, index) => (
+                <div
+                  key={index}
+                  className={`${styles.progressBar} ${
+                    index === currentSlideIndex ? styles.active : ""
+                  }`}
+                  onClick={() => setCurrentSlideIndex(index)}
+                ></div>
+              ))}
+            </div>
+            <div className={styles.navigationButtons}>
+              <button className={styles.navButton} onClick={handlePrev}>
+                &larr; Prev
+              </button>
+              <button className={styles.navButton} onClick={handleNext}>
+                Next &rarr;
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </VisibleReveal>
   );
 }
