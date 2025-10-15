@@ -28,7 +28,7 @@ const services = [
     // Replace with actual image reference
   },
   {
-    title: "Rentals",
+    title: "Event Rentals",
     description:
       "We provide a wide range of stylish, high-quality furniture rentals to elevate your events. From comfortable seating and elegant tables to unique decorative items, our selection ensures that you have everything you need to create a memorable atmosphere. Enjoy the convenience of renting without the hassle of purchasing, allowing you to focus on what matters most—your guests and your occasion.",
     image: RentalServiceImage,

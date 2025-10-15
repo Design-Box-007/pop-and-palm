@@ -4,21 +4,18 @@
 }
 
 .preTitle {
-  font-family: "Montserrat", sans-serif; /* Smaller text, different font */
-  font-size: 0.9em;
+  font-size: 20px;
   font-weight: 400;
   color: black;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px; /* Space between dots and text */
-  margin-bottom: 15px;
-  text-transform: uppercase;
+  gap: 6px; /* Space between dots and text */
   letter-spacing: 1px;
 }
 
 .title {
-  font-size: 48px; /* Large size */
+  font-size: 80px; /* Large size */
   font-weight: 500;
   line-height: 1.2;
   color: var(--primary-color);
@@ -43,5 +40,11 @@
   }
   .header {
     text-align: start;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .title {
+    font-size: 36px;
   }
 }

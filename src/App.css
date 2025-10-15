@@ -33,10 +33,14 @@ h6 {
   font-family: "Boska-Variable", sans-serif;
 }
 
+.flex-heading {
+  display: flex;
+  align-items: end;
+}
+
 .events-page {
   width: 100%;
   padding: 20px;
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
@@ -595,7 +599,6 @@ h6 {
   position: relative;
   width: 100%;
   padding: 0px 20px;
-  padding-top: 70px;
   z-index: 2;
 }
 
@@ -1115,6 +1118,11 @@ h6 {
     margin: 0.5rem;
   }
 
+  .flex-heading {
+    flex-direction: column;
+    align-items: start;
+  }
+
   .blog-content-tag {
     font-size: 16px;
     line-height: 24px;
@@ -1129,6 +1137,11 @@ h6 {
     font-size: 14px;
     line-height: 20px;
   }
+  .servicepage-card-image {
+    width: 100%;
+    height: 100%;
+  }
+  
 }
 
 @media (max-width: 480px) {

@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import VisibleReveal from "../../components/VisibleReveal";
+import TestimonialUserLine from "../../assets/testimonialUserLine.png";
 
 export default function EventHighlight() {
   const testimonials = [
@@ -82,11 +83,13 @@ export default function EventHighlight() {
         <div className={styles.topHeader}>
           <div>
             <span className={styles.label}>✨ Our Event Highlights</span>
-            <h2 className={styles.title}>From Concept to Celebration.</h2>
+            <div className={styles.testdiv}>
+              <h1 className={styles.title}>Testimonials </h1>
+              <div className="subtitle">
+                Proven Experiences. Trusted by Many.
+              </div>
+            </div>
           </div>
-          <p className={styles.subTitle}>
-            Proven Experiences. Trusted by Many.
-          </p>
         </div>
 
         <div className={styles.mainContainer}>
@@ -105,10 +108,16 @@ export default function EventHighlight() {
             <div className={styles.card}>
               <p className={styles.quote}>{currentTestimonial.description}</p>
 
-              <span className={styles.person}>
-                <ArrowRight />
-                {currentTestimonial.username}
-              </span>
+              <div className="d-flex align-items-center gap-2">
+                <img
+                  src={TestimonialUserLine}
+                  alt="TestimonialUserLine"
+                  height="8px"
+                />
+                <div className="testimonial-username">
+                  {currentTestimonial.username}
+                </div>
+              </div>
             </div>
           </div>
 

@@ -1,5 +1,5 @@
 .section {
-  padding: 50px 20px;
+  padding: 50px 20px 0 20px;
 }
 
 .header {
@@ -17,7 +17,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  margin-bottom: 3rem;
+}
+
+.heading {
+  display: flex;
+  align-items: end;
 }
 
 .badge {
@@ -33,9 +37,12 @@
 }
 
 .subtitle {
-  max-width: 300px;
-  font-size: 0.95rem;
-  font-style: italic;
+  font-size: 1.5em;
+  color: black;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-weight: 300;
+  font-family: "Bonheur Royale", cursive;
 }
 
 .grid {
@@ -101,17 +108,21 @@
   align-items: center;
 }
 
-.cta:hover {
+/* .cta:hover {
   background: #f97316;
   color: white;
   border-color: #f97316;
-}
+} */
 
 /* Responsive */
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .heading {
+    flex-direction: column;
+    align-items: start;
   }
 
   .grid {
@@ -136,8 +147,12 @@
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .subtitle {
+  /* .subtitle {
     max-width: 100%;
+  } */
+  .heading {
+    flex-direction: column;
+    align-items: start;
   }
 
   .header h2 {

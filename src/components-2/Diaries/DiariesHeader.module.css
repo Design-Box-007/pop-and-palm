@@ -35,7 +35,7 @@
 
 .title {
   font-family: "Playfair Display", serif; /* Elegant serif font */
-  font-size: 48px; /* Large size */
+  font-size: 80px; /* Large size */
   font-weight: 400;
   color: var(--primary-color);
   line-height: 1.2;
@@ -60,5 +60,10 @@
   }
   .preTitle {
     font-size: 25px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+  .title{
+    font-size: 36px;
   }
 }

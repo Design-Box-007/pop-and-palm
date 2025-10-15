@@ -133,7 +133,7 @@ const servicePageData = [
     },
 
     aboutContent: {
-      title: "Why Private Events Matter",
+      title: "Why Corporate events Matter",
       image: aboutImages.about1,
       description:
         "Corporate events in the UAE are more than just gatherings - they’re powerful opportunities to strengthen relationships, celebrate success, and elevate your brand. At Pop & Palm Events, we design and manage corporate occasions with creativity, precision, and professionalism. From product launches and award ceremonies to team-building retreats and annual gala dinners, our team handles every detail to reflect your company’s vision and goals. We craft sophisticated themes, impactful stage designs, and seamless guest experiences that leave a lasting impression. With end-to-end planning and flawless execution, Pop & Palm ensures your corporate event is engaging, memorable, and perfectly aligned with your brand identity.",
@@ -244,7 +244,7 @@ const servicePageData = [
     },
 
     aboutContent: {
-      title: "Why Private Events Matter",
+      title: "Why Event Rentals Matter",
       image: aboutImages.about1,
       description:
         "At Pop & Palm Events, we offer a wide range of premium event rentals to elevate any occasion. From elegant chairs and tables to stylish décor, linens, and accessories, we provide everything you need for a seamless setup. Our rental items are carefully selected for quality, comfort, and style, ensuring your event looks flawless. Whether it’s a wedding, private celebration, or corporate gathering, we make it easy to create a stunning and functional event space. With timely delivery, professional setup, and flexible options, Pop & Palm Events ensures every detail is perfectly in place.",
@@ -359,7 +359,7 @@ const servicePageData = [
     },
 
     aboutContent: {
-      title: "Why Private Events Matter",
+      title: "Why Quizzy Beez Matter",
       image: aboutImages.about1,
       description:
         "Quizzy Beeez brings a fresh wave of interactive entertainment to events across the UAE, turning ordinary gatherings into unforgettable experiences. We design engaging, themed quiz sessions that captivate audiences — whether it’s a corporate team-building event, private celebration, mall activation, or community festival. Each quiz is fully customizable to suit your theme, audience, and occasion, creating a perfect blend of fun, learning, and friendly competition. With Quizzy Beeez, every event becomes a buzzing hub of energy, conversation, and connection — leaving your guests talking long after the final question.",
