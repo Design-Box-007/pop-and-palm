@@ -11,37 +11,34 @@
 }
 
 .badge {
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem;
   font-size: 20px;
 }
 
-.aboutlink{
+.aboutlink {
   text-decoration: none;
   color: black;
 }
 
-.badge span{
+.badge span {
   text-decoration: none;
 }
 
 .heading {
-  font-size: 48px;
+  font-size: 80px;
   font-weight: 500;
   color: var(--primary-color);
   line-height: 1.2;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 0.5rem;
 }
 
 .description {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #333333;
-  max-width: 1100px;
   margin: 0 auto auto;
+  max-width: 1100px;
+  font-size: 16px;
   font-weight: 400;
-  margin-bottom: 20px;
+  line-height: 24px;
+  color: black;
 }
 
 .statsContainer {

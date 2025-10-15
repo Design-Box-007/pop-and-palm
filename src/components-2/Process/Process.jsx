@@ -11,17 +11,18 @@ export default function ProcessSection() {
       <div className={styles.header}>
         <div className={styles.left}>
           <span className={styles.badge}>
-            {" "}
             <span>
               <img src={icons.icon3} alt="icon" />
-            </span>{" "}
+            </span>
             Our Process
           </span>
-          <h2>How We Bring It All Together</h2>
+          <div className={styles.heading}>
+            <h2>How We Bring It All Together</h2>
+            <p className={styles.subtitle}>
+              We begin by listening — to your story, your goals, your audience.
+            </p>
+          </div>
         </div>
-        <p className={styles.subtitle}>
-          We begin by listening — to your story, your goals, your audience.
-        </p>
       </div>
       <hr />
 

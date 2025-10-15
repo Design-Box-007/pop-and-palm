@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import Gallery from "./pages/Gallery";
 import Header from "./components/Header";
 // import Footer from "./components/Footer";
-import Footer from "./components-2/Footer/Footer";
 import Services from "./pages/Services";
 import GalleryImages from "./pages/GalleryImages";
 import Blogs from "./pages/Blogs";
@@ -16,6 +15,7 @@ import Service from "./pages/Service";
 import ScrollToTop from "./components-2/ScrollToTop/ScrollToTop";
 import useScrollToTop from "./components-2/ScrollToTop/ScrollToTop";
 import MainAbout from "./components-2/AboutMain/MainAbout";
+import Footer from "./components/Footer";
 
 function App() {
   useScrollToTop();
@@ -35,7 +35,6 @@ function App() {
         <Route path="/blog/:blogName" element={<Blog />} />
         <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
-      {/* <Footer /> */}
       <Footer />
     </div>
   );
