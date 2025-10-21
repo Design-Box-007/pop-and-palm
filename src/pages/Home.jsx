@@ -60,8 +60,7 @@ const Home = () => {
       <section>
         {/* <ServicesSection /> */}
         <MainService
-          tagline="Services We Offer"
-          title="Tailored Event Solutions for Every Occasion"
+          title="Services We Offer"
           description="Comprehensive solutions designed to make every event unforgettable."
           section={servicePageData}
         />

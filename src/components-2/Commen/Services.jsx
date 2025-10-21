@@ -6,7 +6,6 @@ import AnimatedWrapper2 from "../Animation/AnimatedWrapper2";
 // import vector2 from "../../assets/Pop and Palm/Home Page Vector/Vector 3.svg";
 
 function MainService({
-  tagline,
   title,
   description,
   section,
@@ -16,7 +15,7 @@ function MainService({
 
   return (
     <div className={styles.servicesSection}>
-      <ServicesHeader preTitle={tagline} title={title} subtitle={description} />
+      <ServicesHeader title={title} subtitle={description} />
 
       <div className={styles.cardGrid}>
         {section.map((service, index) => (
