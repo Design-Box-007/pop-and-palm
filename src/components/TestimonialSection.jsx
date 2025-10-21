@@ -84,7 +84,7 @@ const TestimonialSection = () => {
       <LeftToRightReveal>
         <div className="d-flex align-items-center">
           <h1 className="title ">Testimonials </h1>&nbsp;&nbsp;
-          <div className="subtitle mt-5"> Hear from our Clients</div>
+          <div className="subtitle mt-5">Hear from our Clients</div>
         </div>
       </LeftToRightReveal>
       <VisibleReveal>

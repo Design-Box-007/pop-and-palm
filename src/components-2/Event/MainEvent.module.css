@@ -13,13 +13,6 @@
   color: var(--primary-color);
 }
 
-.header p {
-  color: black;
-  font-size: 1.5rem;
-  font-weight: 300;
-  font-family: "Bonheur Royale", cursive;
-}
-
 .parent {
   display: grid;
   grid-template-columns: repeat(5, 1fr);

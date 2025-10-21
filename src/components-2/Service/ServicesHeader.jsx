@@ -3,12 +3,12 @@ import React from "react";
 import styles from "./ServicesHeader.module.css";
 import icons from "../../Icon/Icon";
 
-function ServicesHeader({ preTitle, title, subtitle }) {
+function ServicesHeader({ title, subtitle }) {
   return (
     <header className={styles.header}>
-      <p className={styles.preTitle}><span><img src={icons.icon3} alt="icon" /></span> {preTitle}</p>
+      {/* <p className={styles.preTitle}><span><img src={icons.icon3} alt="icon" /></span> {preTitle}</p> */}
       <h1 className={styles.title}>{title}</h1>
-      <p className={styles.subtitle}>{subtitle}</p>
+      <p className={"subtitle"}>{subtitle}</p>
     </header>
   );
 }

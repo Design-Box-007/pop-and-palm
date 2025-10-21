@@ -18,7 +18,7 @@ export default function ProcessSection() {
           </span>
           <div className={styles.heading}>
             <h2>How We Bring It All Together</h2>
-            <p className={styles.subtitle}>
+            <p className={"subtitle"}>
               We begin by listening — to your story, your goals, your audience.
             </p>
           </div>

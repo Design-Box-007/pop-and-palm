@@ -5,14 +5,6 @@ import TestimonialStephanie from "../../assets/TestimonialStephanie.jpeg";
 import TestimonialNikitha from "../../assets/TestimonialNikitha.jpeg";
 import TestimonialVanusha from "../../assets/TestimonialVanusha.jpg";
 import TestimonialNilofar from "../../assets/TestimonialNilofar.jpeg";
-import profile from "../../assets/Pop and Palm/Home/Home Page image 17.jpg";
-import { BiRightArrow } from "react-icons/bi";
-import {
-  ArrowBigLeftDashIcon,
-  ArrowRight,
-  ArrowRightFromLine,
-} from "lucide-react";
-import { motion } from "framer-motion";
 import VisibleReveal from "../../components/VisibleReveal";
 import TestimonialUserLine from "../../assets/testimonialUserLine.png";
 

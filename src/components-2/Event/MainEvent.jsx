@@ -5,7 +5,6 @@ import image1 from "../../assets/Pop and Palm/Home/Home Page image 9.png";
 import image2 from "../../assets/Pop and Palm/Home/Home Page image 10.png";
 import image3 from "../../assets/Pop and Palm/Home/Home Page image 11.png";
 import image4 from "../../assets/Pop and Palm/Home/Home Page image 12.png";
-import { ArrowRightCircle } from "lucide-react";
 import AnimatedWrapper3 from "../Animation/AnimatedWrapper3";
 import icons from "../../Icon/Icon";
 
@@ -62,7 +61,7 @@ export default function EventsSection() {
     <section className={styles.section}>
       <div className={styles.header}>
         <h2>Events That Made an Impact</h2>
-        <p>
+        <p className="subtitle">
           A glimpse of the unforgettable experiences we’ve created for brands
           and individuals.
         </p>
