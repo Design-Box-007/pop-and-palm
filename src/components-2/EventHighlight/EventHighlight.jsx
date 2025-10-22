@@ -77,9 +77,7 @@ export default function EventHighlight() {
             <span className={styles.label}>✨ Our Event Highlights</span>
             <div className={styles.testdiv}>
               <h1 className={styles.title}>Testimonials </h1>
-              <div className="subtitle">
-                Proven Experiences. Trusted by Many.
-              </div>
+              <div className="subtitle">Hear from our Clients</div>
             </div>
           </div>
         </div>

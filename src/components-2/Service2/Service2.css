@@ -61,7 +61,7 @@
 
 /* BACK */
 .flip-card-back {
-  background: #ffc3ab;
+  background: var(--secondary-color);
   color: black;
   transform: rotateY(180deg);
   padding: 20px;

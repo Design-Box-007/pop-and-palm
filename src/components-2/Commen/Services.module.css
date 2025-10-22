@@ -10,10 +10,10 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 30px;
-  margin-top: 50px;
   justify-content: center;
   position: relative; /* so vector can align with this */
   z-index: 1;
+  margin-top: 10px;
 }
 
 /* Vector container under cards */

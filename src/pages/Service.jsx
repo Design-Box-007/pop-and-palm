@@ -11,7 +11,8 @@ import formatToHyphenated from "../utils/nameFormat";
 import NotFound from "../components-2/NotFound/NotFound";
 import ServicesHeader from "../components-2/Service/ServicesHeader";
 import FlipCard from "../components-2/Service2/Service2";
- 
+import FlipCardHeader from "../components-2/Service/FlipCardHeader";
+
 const Service = () => {
   const params = useParams();
   const data = servicePageData.find(
@@ -34,7 +35,7 @@ const Service = () => {
       <Private data={data.aboutContent} />
 
       <section className="events-page">
-        <ServicesHeader
+        <FlipCardHeader
           preTitle={data.EventSection.tagline}
           title={data.EventSection.title}
           subtitle={data.EventSection.description}

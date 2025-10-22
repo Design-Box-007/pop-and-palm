@@ -61,8 +61,8 @@ const Home = () => {
       <section>
         {/* <ServicesSection /> */}
         <MainService
-          title="Services We Offer"
-          description="Comprehensive solutions designed to make every event unforgettable."
+          title="Our Services"
+          description="Expertise"
           section={servicePageData}
         />
       </section>

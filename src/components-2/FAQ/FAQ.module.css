@@ -3,7 +3,6 @@
 }
 
 .title {
-  font-weight: 500;
   color: var(--primary-color);
   font-size: 80px;
   margin-bottom: 20px;
@@ -72,7 +71,7 @@
   width: 140px;
 }
 @media (min-width: 769px) and (max-width: 1024px) {
-  .title{
+  .title {
     font-size: 36px;
   }
 }
