@@ -725,14 +725,15 @@ h6 {
   align-items: center;
   text-align: center;
   overflow: hidden;
-  margin-top: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
 }
 
 .right-top {
   position: absolute;
   width: 25%;
   right: 0;
-  top: 100px;
+  top: 10px;
 }
 
 .left-bottom {
@@ -754,6 +755,7 @@ h6 {
 .gallerypage-description {
   font-size: 20px;
   font-weight: 200;
+  z-index: 100;
 }
 
 .gallerypage-categories {
@@ -966,6 +968,7 @@ h6 {
 
   .left-bottom {
     width: 50%;
+    top: 250px;
   }
 
   .gallerypage-title {

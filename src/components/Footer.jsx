@@ -18,7 +18,7 @@ const Footer = () => {
         <div className='col-md-6 my-4'>
           <div className='footer-links'>
             <HashLink className='footer-link' smooth to="/#home">Home</HashLink>
-            <HashLink className='footer-link' smooth to="/#about">About Us</HashLink>
+            <HashLink className='footer-link' smooth to="/about#top">About Us</HashLink>
             <HashLink className='footer-link' smooth to="/services#top">Services</HashLink>
             <HashLink className='footer-link' smooth to="/gallery#top">Gallery</HashLink>
             {/* <HashLink className='footer-link' smooth to="/contact-us">Contact Us</HashLink> */}
