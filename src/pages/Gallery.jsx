@@ -46,12 +46,12 @@ const Gallery = () => {
             content="Explore our gallery showcasing vibrant themed decorations and memorable moments from past events."
           />
         </Helmet>
-        {/* <div className='left-bottom'>
+        <div className='left-bottom'>
           <img src={galleryPageLeftBottom} alt="LeftBottom" width="100%" />
         </div>
         <div className='right-top'>
           <img src={galleryPageRightTop} alt="RightTop" width="100%" />
-        </div> */}
+        </div>
         <section id="gallery">
           <div className="d-flex flex-column justify-content-center align-items-center">
             <LeftToRightReveal>

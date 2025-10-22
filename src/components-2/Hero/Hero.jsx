@@ -78,8 +78,7 @@ export default function HeroSection({ title, image, section = {} }) {
           <span className={styles.bottomText}>
             today to start planning your perfect event.{" "}
           </span>
-          {/* <a href={finalData.buttonLink} className={styles.planButton}></a> */}
-        </div>
+         </div>
       </AnimatedWrapper>
     </section>
   );

@@ -6,12 +6,12 @@ import galleryPageRightTop from "../assets/galleryPageRightTop.png";
 const BlogHeroSection = () => {
   return (
     <section className="gallerypage">
-      {/* <div className='left-bottom'>
+      <div className='left-bottom'>
                 <img src={galleryPageLeftBottom} alt="LeftBottom" width="100%" />
             </div>
             <div className='right-top'>
                 <img src={galleryPageRightTop} alt="RightTop" width="100%" />
-            </div> */}
+            </div>
       <section id="gallery">
         <div className="d-flex flex-column justify-content-center align-items-center blogDetail">
           <LeftToRightReveal>

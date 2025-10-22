@@ -10,6 +10,7 @@ import GallerySection from "../components/GallerySection";
 import FAQAccordion from "../components-2/FAQ/FAQ";
 import faqs from "../data/FAQ/data";
 import HeroSection from "../components-2/Hero/Hero";
+// import HeroSection from "../components/HeroSection"
 import EventHighlight from "../components-2/EventHighlight/EventHighlight";
 import MainEvent from "../components-2/Event/MainEvent";
 import AboutUs from "../components-2/AboutUs/AboutUs";
@@ -48,8 +49,8 @@ const Home = () => {
         />
       </Helmet>
       <section id="home">
-        {/* <HeroSection /> */}
         <HeroSection />
+        {/* <HeroSection /> */}
       </section>
 
       <section id="about">

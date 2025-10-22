@@ -32,27 +32,15 @@ export default function Navbar() {
     { to: "/about", label: "About Us", isHash: true },
     { to: "/services", label: "Services" },
     { to: "/gallery", label: "Gallery" },
-    { to: "/blog", label: "Blog" },
+    { to: "/blog", label: "Blogs" },
   ];
 
   return (
-    <nav
-      className={`${styles.navbar} ${isBlackNavbar ? styles.blackNavbar : ""}`}
-    >
+    <nav className={`${"header"}`}>
       <div className={styles.container}>
         {/* Logo */}
-        <div
-          className={`${styles.logoDiv} ${
-            isBlackNavbar ? styles.blackLogo : ""
-          }`}
-        >
-          <img
-            src={logo}
-            alt="Logo"
-            className={`${styles.imglogo} ${
-              isWhiteNavbar ? styles.imgwhite : ""
-            }`}
-          />
+        <div className={`${styles.logoDiv}`}>
+          <img src={logo} alt="Logo" className={`${styles.imglogo} `} />
         </div>
 
         {/* Desktop Nav Links */}
@@ -64,9 +52,7 @@ export default function Navbar() {
                 smooth
                 to={to}
                 onClick={closeMenu}
-                className={`${styles.navLink} ${
-                  isBlackNavbar ? styles.blackLink : ""
-                } ${hash === "#about" && to === "/about" ? styles.active : ""}`}
+                className={`${styles.navLink}`}
               >
                 {label}
               </HashLink>
@@ -75,13 +61,7 @@ export default function Navbar() {
                 key={to}
                 to={to}
                 onClick={closeMenu}
-                className={`${styles.navLink} ${
-                  isBlackNavbar ? styles.blackLink : ""
-                } ${
-                  pathname === to || pathname.startsWith(`${to}/`)
-                    ? styles.active
-                    : ""
-                }`}
+                className={`${styles.navLink} `}
               >
                 {label}
               </Link>
@@ -105,9 +85,7 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className={`${styles.menuButton} ${
-            isBlackNavbar ? styles.blackMenuButton : ""
-          }`}
+          className={`${styles.menuButton} `}
           onClick={toggleMenu}
           aria-label={isOpen ? "Close menu" : "Open menu"}
         >
@@ -125,11 +103,7 @@ export default function Navbar() {
             key={to}
             to={to}
             onClick={closeMenu}
-            className={`${styles.mobileLink} ${
-              pathname === to || pathname.startsWith(`${to}/`)
-                ? styles.active
-                : ""
-            }`}
+            className={`${styles.mobileLink}`}
           >
             {label}
           </Link>
