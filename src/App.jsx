@@ -12,7 +12,6 @@ import Blog from "./pages/Blog";
 import ContactUs from "./pages/ContactUs";
 import Navbar from "./components-2/Navbar/Nabar";
 import Service from "./pages/Service";
-import ScrollToTop from "./components-2/ScrollToTop/ScrollToTop";
 import useScrollToTop from "./components-2/ScrollToTop/ScrollToTop";
 import MainAbout from "./components-2/AboutMain/MainAbout";
 import Footer from "./components/Footer";
@@ -23,7 +22,7 @@ function App() {
     <div className="global-style">
       {/* <Header /> */}
       <Navbar />
-      {/* <ScrollToTop/> */}
+    
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<MainAbout />} />

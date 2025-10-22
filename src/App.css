@@ -716,6 +716,9 @@ h6 {
     align-items: start;
   }
 }
+.gallerytop{
+  margin-top: 5rem;
+}
 
 .gallerypage {
   position: relative;
@@ -1027,7 +1030,8 @@ h6 {
 .blog {
   position: relative;
   width: 100%;
-  padding: 20px 20px;
+ 
+  margin-top: 5rem;
 }
 
 .blog-image-container {

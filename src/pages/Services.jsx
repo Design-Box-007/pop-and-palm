@@ -52,7 +52,7 @@ const Services = () => {
   };
 
   return (
-    <section id="top">
+    <section id="top" className="gallerytop">
       <section className="gallerypage" id="gallery">
         <div className="left-bottom">
           <img src={galleryPageLeftBottom} alt="LeftBottom" width="100%" />

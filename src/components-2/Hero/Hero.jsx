@@ -33,15 +33,14 @@ export default function HeroSection({ title, image, section = {} }) {
         type="zoomIn"
         duration={2}
         className={styles.backgroundImage}
-      >   
+      >
         <div
           style={{ backgroundImage: `url(${finalData.image})` }}
           className={styles.backgroundImage}
         />
-      
 
-      {/* Dark Overlay */}
-      <div className={styles.overlay} />
+        {/* Dark Overlay */}
+        <div className={styles.overlay} />
       </AnimatedWrapper>
 
       {/* Content */}
@@ -50,6 +49,7 @@ export default function HeroSection({ title, image, section = {} }) {
 
         <AnimatedWrapper type="fadeRight" delay={0.4}>
           <span className={styles.titleSpan}>{finalData.tagline}</span>
+          <span></span>
         </AnimatedWrapper>
 
         <AnimatedWrapper type="fadeUp" delay={0.6}>
@@ -78,7 +78,7 @@ export default function HeroSection({ title, image, section = {} }) {
           <span className={styles.bottomText}>
             today to start planning your perfect event.{" "}
           </span>
-         </div>
+        </div>
       </AnimatedWrapper>
     </section>
   );

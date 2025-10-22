@@ -13,6 +13,7 @@
 .badge {
   margin-bottom: 0.5rem;
   font-size: 20px;
+  color: var(--primary-color);
 }
 
 .aboutlink {
@@ -26,7 +27,6 @@
 
 .heading {
   font-size: 80px;
-  font-weight: 500;
   color: var(--primary-color);
   line-height: 1.2;
   margin-bottom: 0.5rem;

@@ -16,7 +16,6 @@
 
 .title {
   font-size: 80px; /* Large size */
-  font-weight: 500;
   line-height: 1.2;
   color: var(--primary-color);
 }

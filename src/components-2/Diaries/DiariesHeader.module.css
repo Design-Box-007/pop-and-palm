@@ -17,26 +17,11 @@
 }
 
 .header span {
-  color: #fec2aa;
-}
-
-.preTitle {
-  font-size: 48px;
-  font-weight: 400;
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px; /* Space between dots and text */
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  color: var(--secondary-color);
 }
 
 .title {
-  font-family: "Playfair Display", serif; /* Elegant serif font */
   font-size: 80px; /* Large size */
-  font-weight: 400;
   color: var(--primary-color);
   line-height: 1.2;
 }
@@ -62,8 +47,8 @@
     font-size: 25px;
   }
 }
-@media (min-width: 769px) and (max-width: 1024px){
-  .title{
+@media (min-width: 769px) and (max-width: 1024px) {
+  .title {
     font-size: 36px;
   }
 }

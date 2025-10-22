@@ -1,12 +1,15 @@
 import React from "react";
 import styles from "./MainEvent.module.css";
- 
+
 import image1 from "../../assets/Pop and Palm/Home/Home Page image 9.png";
 import image2 from "../../assets/Pop and Palm/Home/Home Page image 10.png";
 import image3 from "../../assets/Pop and Palm/Home/Home Page image 11.png";
 import image4 from "../../assets/Pop and Palm/Home/Home Page image 12.png";
 import AnimatedWrapper3 from "../Animation/AnimatedWrapper3";
 import icons from "../../Icon/Icon";
+import LeftToRightReveal from "../../components/LeftToRightReveal";
+import GalleryBalloons from "../../assets/galleryBalloons.png";
+import GalleryPop from "../../assets/galleryPop.png";
 
 const events = [
   {
@@ -59,13 +62,29 @@ const EventCard = ({ title, img, tags }) => (
 export default function EventsSection() {
   return (
     <section className={styles.section}>
-      <div className={styles.header}>
-        <h2>Events That Made an Impact</h2>
+      <div>
+        <LeftToRightReveal>
+          <div className="subtitle">
+            We Create & Craft <img src={GalleryPop} alt="GalleryPop" />
+          </div>
+        </LeftToRightReveal>
+        <div className=" d-flex align-items-center position-relative">
+          <h1 className="title"> The Experience </h1>
+          <div className="gallery-hr" />
+          <img
+            src={GalleryBalloons}
+            style={{ position: "absolute", right: 0 }}
+            alt="GalleryBalloons"
+          />
+        </div>
+      </div>
+      {/* <div className={styles.header}>
+        <h2>The Experience</h2>
         <p className="subtitle">
           A glimpse of the unforgettable experiences we’ve created for brands
           and individuals.
         </p>
-      </div>
+      </div> */}
 
       <div className={styles.grid}>
         <div className={styles.div1}>

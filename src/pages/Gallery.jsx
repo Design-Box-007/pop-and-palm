@@ -31,7 +31,7 @@ const Gallery = () => {
   }, []);
 
   return (
-    <section id="top">
+    <section id="top" className="gallerytop">
       <div
         className="gallerypage"
         style={{
