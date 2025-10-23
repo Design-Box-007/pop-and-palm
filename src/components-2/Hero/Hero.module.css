@@ -54,7 +54,6 @@
 }
 
 .subtitle {
-  font-size: 20px;
   margin-bottom: 3rem;
   color: white;
   margin-left: auto;
@@ -83,7 +82,6 @@
 }
 
 .bottomText {
-  font-size: 1.1rem;
   margin: 0;
   line-height: 1.5;
 }
@@ -127,7 +125,7 @@
     margin-top: 130px;
   }
   .titleSpan {
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 10px;
   }
   .subtitle {
@@ -157,7 +155,7 @@
     margin-bottom: 0.8rem;
   }
   .titleSpan {
-    font-size: 70px;
+    font-size: 40px;
   }
   .subtitle {
     font-size: 16px;

@@ -48,7 +48,7 @@ export default function HeroSection({ title, image, section = {} }) {
         <h1 className={styles.title}>{finalData.title} </h1>
 
         <AnimatedWrapper type="fadeRight" delay={0.4}>
-          <span className={styles.titleSpan}>{finalData.tagline}</span>
+          <h1 className={styles.titleSpan}>{finalData.tagline}</h1>
           <span></span>
         </AnimatedWrapper>
 
