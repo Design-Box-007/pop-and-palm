@@ -1,9 +1,11 @@
+"use client";
+
 import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import LeafRight from "../assets/heroLeftDesign.png";
-import LeafLeft from "../assets/heroRightDesign.png";
+import LeafRight from "../../assets/heroLeftDesign.png";
+import LeafLeft from "../../assets/heroRightDesign.png";
 
-// Custom hook to detect if an element is in view
+// Custom hook to detect if element is in view
 const useInView = (options) => {
   const [isInView, setIsInView] = useState(false);
   const ref = useRef();
@@ -13,20 +15,20 @@ const useInView = (options) => {
       ([entry]) => setIsInView(entry.isIntersecting),
       options
     );
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
+    if (ref.current) observer.observe(ref.current);
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
+      if (ref.current) observer.unobserve(ref.current);
     };
   }, [options]);
 
   return { ref, isInView };
 };
 
-const HeroSection = () => {
+const Hero = ({
+  heroImage,
+  text1, // subtitle left
+  text2, // subtitle right
+}) => {
   const { ref: heroRef, isInView: isHeroInView } = useInView({
     threshold: 0.1,
   });
@@ -36,21 +38,13 @@ const HeroSection = () => {
   );
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobileOrTablet(window.innerWidth <= 1024);
-    };
+    const handleResize = () => setIsMobileOrTablet(window.innerWidth <= 1024);
     window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   useEffect(() => {
-    if (isHeroInView) {
-      setIsHovered(true);
-    } else {
-      setIsHovered(false);
-    }
+    setIsHovered(isHeroInView);
   }, [isHeroInView]);
 
   const xAnimationValue = isMobileOrTablet ? 80 : 200;
@@ -63,11 +57,12 @@ const HeroSection = () => {
       onHoverEnd={() => setIsHovered(false)}
     >
       <div className="leaf-right">
-        <img src={LeafRight} alt="leaf right" width={383} height={384} />
+        <img src={LeafRight} alt="leaf right" />
       </div>
       <div className="leaf-left">
-        <img src={LeafLeft} alt="leaf left" width={378} height={395} />
+        <img src={LeafLeft} alt="leaf left" />
       </div>
+
       <motion.div
         className="hero-image-container"
         animate={{
@@ -76,33 +71,29 @@ const HeroSection = () => {
         }}
         transition={{ duration: 3, ease: "easeInOut", type: "spring" }}
       >
-        <motion.img
-          src={hero}
-          alt="hero"
-          className="overlay-image"
-          width={1920}
-          height={1080}
-        />
+        {heroImage && (
+          <motion.img src={heroImage} alt="hero" className="overlay-image" />
+        )}
         <div className="image-overlay" />
+
         <div className="hero-subtitle-wrapper">
           <motion.div
             initial={{ x: 0 }}
             animate={{ x: isHovered ? -xAnimationValue : 0 }}
             transition={{ duration: 3, ease: "easeInOut", type: "spring" }}
           >
-            <h1 className="hero-subtitle">Turning Moments into</h1>
+            <h1 className="hero-subtitle">{text1}</h1>
           </motion.div>
           <motion.div
             initial={{ x: 0 }}
             animate={{ x: isHovered ? xAnimationValue : 0 }}
             transition={{ duration: 3, ease: "easeInOut", type: "spring" }}
           >
-            <h1 className="hero-subtitle top-left">
-              Unforgettable Experiences.
-            </h1>
+            <h1 className="hero-subtitle top-left">{text2}</h1>
           </motion.div>
         </div>
       </motion.div>
+
       <div className="hero-titles">
         <motion.div
           className="hero-title-wrapper"
@@ -110,7 +101,7 @@ const HeroSection = () => {
           animate={{ x: isHovered ? -xAnimationValue : 0 }}
           transition={{ duration: 2, ease: "easeInOut", type: "spring" }}
         >
-          <h2 className="hero-title">Turning Moments into</h2>
+          <h2 className="hero-title">{text1}</h2>
         </motion.div>
         <motion.div
           className="hero-title-wrapper"
@@ -118,11 +109,11 @@ const HeroSection = () => {
           animate={{ x: isHovered ? xAnimationValue : 0 }}
           transition={{ duration: 2, ease: "easeInOut", type: "spring" }}
         >
-          <h2 className="hero-title">Unforgettable Experiences.</h2>
+          <h2 className="hero-title">{text2}</h2>
         </motion.div>
       </div>
     </motion.div>
   );
 };
 
-export default HeroSection;
+export default Hero;

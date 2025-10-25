@@ -253,6 +253,7 @@ h6 {
   align-items: center;
   text-align: center;
   overflow: hidden;
+  margin-top: 80px;
   /* Ensure no overflow from positioned elements */
 }
 
@@ -309,7 +310,7 @@ h6 {
 }
 
 .hero-title {
-  font-size: 80px;
+  font-size: 73px;
   color: var(--primary-color);
   margin: 0;
   display: inline-block;
@@ -318,7 +319,7 @@ h6 {
 }
 
 .hero-subtitle {
-  font-size: 80px;
+  font-size: 73px;
   display: inline-block;
   z-index: 1;
   margin: 0;
@@ -1030,8 +1031,8 @@ h6 {
 .blog {
   position: relative;
   width: 100%;
- 
-  margin-top: 5rem;
+  margin-top: 7rem;
+  padding: 0 20px;
 }
 
 .blog-image-container {

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Nav } from "react-bootstrap";
 import { HashLink } from "react-router-hash-link";
 import styles from "./Navbar.module.css";
@@ -9,22 +9,9 @@ import logo from "../../assets/new-logo-2.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation();
-  const { pathname, hash } = location;
 
-  const isActive = (path) => pathname === path;
   const toggleMenu = () => setIsOpen((prev) => !prev);
   const closeMenu = () => setIsOpen(false);
-
-  // Navbar color logic
-  const isWhiteNavbar =
-    ["/", "/about"].includes(pathname) ||
-    pathname.startsWith("/blog/") ||
-    pathname.startsWith("/services/");
-
-  const isBlackNavbar =
-    ["/blog", "/services"].includes(pathname) ||
-    pathname.startsWith("/gallery");
 
   // Reusable link list
   const links = [
@@ -36,23 +23,11 @@ export default function Navbar() {
   ];
 
   return (
-    <nav
-      className={`${styles.navbar} ${isBlackNavbar ? styles.blackNavbar : ""}`}
-    >
+    <nav className={styles.navbar}>
       <div className={styles.container}>
         {/* Logo */}
-        <div
-          className={`${styles.logoDiv} ${
-            isBlackNavbar ? styles.blackLogo : ""
-          }`}
-        >
-          <img
-            src={logo}
-            alt="Logo"
-            className={`${styles.imglogo} ${
-              isWhiteNavbar ? styles.imgwhite : ""
-            }`}
-          />
+        <div className={styles.logoDiv}>
+          <img src={logo} alt="Logo" className={styles.imglogo} />
         </div>
 
         {/* Desktop Nav Links */}
@@ -64,9 +39,7 @@ export default function Navbar() {
                 smooth
                 to={to}
                 onClick={closeMenu}
-                className={`${styles.navLink} ${
-                  isBlackNavbar ? styles.blackLink : ""
-                } ${hash === "#about" && to === "/about" ? styles.active : ""}`}
+                className={styles.navLink}
               >
                 {label}
               </HashLink>
@@ -75,13 +48,7 @@ export default function Navbar() {
                 key={to}
                 to={to}
                 onClick={closeMenu}
-                className={`${styles.navLink} ${
-                  isBlackNavbar ? styles.blackLink : ""
-                } ${
-                  pathname === to || pathname.startsWith(`${to}/`)
-                    ? styles.active
-                    : ""
-                }`}
+                className={styles.navLink}
               >
                 {label}
               </Link>
@@ -105,9 +72,7 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className={`${styles.menuButton} ${
-            isBlackNavbar ? styles.blackMenuButton : ""
-          }`}
+          className={styles.menuButton}
           onClick={toggleMenu}
           aria-label={isOpen ? "Close menu" : "Open menu"}
         >
@@ -125,11 +90,7 @@ export default function Navbar() {
             key={to}
             to={to}
             onClick={closeMenu}
-            className={`${styles.mobileLink} ${
-              pathname === to || pathname.startsWith(`${to}/`)
-                ? styles.active
-                : ""
-            }`}
+            className={styles.mobileLink}
           >
             {label}
           </Link>
