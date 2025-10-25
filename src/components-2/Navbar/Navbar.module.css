@@ -13,6 +13,10 @@
   transition: all 0.3s ease;
 }
 
+.blackNavbar {
+  color: var(--primary-color);
+}
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -31,6 +35,10 @@
   cursor: pointer;
 }
 
+.blackLogo {
+  color: var(--primary-color);
+}
+
 /* Desktop Navigation */
 .navLinks {
   display: flex;
@@ -39,13 +47,17 @@
 }
 
 .navLink {
-  color: var(--primary-color);
+  color: white;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .navLink:hover {
   text-decoration: underline;
+}
+
+.blackLink {
+  color: var(--primary-color);
 }
 
 .contactButton {
@@ -124,10 +136,6 @@
   transform: translateX(0); /* Final state: slides into view */
 }
 
-.imgwhite {
-  filter: invert(1);
-}
-
 /* Adjustments for the links inside the new mobile menu */
 .mobileLink {
   color: white;
@@ -142,10 +150,6 @@
 
 .mobileLink:last-of-type {
   border-bottom: none;
-}
-
-.mobileLink:hover {
-  color: #f97316;
 }
 
 .mobileButton {
