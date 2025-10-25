@@ -13,10 +13,6 @@
   transition: all 0.3s ease;
 }
 
-.blackNavbar {
-  color: var(--primary-color);
-}
-
 .container {
   display: flex;
   justify-content: space-between;
@@ -35,10 +31,6 @@
   cursor: pointer;
 }
 
-.blackLogo {
-  color: var(--primary-color);
-}
-
 /* Desktop Navigation */
 .navLinks {
   display: flex;
@@ -47,17 +39,13 @@
 }
 
 .navLink {
-  color: white;
+  color: var(--primary-color);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .navLink:hover {
   text-decoration: underline;
-}
-
-.blackLink {
-  color: var(--primary-color);
 }
 
 .contactButton {

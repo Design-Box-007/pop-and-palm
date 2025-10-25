@@ -9,8 +9,8 @@ import { Helmet } from "react-helmet-async";
 import GallerySection from "../components/GallerySection";
 import FAQAccordion from "../components-2/FAQ/FAQ";
 import faqs from "../data/FAQ/data";
-import HeroSection from "../components-2/Hero/Hero";
-// import HeroSection from "../components/HeroSection"
+// import HeroSection from "../components-2/Hero/Hero";
+import HeroSection from "../components/HeroSection";
 import EventHighlight from "../components-2/EventHighlight/EventHighlight";
 import MainEvent from "../components-2/Event/MainEvent";
 import AboutUs from "../components-2/AboutUs/AboutUs";
@@ -23,7 +23,8 @@ import heroImage from "../assets/Pop and Palm/Home/Home Page image 2.png";
 import MainService from "../components-2/Commen/Services";
 import serviceData from "../components-2/Service/Services";
 import servicePageData from "../data/servicesData";
-
+import Hero from "../components-2/Commen/NewHero";
+import MainHeroImage from "../assets/hero.png";
 const Home = () => {
   const location = useLocation();
 
@@ -49,8 +50,12 @@ const Home = () => {
         />
       </Helmet>
       <section id="home">
-        <HeroSection />
         {/* <HeroSection /> */}
+        <Hero
+          heroImage={MainHeroImage}
+          text1={"Turning Moments into"}
+          text2={"Unforgettable Experiences."}
+        />
       </section>
 
       <section id="about">
