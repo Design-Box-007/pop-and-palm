@@ -1,0 +1,311 @@
+.hero-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+
+.leaf-right,
+.leaf-left {
+  position: absolute;
+  width: 25%;
+  z-index: 0;
+}
+
+.leaf-right {
+  top: 0;
+  left: 0;
+}
+
+.leaf-left {
+  top: 50%;
+  bottom: 0;
+  right: 0;
+}
+
+@media (max-width: 1024px) {
+  .leaf-right,
+  .leaf-left {
+    width: 30%;
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 768px) {
+  .leaf-right,
+  .leaf-left {
+    width: 40%;
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .leaf-right,
+  .leaf-left {
+    width: 50%;
+    opacity: 0.5;
+  }
+}
+
+.hero-title-wrapper {
+  position: relative;
+}
+
+.hero-description {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.bottomCon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bottomTextAndButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  color: white;
+  text-align: center;
+  gap: 10px;
+}
+
+.bottomText {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.contactUsLink {
+  color: white;
+  text-decoration: underline;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.planButton {
+  background-color: white;
+  color: var(--primary-color);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.planButton:hover {
+  color: var(--primary-color);
+}
+
+.hero-subtitle-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.hero-title {
+  font-size: 73px;
+  color: var(--primary-color);
+  margin: 0;
+  display: inline-block;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.hero-description-title {
+  font-size: 20px;
+  color: var(--primary-color);
+  margin: 0;
+  display: inline-block;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.bottomText-title {
+  color: var(--primary-color);
+  margin: 0;
+  display: inline-block;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.hero-subtitle {
+  font-size: 73px;
+  display: inline-block;
+  z-index: 100;
+  margin: 0;
+  white-space: nowrap;
+
+  background-image: url("../../assets/TextImage.svg");
+  background-size: cover;
+
+  -webkit-background-clip: text;
+
+  background-clip: text;
+
+  color: transparent;
+}
+
+.hero-image-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  display: flex;
+  overflow: hidden;
+}
+
+.overlay-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.text-green {
+  color: var(--primary-color);
+}
+
+@media (max-width: 1024px) {
+  .hero-section {
+    min-height: 700px;
+    margin-top: 50px;
+  }
+
+  .hero-subtitle,
+  .hero-title {
+    font-size: 50px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-description-title {
+    font-size: 16px;
+  }
+
+  .bottomText {
+    font-size: 14px;
+  }
+
+  .planButton {
+    padding: 0.6rem 1.2rem;
+    font-size: 14px;
+  }
+
+  .hero-subtitle-wrapper {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 650px;
+    margin-top: 50px;
+  }
+
+  .hero-subtitle,
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+  .hero-description-title {
+    font-size: 14px;
+  }
+
+  .bottomText {
+    font-size: 13px;
+  }
+
+  .planButton {
+    padding: 0.5rem 1rem;
+    font-size: 13px;
+  }
+
+  .bottomTextAndButton {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .hero-subtitle-wrapper {
+    gap: 22px;
+    padding: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: 600px;
+    height: 100dvh;
+  }
+
+  .hero-subtitle,
+  .hero-title {
+    font-size: 24px;
+    font-weight: 800;
+  }
+
+  .hero-description {
+    font-size: 12px;
+  }
+
+  .hero-description-title {
+    font-size: 12px;
+  }
+
+  .bottomText {
+    font-size: 11px;
+  }
+
+  .planButton {
+    padding: 0.4rem 0.8rem;
+    font-size: 11px;
+  }
+
+  .bottomTextAndButton {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .hero-subtitle-wrapper {
+    gap: 20px;
+    padding: 15px;
+  }
+}

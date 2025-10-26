@@ -4,6 +4,10 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import LeafRight from "../../assets/heroLeftDesign.png";
 import LeafLeft from "../../assets/heroRightDesign.png";
+import AnimatedWrapper from "../Animation/AnimatedWrapper1";
+import { Nav } from "react-bootstrap";
+import icons from "../../Icon/Icon";
+import "./NewHero.css";
 
 // Custom hook to detect if element is in view
 const useInView = (options) => {
@@ -28,6 +32,7 @@ const Hero = ({
   heroImage,
   text1, // subtitle left
   text2, // subtitle right
+  description,
 }) => {
   const { ref: heroRef, isInView: isHeroInView } = useInView({
     threshold: 0.1,
@@ -44,17 +49,26 @@ const Hero = ({
   }, []);
 
   useEffect(() => {
-    setIsHovered(isHeroInView);
-  }, [isHeroInView]);
+    if (isMobileOrTablet) {
+      // Auto-trigger animation on mobile/tablet after component mounts with delay
+      const timer = setTimeout(() => {
+        setIsHovered(true);
+      }, 500);
+      return () => clearTimeout(timer);
+    } else {
+      setIsHovered(isHeroInView);
+    }
+  }, [isHeroInView, isMobileOrTablet]);
 
-  const xAnimationValue = isMobileOrTablet ? 80 : 200;
+  const xAnimationValue = isMobileOrTablet ? 60 : 200;
 
   return (
     <motion.div
       className="hero-section"
       ref={heroRef}
-      onHoverStart={() => setIsHovered(true)}
-      onHoverEnd={() => setIsHovered(false)}
+      onHoverStart={() => !isMobileOrTablet && setIsHovered(true)}
+      onHoverEnd={() => !isMobileOrTablet && setIsHovered(false)}
+      onTouchStart={() => setIsHovered(true)}
     >
       <div className="leaf-right">
         <img src={LeafRight} alt="leaf right" />
@@ -66,8 +80,8 @@ const Hero = ({
       <motion.div
         className="hero-image-container"
         animate={{
-          width: isHovered ? "60dvw" : "100dvw",
-          height: isHovered ? "70dvh" : "100dvh",
+          width: isHovered ? (isMobileOrTablet ? "85dvw" : "60dvw") : "100dvw",
+          height: isHovered ? (isMobileOrTablet ? "85dvh" : "70dvh") : "100dvh",
         }}
         transition={{ duration: 3, ease: "easeInOut", type: "spring" }}
       >
@@ -77,40 +91,120 @@ const Hero = ({
         <div className="image-overlay" />
 
         <div className="hero-subtitle-wrapper">
-          <motion.div
-            initial={{ x: 0 }}
-            animate={{ x: isHovered ? -xAnimationValue : 0 }}
-            transition={{ duration: 3, ease: "easeInOut", type: "spring" }}
-          >
-            <h1 className="hero-subtitle">{text1}</h1>
-          </motion.div>
-          <motion.div
-            initial={{ x: 0 }}
-            animate={{ x: isHovered ? xAnimationValue : 0 }}
-            transition={{ duration: 3, ease: "easeInOut", type: "spring" }}
-          >
-            <h1 className="hero-subtitle top-left">{text2}</h1>
-          </motion.div>
+          <div>
+            <motion.div
+              initial={{ x: 0 }}
+              animate={{ x: isMobileOrTablet ? 0 : (isHovered ? -xAnimationValue : 0) }}
+              transition={{ duration: 3, ease: "easeInOut", type: "spring" }}
+            >
+              <h1 className="hero-subtitle">{text1}</h1>
+            </motion.div>
+            <motion.div
+              initial={{ x: 0 }}
+              animate={{ x: isMobileOrTablet ? 0 : (isHovered ? xAnimationValue : 0) }}
+              transition={{ duration: 3, ease: "easeInOut", type: "spring" }}
+            >
+              <h1 className="hero-subtitle top-left">{text2}</h1>
+            </motion.div>
+
+            <motion.div
+              initial={{ x: 0 }}
+              animate={{ x: isMobileOrTablet ? 0 : (isHovered ? -xAnimationValue : 0) }}
+              transition={{ duration: 3, ease: "easeInOut", type: "spring" }}
+            >
+              <h1 className="hero-description">{description}</h1>
+            </motion.div>
+          </div>
+          <div>
+            <motion.div
+              initial={{ x: 0 }}
+              animate={{ x: isMobileOrTablet ? 0 : (isHovered ? xAnimationValue : 0) }}
+              transition={{ duration: 3, ease: "easeInOut", type: "spring" }}
+            >
+              <div className={"bottomCon"}>
+                <div className={"bottomTextAndButton"}>
+                  <p className={"bottomText"}>
+                    Let's bring your vision to life
+                  </p>
+                  <span>-</span>
+
+                  <Nav.Link
+                    href="https://us.bigin.online/org868107012/forms/enquiry-form"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={"planButton"}
+                  >
+                    Plan Your Event
+                    <span>
+                      <img src={icons.icon1} alt="icon" />
+                    </span>
+                  </Nav.Link>
+
+                  <span className={"bottomText"}>
+                    today to start planning your perfect event.{" "}
+                  </span>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </motion.div>
 
-      <div className="hero-titles">
-        <motion.div
-          className="hero-title-wrapper"
-          initial={{ x: 0 }}
-          animate={{ x: isHovered ? -xAnimationValue : 0 }}
-          transition={{ duration: 2, ease: "easeInOut", type: "spring" }}
-        >
-          <h2 className="hero-title">{text1}</h2>
-        </motion.div>
-        <motion.div
-          className="hero-title-wrapper"
-          initial={{ x: 0 }}
-          animate={{ x: isHovered ? xAnimationValue : 0 }}
-          transition={{ duration: 2, ease: "easeInOut", type: "spring" }}
-        >
-          <h2 className="hero-title">{text2}</h2>
-        </motion.div>
+      <div className="hero-subtitle-wrapper">
+        <div>
+            <motion.div
+              initial={{ x: 0 }}
+              animate={{ x: isMobileOrTablet ? 0 : (isHovered ? -xAnimationValue : 0) }}
+              transition={{ duration: 3, ease: "easeInOut", type: "spring" }}
+            >
+              <h1 className="hero-subtitle text-green">{text1}</h1>
+            </motion.div>
+            <motion.div
+              initial={{ x: 0 }}
+              animate={{ x: isMobileOrTablet ? 0 : (isHovered ? xAnimationValue : 0) }}
+              transition={{ duration: 3, ease: "easeInOut", type: "spring" }}
+            >
+              <h1 className="hero-subtitle  text-green">{text2}</h1>
+            </motion.div>
+
+            <motion.div
+              initial={{ x: 0 }}
+              animate={{ x: isMobileOrTablet ? 0 : (isHovered ? -xAnimationValue : 0) }}
+              transition={{ duration: 3, ease: "easeInOut", type: "spring" }}
+            >
+              <h1 className="hero-description text-green">{description}</h1>
+            </motion.div>
+        </div>
+        <div>
+          <motion.div
+            initial={{ x: 0 }}
+            animate={{ x: isMobileOrTablet ? 0 : (isHovered ? xAnimationValue : 0) }}
+            transition={{ duration: 3, ease: "easeInOut", type: "spring" }}
+          >
+            <div className={"bottomCon"}>
+              <div className={"bottomTextAndButton"}>
+                <p className={"bottomText text-green"}>Let's bring your vision to life</p>
+                <span>-</span>
+
+                <Nav.Link
+                  href="https://us.bigin.online/org868107012/forms/enquiry-form"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={"planButton"}
+                >
+                  Plan Your Event
+                  <span>
+                    <img src={icons.icon1} alt="icon" />
+                  </span>
+                </Nav.Link>
+
+                <span className={"bottomText text-green"}>
+                  today to start planning your perfect event.
+                </span>
+              </div>
+            </div>
+          </motion.div>
+        </div>
       </div>
     </motion.div>
   );
