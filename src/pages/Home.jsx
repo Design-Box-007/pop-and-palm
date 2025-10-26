@@ -55,6 +55,7 @@ const Home = () => {
           heroImage={MainHeroImage}
           text1={"Turning Moments into"}
           text2={"Unforgettable Experiences."}
+          description={"From Corporate Excellence to Wedding Elegance – We Make It Happen."}
         />
       </section>
 

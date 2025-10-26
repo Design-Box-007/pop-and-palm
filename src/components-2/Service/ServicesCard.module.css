@@ -18,7 +18,7 @@
 
 .imageWrapper {
   width: 100%;
-  padding-bottom: 60%; /* Aspect ratio for images */
+  padding-bottom: 70%; /* Aspect ratio for images */
   position: relative;
   overflow: hidden;
 }
