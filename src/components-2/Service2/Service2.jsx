@@ -18,10 +18,8 @@ const FlipCard = ({ title, image, flipData }) => {
     >
       <div className="flip-card-inner">
         {/* FRONT */}
-        <div
-          className="flip-card-front"
-          style={{ backgroundImage: `url(${image})` }}
-        >
+        <div className="flip-card-front">
+          <img src={image} alt={title} className="flip-card-image" />
           <div className="overlay">
             <h2>{title}</h2>
           </div>

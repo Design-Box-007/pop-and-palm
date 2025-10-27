@@ -145,15 +145,15 @@ const servicePageData = [
       description:
         "Comprehensive solutions designed to make every event unforgettable.",
       section: [
-        // {
-        //   title: "Corporate Celebrations & Milestones",
-        //   image: corporateEventsImages.corporateCelebrationsMilestones,
-        //   flipData: [
-        //     "Company Anniversaries",
-        //     "Employee Appreciation Events",
-        //     "Milestone Achievements & Celebrations",
-        //   ],
-        // },
+        {
+          title: "Corporate Celebrations & Milestones",
+          image: corporateEventsImages.corporateLandingPageImage,
+          flipData: [
+            "Company Anniversaries",
+            "Employee Appreciation Events",
+            "Milestone Achievements & Celebrations",
+          ],
+        },
         {
           title: "Awards & Recognition Events",
           image: corporateEventsImages.awardsRecognitionEvents,
