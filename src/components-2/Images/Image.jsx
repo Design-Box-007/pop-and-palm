@@ -24,8 +24,23 @@ import seatingRentals from "../../assets/event-rentals/seating-rentals.jpg";
 import stageStructureRentals from "../../assets/event-rentals/stage-&-structure-rentals.jpg";
 import tablesRentals from "../../assets/event-rentals/tables-rentals.jpg";
 import whyEventRentalsMatter from "../../assets/event-rentals/why-event-rentals-matter.jpg";
- 
-
+// Private events images
+import privateImage1 from "../../assets/private/1.jpg";
+import privateImage2 from "../../assets/private/2.jpg";
+import festivalCulturalCelebrations from "../../assets/private/festival&-cultural-celebrations.jpg";
+import homeIntimateGatherings from "../../assets/private/home-&intimate-gatherings.jpg";
+import luxuryBespoke from "../../assets/private/luxury-&-bespoke.jpg";
+import modernThemedEvents from "../../assets/private/modern-&-themed-events.jpg";
+import whyPrivateEventsMatter from "../../assets/private/why-private-events-matter.jpg";
+// Corporate events images
+import awardsRecognitionEvents from "../../assets/corporate/awards-&-recognition-events.jpg";
+import clientVipEvents from "../../assets/corporate/client-&-vip-events.jpg";
+import corporateMeetingsConferences from "../../assets/corporate/corporate-meetings-&-conferences.jpg";
+import corporateLandingPageImage from "../../assets/corporate/landing-page-image.jpg";
+import productLaunchesBrandPromotions from "../../assets/corporate/product-launches-&-brand-promotions.jpg";
+import teamBuildingCorporateRetreats from "../../assets/corporate/team-building-&-corporate-retreats.jpg";
+import whyCorporateEventsMatterImage from "../../assets/corporate/whycorporate-events-matter-image.jpg";
+import aboutUsLandingPageImage from "../../assets/abou-us/landing-page-image.jpg";
 export const HomeImages = {
   image1,
   image2,
@@ -49,6 +64,7 @@ export const aboutImages = {
   about1,
   about2,
   about3,
+  aboutUsLandingPageImage,
 };
 
 export const eventRentalsImages = {
@@ -59,6 +75,26 @@ export const eventRentalsImages = {
   stageStructureRentals,
   tablesRentals,
   whyEventRentalsMatter,
+};
+
+export const privateEventsImages = {
+  privateImage1,
+  privateImage2,
+  festivalCulturalCelebrations,
+  homeIntimateGatherings,
+  luxuryBespoke,
+  modernThemedEvents,
+  whyPrivateEventsMatter,
+};
+
+export const corporateEventsImages = {
+  awardsRecognitionEvents,
+  clientVipEvents,
+  corporateMeetingsConferences,
+  corporateLandingPageImage,
+  productLaunchesBrandPromotions,
+  teamBuildingCorporateRetreats,
+  whyCorporateEventsMatterImage,
 };
 
 

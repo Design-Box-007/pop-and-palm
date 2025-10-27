@@ -1,4 +1,4 @@
-import { aboutImages, eventRentalsImages, HomeImages } from "../components-2/Images/Image";
+import { aboutImages, corporateEventsImages, eventRentalsImages, HomeImages, privateEventsImages } from "../components-2/Images/Image";
 import KidsBirthdayPartiesServiceImage from "../assets/ServicePageImages/KidsBirthdayPartiesServiceImage.jpg";
 import CorporateEventsServiceImage from "../assets/ServicePageImages/CorporateEventsServiceImage.jpg";
 import RentalServiceImage from "../assets/ServicePageImages/RentalServiceImage.jpg";
@@ -18,7 +18,7 @@ const servicePageData = [
 
     aboutContent: {
       title: "Our Services at a Glance",
-      image: aboutImages.about1,
+      image: privateEventsImages.whyPrivateEventsMatter,
       description:
         "Private events in the UAE are all about creating unforgettable moments — from intimate family gatherings to grand celebrations that reflect style, culture, and personality. At Pop & Palm Events, we transform ordinary occasions into extraordinary experiences with creative décor, thoughtful details, and seamless execution. Whether it’s a romantic proposal, a themed birthday, a baby shower, or a festive celebration at home or in a venue, our team handles every element from concept to setup. We specialize in bringing your vision to life with customized themes, stunning backdrops, and beautifully styled spaces. With a passion for design and a focus on flawless coordination, Pop & Palm ensures that every event is stress-free, memorable, and truly one of a kind.",
     },
@@ -31,7 +31,7 @@ const servicePageData = [
       section: [
         {
           title: "Life’s Milestones & Celebrations",
-          image: HomeImages.image3,
+          image: privateEventsImages.privateImage1,
           flipData: [
             "Weddings & Engagement Parties",
             "Anniversary Celebrations",
@@ -42,7 +42,7 @@ const servicePageData = [
         },
         {
           title: "Family & Kids’ Events",
-          image: HomeImages.image4,
+          image: privateEventsImages.privateImage2,
           flipData: [
             "Themed Kids’ Birthday Parties",
             "Baby Showers & Gender Reveal Events",
@@ -52,7 +52,7 @@ const servicePageData = [
         },
         {
           title: "Home & Intimate Gatherings",
-          image: HomeImages.image5,
+          image: privateEventsImages.homeIntimateGatherings,
           flipData: [
             "Housewarming Parties",
             "Private Dinner Parties",
@@ -62,7 +62,7 @@ const servicePageData = [
         },
         {
           title: "Festive & Cultural Celebrations",
-          image: HomeImages.image6,
+          image: privateEventsImages.festivalCulturalCelebrations,
           flipData: [
             "Diwali, Eid, and Christmas Parties",
             "Cultural & Traditional Gatherings",
@@ -71,7 +71,7 @@ const servicePageData = [
         },
         {
           title: "Luxury & Bespoke Experiences",
-          image: HomeImages.image7,
+          image: privateEventsImages.luxuryBespoke,
           flipData: [
             "Luxury Picnics & Styled Setups",
             "Destination Events",
@@ -81,7 +81,7 @@ const servicePageData = [
         },
         {
           title: "Modern & Themed Events",
-          image: HomeImages.image8,
+          image: privateEventsImages.modernThemedEvents,
           flipData: [
             "Corporate & Private Theme Parties",
             "Movie Night or Game Night Setups",
@@ -123,7 +123,7 @@ const servicePageData = [
   {
     title: "Corporate Events",
     tags: ["Conferences", "Team Building", "Office Opening", "Award Ceremony"],
-    image: CorporateEventsServiceImage,
+    image: corporateEventsImages.corporateLandingPageImage,
     HeroData: {
       tagline: "We Bring to Life",
       description:
@@ -134,7 +134,7 @@ const servicePageData = [
 
     aboutContent: {
       title: "Why Corporate events Matter",
-      image: aboutImages.about1,
+      image: corporateEventsImages.whyCorporateEventsMatterImage,
       description:
         "Corporate events in the UAE are more than just gatherings - they’re powerful opportunities to strengthen relationships, celebrate success, and elevate your brand. At Pop & Palm Events, we design and manage corporate occasions with creativity, precision, and professionalism. From product launches and award ceremonies to team-building retreats and annual gala dinners, our team handles every detail to reflect your company’s vision and goals. We craft sophisticated themes, impactful stage designs, and seamless guest experiences that leave a lasting impression. With end-to-end planning and flawless execution, Pop & Palm ensures your corporate event is engaging, memorable, and perfectly aligned with your brand identity.",
     },
@@ -145,18 +145,18 @@ const servicePageData = [
       description:
         "Comprehensive solutions designed to make every event unforgettable.",
       section: [
-        {
-          title: "Corporate Celebrations & Milestones",
-          image: HomeImages.image3,
-          flipData: [
-            "Company Anniversaries",
-            "Employee Appreciation Events",
-            "Milestone Achievements & Celebrations",
-          ],
-        },
+        // {
+        //   title: "Corporate Celebrations & Milestones",
+        //   image: corporateEventsImages.corporateCelebrationsMilestones,
+        //   flipData: [
+        //     "Company Anniversaries",
+        //     "Employee Appreciation Events",
+        //     "Milestone Achievements & Celebrations",
+        //   ],
+        // },
         {
           title: "Awards & Recognition Events",
-          image: HomeImages.image4,
+          image: corporateEventsImages.awardsRecognitionEvents,
           flipData: [
             "Employee Awards Nights",
             "Performance Recognition Ceremonies",
@@ -165,7 +165,7 @@ const servicePageData = [
         },
         {
           title: "Product Launches & Brand Promotions",
-          image: HomeImages.image5,
+          image: corporateEventsImages.productLaunchesBrandPromotions,
           flipData: [
             "Product Launch Parties",
             "Brand Activation Events",
@@ -174,7 +174,7 @@ const servicePageData = [
         },
         {
           title: "Team Building & Corporate Retreats",
-          image: HomeImages.image6,
+          image: corporateEventsImages.teamBuildingCorporateRetreats,
           flipData: [
             "Outdoor Adventure Retreats",
             "Indoor Team-Building Workshops",
@@ -183,7 +183,7 @@ const servicePageData = [
         },
         {
           title: "Corporate Meetings & Conferences",
-          image: HomeImages.image7,
+          image: corporateEventsImages.corporateMeetingsConferences,
           flipData: [
             "Annual General Meetings (AGMs)",
             "Corporate Conferences & Seminars",
@@ -192,7 +192,7 @@ const servicePageData = [
         },
         {
           title: "Client & VIP Events",
-          image: HomeImages.image8,
+          image: corporateEventsImages.clientVipEvents,
           flipData: [
             "VIP Dinners & Networking Events",
             "Client Appreciation Nights",
@@ -245,7 +245,7 @@ const servicePageData = [
 
     aboutContent: {
       title: "Why Event Rentals Matter",
-      image: aboutImages.about1,
+      image: eventRentalsImages.whyEventRentalsMatter,
       description:
         "At Pop & Palm Events, we offer a wide range of premium event rentals to elevate any occasion. From elegant chairs and tables to stylish décor, linens, and accessories, we provide everything you need for a seamless setup. Our rental items are carefully selected for quality, comfort, and style, ensuring your event looks flawless. Whether it’s a wedding, private celebration, or corporate gathering, we make it easy to create a stunning and functional event space. With timely delivery, professional setup, and flexible options, Pop & Palm Events ensures every detail is perfectly in place.",
     },
@@ -382,28 +382,28 @@ const servicePageData = [
             "Training & Workshop Gamified Quizzes",
           ],
         },
-        {
-          title: "Private & Social Gatherings",
-          image: HomeImages.image4,
-          flipData: [
-            "Birthday Party Quizzes",
-            "Family Gatherings & Reunions",
-            "Wedding or Engagement Quizzes",
-            "Themed House Party Quizzes",
-            "Festive Celebration Quizzes",
-          ],
-        },
-        {
-          title: "Public & Community Events",
-          image: HomeImages.image5,
-          flipData: [
-            "Mall & Retail Activation Quizzes",
-            "Festival & Fair Quizzes",
-            "Community & Cultural Event Quizzes",
-            "School & College Fair Quizzes",
-            "Citywide Quiz Competitions",
-          ],
-        },
+        // {
+        //   title: "Private & Social Gatherings",
+        //   image: HomeImages.image4,
+        //   flipData: [
+        //     "Birthday Party Quizzes",
+        //     "Family Gatherings & Reunions",
+        //     "Wedding or Engagement Quizzes",
+        //     "Themed House Party Quizzes",
+        //     "Festive Celebration Quizzes",
+        //   ],
+        // },
+        // {
+        //   title: "Public & Community Events",
+        //   image: HomeImages.image5,
+        //   flipData: [
+        //     "Mall & Retail Activation Quizzes",
+        //     "Festival & Fair Quizzes",
+        //     "Community & Cultural Event Quizzes",
+        //     "School & College Fair Quizzes",
+        //     "Citywide Quiz Competitions",
+        //   ],
+        // },
         {
           title: "Themed & Special Interest Quizzes",
           image: HomeImages.image6,
@@ -415,17 +415,17 @@ const servicePageData = [
             "Science, Innovation & Tech",
           ],
         },
-        {
-          title: "Brand & Marketing Activations",
-          image: HomeImages.image7,
-          flipData: [
-            "Product Launch Quizzes",
-            "Store Opening / Promotional Quizzes",
-            "Customer Engagement Kiosks",
-            "Roadshow & Outdoor Event Quizzes",
-            "Loyalty Program & Giveaway Quizzes",
-          ],
-        },
+        // {
+        //   title: "Brand & Marketing Activations",
+        //   image: HomeImages.image7,
+        //   flipData: [
+        //     "Product Launch Quizzes",
+        //     "Store Opening / Promotional Quizzes",
+        //     "Customer Engagement Kiosks",
+        //     "Roadshow & Outdoor Event Quizzes",
+        //     "Loyalty Program & Giveaway Quizzes",
+        //   ],
+        // },
         {
           title: "Educational & Edutainment Quizzes",
           image: HomeImages.image8,

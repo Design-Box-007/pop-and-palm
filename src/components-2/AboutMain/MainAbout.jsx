@@ -4,6 +4,8 @@ import aboutHeroimage from "../../assets/Pop and Palm/About Us/about-hero.jpg";
 import About2 from "./About2";
 import FAQAccordion from "../FAQ/FAQ";
 import Hero from "../Commen/NewHero";
+import { aboutImages } from "../Images/Image";
+
 
 const MainAbout = () => {
   // const aboutHero = {
@@ -18,7 +20,7 @@ const MainAbout = () => {
   return (
     <div id="top">
       <Hero
-        heroImage={aboutHeroimage}
+        heroImage={aboutImages.aboutUsLandingPageImage}
         text1={"Built on Passion"}
         text2={"Driven by Vision"}
       />
