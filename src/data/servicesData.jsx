@@ -1,4 +1,4 @@
-import { aboutImages, HomeImages } from "../components-2/Images/Image";
+import { aboutImages, eventRentalsImages, HomeImages } from "../components-2/Images/Image";
 import KidsBirthdayPartiesServiceImage from "../assets/ServicePageImages/KidsBirthdayPartiesServiceImage.jpg";
 import CorporateEventsServiceImage from "../assets/ServicePageImages/CorporateEventsServiceImage.jpg";
 import RentalServiceImage from "../assets/ServicePageImages/RentalServiceImage.jpg";
@@ -258,7 +258,7 @@ const servicePageData = [
       section: [
         {
           title: "Seating Rentals",
-          image: HomeImages.image3,
+          image: eventRentalsImages.seatingRentals,
           flipData: [
             "Banquet Chairs",
             "Chiavari Chairs",
@@ -269,7 +269,7 @@ const servicePageData = [
         },
         {
           title: "Table Rentals",
-          image: HomeImages.image4,
+          image: eventRentalsImages.tablesRentals,
           flipData: [
             "Round & Rectangular Dining Tables",
             "Cocktail & High Tables",
@@ -280,7 +280,7 @@ const servicePageData = [
         },
         {
           title: "Stage & Structure Rentals",
-          image: HomeImages.image5,
+          image: eventRentalsImages.stageStructureRentals,
           flipData: [
             "Event Stages & Platforms",
             "Backdrops & Frames",
@@ -291,7 +291,7 @@ const servicePageData = [
         },
         {
           title: "Decor & Styling Rentals",
-          image: HomeImages.image6,
+          image: eventRentalsImages.decorStylingRentals,
           flipData: [
             "Flower Walls & Greenery Panels",
             "Arches & Entrance Gates",
@@ -302,7 +302,7 @@ const servicePageData = [
         },
         {
           title: "Lighting & Audio-Visual Rentals",
-          image: HomeImages.image7,
+          image: eventRentalsImages.lightingAudioVisualRentals,
           flipData: [
             "LED Uplighting & Fairy Lights",
             "Chandeliers & Hanging Lights",
@@ -313,7 +313,7 @@ const servicePageData = [
         },
         {
           title: "Outdoor & Utility Rentals",
-          image: HomeImages.image8,
+          image: eventRentalsImages.outdoorUtilityRentals,
           flipData: [
             "Tents, Marquees & Gazebos",
             "Outdoor Heaters & Fans",

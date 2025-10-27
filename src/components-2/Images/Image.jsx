@@ -17,6 +17,14 @@ import image16 from "../../assets/Pop and Palm/Home/Home Page image 16.png";
 import about1 from "../../assets/Pop and Palm/About Us/About us 1.png";
 import about2 from "../../assets/Pop and Palm/About Us/About us 2.png";
 import about3 from "../../assets/Pop and Palm/About Us/About us 3.png";
+import decorStylingRentals from "../../assets/event-rentals/decor-&-styling-rentals.jpg";
+import lightingAudioVisualRentals from "../../assets/event-rentals/lighting-&-audio-visual-rentals.jpg";
+import outdoorUtilityRentals from "../../assets/event-rentals/outdoor-&-utility-rentals.jpg";
+import seatingRentals from "../../assets/event-rentals/seating-rentals.jpg";
+import stageStructureRentals from "../../assets/event-rentals/stage-&-structure-rentals.jpg";
+import tablesRentals from "../../assets/event-rentals/tables-rentals.jpg";
+import whyEventRentalsMatter from "../../assets/event-rentals/why-event-rentals-matter.jpg";
+ 
 
 export const HomeImages = {
   image1,
@@ -42,3 +50,15 @@ export const aboutImages = {
   about2,
   about3,
 };
+
+export const eventRentalsImages = {
+  decorStylingRentals,
+  lightingAudioVisualRentals,
+  outdoorUtilityRentals,
+  seatingRentals,
+  stageStructureRentals,
+  tablesRentals,
+  whyEventRentalsMatter,
+};
+
+
