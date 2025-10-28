@@ -34,9 +34,10 @@ export default function HeroSection({ title, image, section = {} }) {
         duration={2}
         className={styles.backgroundImage}
       >
-        <div
-          style={{ backgroundImage: `url(${finalData.image})` }}
-          className={styles.backgroundImage}
+        <img
+          src={finalData.image}
+          alt={finalData.title}
+          className={styles.backgroundImageImg}
         />
 
         {/* Dark Overlay */}

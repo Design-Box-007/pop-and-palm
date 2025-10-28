@@ -41,6 +41,12 @@ import productLaunchesBrandPromotions from "../../assets/corporate/product-launc
 import teamBuildingCorporateRetreats from "../../assets/corporate/team-building-&-corporate-retreats.jpg";
 import whyCorporateEventsMatterImage from "../../assets/corporate/whycorporate-events-matter-image.jpg";
 import aboutUsLandingPageImage from "../../assets/abou-us/landing-page-image.jpg";
+
+import educationalEdutainmentQuizzes from "../../assets/updated-images/quizzy-beez-landing-page-images/educational-&-edutainment-quizzes.jpg";
+import themedSpecialInterestQuizzes from "../../assets/updated-images/quizzy-beez-landing-page-images/themed-&-special-interest-quizzes.jpg";
+import whyQuizzyBeezMatter from "../../assets/updated-images/quizzy-beez-landing-page-images/why-quizzy-beez-matter.png";
+ 
+
 export const HomeImages = {
   image1,
   image2,
@@ -97,4 +103,9 @@ export const corporateEventsImages = {
   whyCorporateEventsMatterImage,
 };
 
+export const quizzyBeezImages = {
+  educationalEdutainmentQuizzes,
+  themedSpecialInterestQuizzes,
+  whyQuizzyBeezMatter,
+};
 

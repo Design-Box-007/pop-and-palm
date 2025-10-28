@@ -1,4 +1,4 @@
-import { aboutImages, corporateEventsImages, eventRentalsImages, HomeImages, privateEventsImages } from "../components-2/Images/Image";
+import { aboutImages, corporateEventsImages, eventRentalsImages, HomeImages, privateEventsImages, quizzyBeezImages } from "../components-2/Images/Image";
 import KidsBirthdayPartiesServiceImage from "../assets/ServicePageImages/KidsBirthdayPartiesServiceImage.jpg";
 import CorporateEventsServiceImage from "../assets/ServicePageImages/CorporateEventsServiceImage.jpg";
 import RentalServiceImage from "../assets/ServicePageImages/RentalServiceImage.jpg";
@@ -360,7 +360,7 @@ const servicePageData = [
 
     aboutContent: {
       title: "Why Quizzy Beez Matter",
-      image: aboutImages.about1,
+      image: quizzyBeezImages.whyQuizzyBeezMatter,
       description:
         "Quizzy Beeez brings a fresh wave of interactive entertainment to events across the UAE, turning ordinary gatherings into unforgettable experiences. We design engaging, themed quiz sessions that captivate audiences — whether it’s a corporate team-building event, private celebration, mall activation, or community festival. Each quiz is fully customizable to suit your theme, audience, and occasion, creating a perfect blend of fun, learning, and friendly competition. With Quizzy Beeez, every event becomes a buzzing hub of energy, conversation, and connection — leaving your guests talking long after the final question.",
     },
@@ -406,7 +406,7 @@ const servicePageData = [
         // },
         {
           title: "Themed & Special Interest Quizzes",
-          image: HomeImages.image6,
+          image: quizzyBeezImages.themedSpecialInterestQuizzes,
           flipData: [
             "Travel & Geography",
             "Movies, Music & Pop Culture",
@@ -428,7 +428,7 @@ const servicePageData = [
         // },
         {
           title: "Educational & Edutainment Quizzes",
-          image: HomeImages.image8,
+          image: quizzyBeezImages.educationalEdutainmentQuizzes,
           flipData: [
             "School Quiz Competitions",
             "College & University Events",
