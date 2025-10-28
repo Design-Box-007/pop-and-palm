@@ -10,12 +10,15 @@ import icons from "../../Icon/Icon";
 import LeftToRightReveal from "../../components/LeftToRightReveal";
 import GalleryBalloons from "../../assets/galleryBalloons.png";
 import GalleryPop from "../../assets/galleryPop.png";
+import exhibition from "../../assets/updated-images/homepage-image/exhibition.jpg";
+import launch from "../../assets/updated-images/homepage-image/launch.jpg";
+
 
 const events = [
   {
-    title: "Corporate Innovation Summit",
+    title: "Corporate Events",
     img: image1,
-    tags: ["Corporate Event", "500+ Attendees"],
+    tags: ["Retreats", "Team Building", "Conferences"],
     wide: true,
   },
   {
@@ -25,15 +28,15 @@ const events = [
     wide: false,
   },
   {
-    title: "Global Tech Expo",
-    img: image3,
-    tags: ["Exhibition", "Dubai World Trade Centre"],
+    title: "Exhibitions",
+    img: exhibition,
+    tags: ["Tech Expo", "Product Expo"],
     wide: false,
   },
   {
-    title: "Fashion Brand Launch",
-    img: image4,
-    tags: ["Brand Activation", "Dubai Mall"],
+    title: "Brand Launch",
+    img: launch,
+    tags: ["Entertainment Launch", "Product Launches"],
     wide: true,
   },
 ];
