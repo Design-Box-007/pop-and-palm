@@ -10,8 +10,8 @@ import icons from "../../Icon/Icon";
 import LeftToRightReveal from "../../components/LeftToRightReveal";
 import GalleryBalloons from "../../assets/galleryBalloons.png";
 import GalleryPop from "../../assets/galleryPop.png";
-import exhibition from "../../assets/updated-images/homepage-image/exhibition.jpg";
-import launch from "../../assets/updated-images/homepage-image/launch.jpg";
+import launch from "../../assets/homepage-image/launch.jpg";
+import exhibition from "../../assets/homepage-image/exhibition.jpg";
 
 
 const events = [

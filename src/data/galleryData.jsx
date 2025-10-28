@@ -23,6 +23,11 @@ import BirthdayParties22 from "../assets/Website photos/Private events/Birthday 
 import BirthdayParties23 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (23).jpg";
 import BirthdayParties24 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (24).jpg";
 import BirthdayParties25 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (25).jpg";
+import BirthdayParties26 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (26).jpg";
+import BirthdayParties27 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (27).jpg";
+import BirthdayParties28 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (28).jpg";
+import BirthdayParties29 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (29).jpeg";
+import BirthdayParties30 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (30).jpeg";
 
 
 // import Festivaldecor1 from "../assets/Website photos/Private events/Festival decor/Festival decor (1).jpg";
@@ -57,6 +62,11 @@ import Festivaldecor27 from "../assets/Website photos/Private events/Festival de
 import Festivaldecor28 from "../assets/Website photos/Private events/Festival decor/Festival decor (28).jpg";
 import Festivaldecor29 from "../assets/Website photos/Private events/Festival decor/Festival decor (29).jpg";
 import Festivaldecor30 from "../assets/Website photos/Private events/Festival decor/Festival decor (30).jpg";
+import Festivaldecor31 from "../assets/Website photos/Private events/Festival decor/Festival decor (31).jpg";
+import Festivaldecor32 from "../assets/Website photos/Private events/Festival decor/Festival decor (32).jpg";
+import Festivaldecor33 from "../assets/Website photos/Private events/Festival decor/Festival decor (33).jpg";
+import Festivaldecor34 from "../assets/Website photos/Private events/Festival decor/Festival decor (34).jpg";   
+import Festivaldecor35 from "../assets/Website photos/Private events/Festival decor/Festival decor (35).jpg";
 
 import Newbeginnings1 from "../assets/Website photos/Private events/New beginnings/New beginnings (1).jpg";
 import Newbeginnings2 from "../assets/Website photos/Private events/New beginnings/New beginnings (2).jpg";
@@ -242,7 +252,26 @@ export const galleryImages = {
             imgSrc: BirthdayParties25,
             alt: "",
         },
-
+        {
+            imgSrc: BirthdayParties26,
+            alt: "",
+        },
+        {
+            imgSrc: BirthdayParties27,
+            alt: "",
+        },
+        {
+            imgSrc: BirthdayParties28,
+            alt: "",
+        },
+        {
+            imgSrc: BirthdayParties29,
+            alt: "",
+        },
+        {
+            imgSrc: BirthdayParties30,
+            alt: "",
+        },
     ],
     "newbeginnings": [
         {
@@ -457,7 +486,27 @@ export const galleryImages = {
         {
             imgSrc: Festivaldecor28,
             alt: "Beautiful wedding stage decor featuring white seating with white fabric, elegant white screen pillars, green leaf strings, and white floral arrangements for a fresh and elegant look"
-        }
+        },
+        {
+            imgSrc: Festivaldecor31,
+            alt: "",
+        },
+        {
+            imgSrc: Festivaldecor32,
+            alt: "",
+        },
+        {
+            imgSrc: Festivaldecor33,
+            alt: "",
+        },
+        {
+            imgSrc: Festivaldecor34,
+            alt: "",
+        },
+        {
+            imgSrc: Festivaldecor35,
+            alt: "",
+        },
     ],
     "corporateretreats": [
         {
