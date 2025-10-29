@@ -25,6 +25,7 @@ import BlogImage17 from '../assets/Blogs/blog-17.jpg'
 import BlogImage18 from '../assets/Blogs/blog-18.jpg'
 import BlogImage19 from '../assets/Blogs/blog-19.jpg'
 import BlogImage20 from '../assets/Blogs/blog-20.png'
+import BlogImage21 from '../assets/Blogs/blog-21.png'
 
 
 import Blog5 from "./Blogs/Blog5";
@@ -44,6 +45,7 @@ import Blog17 from "./Blogs/Blog17";
 import Blog18 from "./Blogs/Blog18";
 import Blog19 from "./Blogs/Blog19";
 import blog20 from "./Blogs/blog20";
+import Blog23 from "./Blogs/blog23";
 
 
 
@@ -171,5 +173,26 @@ export const blogData = [
         description: "Some nights were filled with sparkle, like a prom where teenagers danced as if time didn’t exist. Others were quieter",
         imgSrc: BlogImage20,
         blogContent: blog20
-    }
+    },
+    // {
+    //     title: "Half a Year of Heartfelt Gatherings",
+    //     description:
+    //       "The first six months of 2025 felt like a mosaic—each event adding its own color, texture, and memory to Pop & Palm’s journey. From dazzling proms to warm community Iftars, every gathering brought unique challenges, cherished memories, and moments of unplanned magic.",
+    //     imgSrc: BlogImage20,
+    //     blogContent: Blog21, // Replace with Blog21 if you have the component
+    //   },
+    //   {
+    //     title: "A Season of Stories: Celebrating the Second Half of 2025 in Dubai",
+    //     description:
+    //       "Dubai comes alive in the second half of the year with traditions such as Ganpati, Navratri, Diwali, and UAE National Day. Each celebration is more than an occasion—it's a story of unity, culture, and anticipation for the future.",
+    //     imgSrc: BlogImage19, // choose image as appropriate
+    //     blogContent: Blog22, // Replace with Blog22 if you have the component
+    //   },
+      {
+        title: "Celebrations, Creativity & Unforgettable Setups",
+        description:
+          "At Pop & Palm Events, every event is a story brought to life with creativity and heart. From festive cultural installations to elegant beach and yacht setups, we believe in creating moments that foster joy and connection.",
+        imgSrc: BlogImage21, // choose image as appropriate
+        blogContent: Blog23, // Replace with Blog23 if you have the component
+      },
 ];
