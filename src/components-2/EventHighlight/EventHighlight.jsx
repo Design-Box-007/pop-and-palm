@@ -125,10 +125,10 @@ export default function EventHighlight() {
               ))}
             </div>
             <div className={styles.navigationButtons}>
-              <button className={styles.navButton} onClick={handlePrev}>
+              <button className={"button-primary"} onClick={handlePrev}>
                 &larr; Prev
               </button>
-              <button className={styles.navButton} onClick={handleNext}>
+              <button className={"button-primary"} onClick={handleNext}>
                 Next &rarr;
               </button>
             </div>
