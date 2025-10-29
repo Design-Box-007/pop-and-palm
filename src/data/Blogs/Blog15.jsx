@@ -4,7 +4,7 @@ const Blog15 = () => {
   return (
     <main>
       <p>
-        <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
+        <span style={{ fontSize: "20px",  }}>
           Have you ever attended an event that felt more like an experience than
           just a gathering? That’s the power of storytelling. A well-crafted event
           isn’t just about logistics—it’s about creating an emotional journey for
@@ -17,12 +17,12 @@ const Blog15 = () => {
         <br />
       </p>
       <p>
-        <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
+        <span style={{ fontSize: "20px",  }}>
           The Power of Storytelling in Events
         </span>
       </p>
       <p>
-        <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
+        <span style={{ fontSize: "20px",  }}>
           At its core, every event has a purpose. Whether it’s to celebrate,
           educate, inspire, or connect, a great event engages guests on an emotional
           level. Instead of just focusing on décor and logistics, event storytelling
@@ -34,12 +34,12 @@ const Blog15 = () => {
         <br />
       </p>
       <p>
-        <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
+        <span style={{ fontSize: "20px",  }}>
           How to Craft an Event with a Storytelling Approach
         </span>
       </p>
       <p>
-        <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
+        <span style={{ fontSize: "20px",  }}>
           📌 1. Define the Purpose &amp; Emotion What do you want attendees to feel?
           Inspired, nostalgic, excited? Setting a clear intention helps shape every
           decision.
@@ -49,7 +49,7 @@ const Blog15 = () => {
         <br />
       </p>
       <p>
-        <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
+        <span style={{ fontSize: "20px",  }}>
           📌 2. Set the Scene with Themed Décor An immersive environment reinforces
           the narrative. Lighting, color schemes, seating arrangements, and visual
           elements should reflect the story being told.
@@ -59,7 +59,7 @@ const Blog15 = () => {
         <br />
       </p>
       <p>
-        <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
+        <span style={{ fontSize: "20px",  }}>
           📌 3. Engage the Senses The best events stimulate multiple senses. Think
           about:
         </span>
@@ -68,23 +68,23 @@ const Blog15 = () => {
         <br />
       </p>
       <p>
-        <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
+        <span style={{ fontSize: "20px",  }}>
           Sound: Live music, ambient soundscapes, or a powerful keynote speech.
         </span>
       </p>
       <p>
-        <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
+        <span style={{ fontSize: "20px",  }}>
           Scent: Signature fragrances or floral arrangements can create lasting
           associations.
         </span>
       </p>
       <p>
-        <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
+        <span style={{ fontSize: "20px",  }}>
           Taste: Curated food and beverage selections that align with the theme.
         </span>
       </p>
       <p>
-        <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
+        <span style={{ fontSize: "20px",  }}>
           Touch &amp; Interaction: Custom installations, props, and hands-on
           activities enhance engagement.
         </span>
@@ -93,7 +93,7 @@ const Blog15 = () => {
         <br />
       </p>
       <p>
-        <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
+        <span style={{ fontSize: "20px",  }}>
           📌 4. Create Impactful Key Moments Every great story has a beginning,
           climax, and conclusion. In events, these translate to:
         </span>
@@ -102,18 +102,18 @@ const Blog15 = () => {
         <br />
       </p>
       <p>
-        <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
+        <span style={{ fontSize: "20px",  }}>
           Grand Entrances – A powerful opening sets the tone.
         </span>
       </p>
       <p>
-        <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
+        <span style={{ fontSize: "20px",  }}>
           Emotional High Points – A video montage, speech, or surprise performance
           can be unforgettable.
         </span>
       </p>
       <p>
-        <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
+        <span style={{ fontSize: "20px",  }}>
           A Meaningful Conclusion – Send guests off with a final touch that
           resonates, such as a personalized takeaway.
         </span>
@@ -122,7 +122,7 @@ const Blog15 = () => {
         <br />
       </p>
       <p>
-        <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
+        <span style={{ fontSize: "20px",  }}>
           📌 5. Make the Story Last Beyond the Event The story shouldn’t end when
           guests leave. Capture the experience through photography, videos, and
           post-event follow-ups. Sharing highlights on social media or through
@@ -133,12 +133,12 @@ const Blog15 = () => {
         <br />
       </p>
       <p>
-        <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
+        <span style={{ fontSize: "20px",  }}>
           The Takeaway
         </span>
       </p>
       <p>
-        <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
+        <span style={{ fontSize: "20px",  }}>
           Events aren’t just about what happens—they’re about how they make people
           feel. The best events don’t just entertain; they create stories that
           attendees will talk about long after they’re over.
@@ -148,7 +148,7 @@ const Blog15 = () => {
         <br />
       </p>
       <p>
-        <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
+        <span style={{ fontSize: "20px",  }}>
           What’s the most memorable event you’ve attended? Share your experience in
           the comments!
         </span>
@@ -157,7 +157,7 @@ const Blog15 = () => {
         <br />
       </p>
       <p>
-        <span style={{ fontSize: "11pt", fontFamily: "Arial,sans-serif" }}>
+        <span style={{ fontSize: "20px",  }}>
           #EventStorytelling #EventPlanning #ExperientialMarketing #CorporateEvents
           #EventDesign #BrandExperience
         </span>
