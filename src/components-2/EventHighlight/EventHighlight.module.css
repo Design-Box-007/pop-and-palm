@@ -171,6 +171,7 @@
 }
 
 .navButton {
+  color: #007AFF;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   cursor: pointer;
