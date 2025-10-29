@@ -16,9 +16,7 @@
   padding: 4px 15px;
 }
 
-.header span {
-  color: var(--secondary-color);
-}
+ 
 
 .title {
   font-size: 80px; /* Large size */
@@ -36,7 +34,6 @@
 
 .view {
   text-decoration: none;
-  color: #007AFF;
 }
 
 /* Responsive adjustments for header */
