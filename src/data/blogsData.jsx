@@ -26,7 +26,7 @@ import BlogImage18 from '../assets/Blogs/blog-18.jpg'
 import BlogImage19 from '../assets/Blogs/blog-19.jpg'
 import BlogImage20 from '../assets/Blogs/blog-20.png'
 import BlogImage21 from '../assets/Blogs/blog-21.png'
-
+import BlogImage24 from '../assets/Blogs/blog-24.png'
 
 import Blog5 from "./Blogs/Blog5";
 import Blog6 from "./Blogs/Blog6";
@@ -46,6 +46,7 @@ import Blog18 from "./Blogs/Blog18";
 import Blog19 from "./Blogs/Blog19";
 import blog20 from "./Blogs/blog20";
 import Blog23 from "./Blogs/blog23";
+import Blog24 from "./Blogs/Blog24";
 
 
 
@@ -194,5 +195,12 @@ export const blogData = [
           "At Pop & Palm Events, every event is a story brought to life with creativity and heart. From festive cultural installations to elegant beach and yacht setups, we believe in creating moments that foster joy and connection.",
         imgSrc: BlogImage21, // choose image as appropriate
         blogContent: Blog23, // Replace with Blog23 if you have the component
+      },
+      {
+        title: "Sustainability That Still Feels Special",
+        description:
+        "At Pop & Palm Events, we’ve always believed that beauty doesn’t have to come at the planet’s expense. Every event we plan — whether it’s a luxury corporate evening or an intimate celebration — is an opportunity to be thoughtful, intentional, and kind to the environment.",
+        imgSrc: BlogImage24, 
+        blogContent: Blog24, 
       },
 ];
