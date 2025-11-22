@@ -27,6 +27,8 @@ import BlogImage19 from '../assets/Blogs/blog-19.jpg'
 import BlogImage20 from '../assets/Blogs/blog-20.png'
 import BlogImage21 from '../assets/Blogs/blog-21.png'
 import BlogImage24 from '../assets/Blogs/blog-24.png'
+import BlogImage25 from '../assets/Blogs/blog-25.jpg'
+import BlogImage26 from '../assets/Blogs/blog-26.jpg'
 
 import Blog5 from "./Blogs/Blog5";
 import Blog6 from "./Blogs/Blog6";
@@ -47,7 +49,8 @@ import Blog19 from "./Blogs/Blog19";
 import blog20 from "./Blogs/blog20";
 import Blog23 from "./Blogs/blog23";
 import Blog24 from "./Blogs/Blog24";
-
+import Blog25 from "./Blogs/Blog25";
+import Blog26 from "./Blogs/Blog26";
 
 
 
@@ -189,18 +192,30 @@ export const blogData = [
     //     imgSrc: BlogImage19, // choose image as appropriate
     //     blogContent: Blog22, // Replace with Blog22 if you have the component
     //   },
-      {
+    {
         title: "Celebrations, Creativity & Unforgettable Setups",
         description:
-          "At Pop & Palm Events, every event is a story brought to life with creativity and heart. From festive cultural installations to elegant beach and yacht setups, we believe in creating moments that foster joy and connection.",
+            "At Pop & Palm Events, every event is a story brought to life with creativity and heart. From festive cultural installations to elegant beach and yacht setups, we believe in creating moments that foster joy and connection.",
         imgSrc: BlogImage21, // choose image as appropriate
         blogContent: Blog23, // Replace with Blog23 if you have the component
-      },
-      {
+    },
+    {
         title: "Sustainability That Still Feels Special",
-        description:
-        "At Pop & Palm Events, we’ve always believed that beauty doesn’t have to come at the planet’s expense. Every event we plan — whether it’s a luxury corporate evening or an intimate celebration — is an opportunity to be thoughtful, intentional, and kind to the environment.",
-        imgSrc: BlogImage24, 
-        blogContent: Blog24, 
-      },
+        description: "At Pop & Palm Events, we’ve always believed that beauty doesn’t have to come at the planet’s expense. Every event we plan whether it’s a luxury corporate evening or an intimate celebration is an opportunity to be thoughtful, intentional, and kind to the environment.",
+        imgSrc: BlogImage24,
+        blogContent: Blog24,
+    },
+    {
+        title: "Cultural Connection in Events",
+        description: "At Pop & Palm Events, we’ve learned that the heart of any celebration lies in its cultural roots. In the UAE a place where traditions from around the world meet culture isn’t a theme we add at the end. It’s where every idea begins. When we understand what a moment means to the people hosting it, the event naturally becomes more meaningful, more emotional, and more memorable.",
+        imgSrc: BlogImage25,
+        blogContent: Blog25,
+    },
+    {
+        title: "Why Winter Transforms Events in Dubai",
+        description: "Winter in Dubai feels like an invitation the kind that draws people outdoors to enjoy cool evenings, open skies, and a pace that finally slows down. For us, it’s the season when events feel most effortless. The weather becomes the perfect backdrop for celebrations, from intimate garden gatherings to grand outdoor experiences.",
+        imgSrc: BlogImage26,
+        blogContent: Blog26,
+    },
+
 ];
