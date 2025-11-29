@@ -82,7 +82,7 @@ const Home = () => {
 
       {/* <CTA /> */}
 
-      <FAQAccordion faqs={faqs} />
+      <FAQAccoTrdion faqs={faqs} />
 
       <Diaries />
 

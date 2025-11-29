@@ -18,14 +18,12 @@ import BirthdayParties17 from "../assets/Website photos/Private events/Birthday 
 import BirthdayParties18 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (18).jpg";
 import BirthdayParties19 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (19).jpg";
 import BirthdayParties20 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (20).jpg";
-import BirthdayParties21 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (21).jpg";
 import BirthdayParties22 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (22).jpg";
 import BirthdayParties23 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (23).jpg";
 import BirthdayParties24 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (24).jpg";
 import BirthdayParties25 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (25).jpg";
 import BirthdayParties26 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (26).jpg";
 import BirthdayParties27 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (27).jpg";
-import BirthdayParties28 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (28).jpg";
 import BirthdayParties29 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (29).jpeg";
 import BirthdayParties30 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (30).jpeg";
 
@@ -65,7 +63,7 @@ import Festivaldecor30 from "../assets/Website photos/Private events/Festival de
 import Festivaldecor31 from "../assets/Website photos/Private events/Festival decor/Festival decor (31).jpg";
 import Festivaldecor32 from "../assets/Website photos/Private events/Festival decor/Festival decor (32).jpg";
 import Festivaldecor33 from "../assets/Website photos/Private events/Festival decor/Festival decor (33).jpg";
-import Festivaldecor34 from "../assets/Website photos/Private events/Festival decor/Festival decor (34).jpg";   
+import Festivaldecor34 from "../assets/Website photos/Private events/Festival decor/Festival decor (34).jpg";
 import Festivaldecor35 from "../assets/Website photos/Private events/Festival decor/Festival decor (35).jpg";
 
 import Newbeginnings1 from "../assets/Website photos/Private events/New beginnings/New beginnings (1).jpg";
@@ -88,7 +86,8 @@ import Newbeginnings17 from "../assets/Website photos/Private events/New beginni
 import Newbeginnings18 from "../assets/Website photos/Private events/New beginnings/New beginnings (18).jpg";
 import Newbeginnings19 from "../assets/Website photos/Private events/New beginnings/New beginnings (19).jpg";
 import Newbeginnings20 from "../assets/Website photos/Private events/New beginnings/New beginnings (12).jpg";
-
+import Newbeginnings21 from "../assets/Website photos/Private events/New beginnings/New beginnings (21).jpg";
+import Newbeginnings22 from "../assets/Website photos/Private events/New beginnings/New beginnings (22).jpg";
 
 
 import WeddingsandReception1 from "../assets/Website photos/Private events/Weddings and Reception/Weddings and Reception (1).jpg";
@@ -112,6 +111,10 @@ import Inaugration1 from '../assets/Website photos/Corporate Events/Inaugration/
 
 import SchoolEvents1 from '../assets/Website photos/Corporate Events/School Events/school-event-1.jpg'
 import SchoolEvents2 from '../assets/Website photos/Corporate Events/School Events/school-event-2.jpg'
+import SchoolEvents3 from '../assets/Website photos/Corporate Events/School Events/school-event-3.jpg'
+import SchoolEvents4 from '../assets/Website photos/Corporate Events/School Events/school-event-4.jpg'
+import SchoolEvents5 from '../assets/Website photos/Corporate Events/School Events/school-event-5.jpg'
+import SchoolEvents6 from '../assets/Website photos/Corporate Events/School Events/school-event-6.jpg'
 
 import TeamBuilding1 from "../assets/Website photos/Corporate Events/TeamBuilding/TeamBuilding (1).jpg";
 import TeamBuilding2 from "../assets/Website photos/Corporate Events/TeamBuilding/TeamBuilding (2).jpg";
@@ -143,10 +146,10 @@ import Rentals9 from "../assets/Website photos/Rentals/Rentals (9).jpg";
 import Rentals10 from "../assets/Website photos/Rentals/Rentals (10).jpg";
 import Rentals11 from "../assets/Website photos/Rentals/Rentals (11).jpg";
 import Rentals12 from "../assets/Website photos/Rentals/Rentals (12).jpg";
-import Rentals13 from "../assets/Website photos/Rentals/Rentals (13).jpg";
+// import Rentals13 from "../assets/Website photos/Rentals/Rentals (13).jpg";
 import Rentals14 from "../assets/Website photos/Rentals/Rentals (14).jpg";
 import Rentals15 from "../assets/Website photos/Rentals/Rentals (15).jpg";
-import Rentals16 from "../assets/Website photos/Rentals/Rentals (16).jpg";
+// import Rentals16 from "../assets/Website photos/Rentals/Rentals (16).jpg";
 
 
 
@@ -233,10 +236,6 @@ export const galleryImages = {
             alt: "",
         },
         {
-            imgSrc: BirthdayParties21,
-            alt: "",
-        },
-        {
             imgSrc: BirthdayParties22,
             alt: "",
         },
@@ -258,10 +257,6 @@ export const galleryImages = {
         },
         {
             imgSrc: BirthdayParties27,
-            alt: "",
-        },
-        {
-            imgSrc: BirthdayParties28,
             alt: "",
         },
         {
@@ -322,10 +317,10 @@ export const galleryImages = {
             imgSrc: Newbeginnings12,
             alt: "Baby shower decorations with a beautiful flower backdrop, soft pastel-colored blooms, and elegant lamps creating a warm and inviting atmosphere"
         },
-        {
-            imgSrc: Newbeginnings13,
-            alt: "",
-        },
+        // {
+        //     imgSrc: Newbeginnings13,
+        //     alt: "",
+        // },
         {
             imgSrc: Newbeginnings14,
             alt: "",
@@ -354,6 +349,11 @@ export const galleryImages = {
             imgSrc: Newbeginnings20,
             alt: "",
         },
+        {
+            imgSrc: Newbeginnings22,
+            alt: "",
+        }
+
 
     ],
     "weddingsandreception": [
@@ -510,6 +510,10 @@ export const galleryImages = {
     ],
     "corporateretreats": [
         {
+            imgSrc: Inaugration1,
+            alt: "Beautiful wedding stage decor featuring white seating with white fabric, elegant white screen pillars, green leaf strings, and white floral arrangements for a fresh and elegant look"
+        },
+        {
             imgSrc: CorporateRetreats1,
             alt: "Placards with motivational and fun messages for turning 17, designed in red, white, and black color cards for a bold and youthful look"
         },
@@ -538,12 +542,12 @@ export const galleryImages = {
             alt: "Food setup decor featuring an elegant display of various dishes, arranged with decorative elements to enhance the presentation"
         }
     ],
-    "inaguration": [
-        {
-            imgSrc: Inaugration1,
-            alt: "Beautiful wedding stage decor featuring white seating with white fabric, elegant white screen pillars, green leaf strings, and white floral arrangements for a fresh and elegant look"
-        }
-    ],
+    // "inaguration": [
+    //     {
+    //         imgSrc: Inaugration1,
+    //         alt: "Beautiful wedding stage decor featuring white seating with white fabric, elegant white screen pillars, green leaf strings, and white floral arrangements for a fresh and elegant look"
+    //     }
+    // ],
     "academic-celebrations": [
         {
             imgSrc: SchoolEvents1,
@@ -551,6 +555,22 @@ export const galleryImages = {
         },
         {
             imgSrc: SchoolEvents2,
+            alt: "",
+        },
+        {
+            imgSrc: SchoolEvents3,
+            alt: "",
+        },
+        {
+            imgSrc: SchoolEvents4,
+            alt: "",
+        },
+        {
+            imgSrc: SchoolEvents5,
+            alt: "",
+        },
+        {
+            imgSrc: SchoolEvents6,
             alt: "",
         },
 
@@ -668,10 +688,10 @@ export const galleryImages = {
             imgSrc: Rentals12,
             alt: "Table setup for a Baby Shark birthday party, featuring themed decorations, plates, cups, and colorful accents that bring the underwater world to life"
         },
-        {
-            imgSrc: Rentals13,
-            alt: "Elegant table and chair setup for a wedding event, featuring beautifully arranged seating and decor, creating a sophisticated atmosphere for the celebration"
-        },
+        // {
+        //     imgSrc: Rentals13,
+        //     alt: "Elegant table and chair setup for a wedding event, featuring beautifully arranged seating and decor, creating a sophisticated atmosphere for the celebration"
+        // },
         {
             imgSrc: Rentals14,
             alt: "Close-up view of an Iftar table setup, featuring traditional dishes, drinks, and decorative elements, creating an inviting atmosphere for the evening meal"
@@ -680,106 +700,106 @@ export const galleryImages = {
             imgSrc: Rentals15,
             alt: "Close-up view of decorative glasses with candles inside, accompanied by a flower vase, creating a warm and elegant ambiance"
         },
-        {
-            imgSrc: Rentals16,
-            alt: "Close-up view of decorative glasses with candles inside, accompanied by a flower vase, creating a warm and elegant ambiance"
-        }
+        // {
+        //     imgSrc: Rentals16,
+        //     alt: "Close-up view of decorative glasses with candles inside, accompanied by a flower vase, creating a warm and elegant ambiance"
+        // }
     ]
 };
 export const categories = ['All', 'Private Events', 'Corporate Events', 'Rentals', 'Quizzy Beez'];
 // Define your gallery items array here...
 
 export const galleryItems = [
-  {
-    category: "Private Events",
-    name: "Birthday Parties",
-    description: "We organize kids' birthday parties, adult celebrations, and themed events.",
-    link: '/galleryimages/birthdayparties'
-  },
-  {
-    category: "Private Events",
-    name: "New Beginnings",
-    description: "We organize baby welcoming, baby showers, and engagement parties.",
-    link: '/galleryimages/newbeginnings'
-  },
+    {
+        category: "Private Events",
+        name: "Birthday Parties",
+        description: "We organize kids' birthday parties, adult celebrations, and themed events.",
+        link: '/galleryimages/birthdayparties'
+    },
+    {
+        category: "Private Events",
+        name: "New Beginnings",
+        description: "We organize baby welcoming, baby showers, and engagement parties.",
+        link: '/galleryimages/newbeginnings'
+    },
 
-  {
-    category: "Private Events",
-    name: "Weddings and Reception",
-    description: "Elegant ceremonies and receptions that create lasting memories for the couple.",
-    link: '/galleryimages/weddingsandreception'
-  },
-  {
-    category: "Private Events",
-    name: "Festival Decor",
-    description: "Vibrant decorations that bring festive spirit to community celebrations and events.",
-    link: '/galleryimages/festivaldecors'
-  },
-  // {
-  //   category: "Corporate Events",
-  //   name: "Product Launch Decor",
-  //   description: "Creative decor to showcase new products and enhance brand presence.",
-  //   link:'/galleryimages/productlaunchdecor'
-  // },
-  {
-    category: "Corporate Events",
-    name: "Corporate Celebrations",
-    description: "Engaging experiences designed for team bonding and relaxation away from the office.",
-    link: '/galleryimages/corporateretreats'
-  },
-  // {
-  //   category: "Corporate Events",
-  //   name: "Annual General Meetings Decor",
-  //   description: "Professional decor to create an impactful setting for important discussions.",
-  //   link:'/galleryimages/corporateevents'
-  // },
-  {
-    category: "Corporate Events",
-    name: "New Beginnings",
-    description: "Grand Ambience for Grand Openings",
-    link: '/galleryimages/inaguration'
-  },
-  {
-    category: "Corporate Events",
-    name: "Academic Celebrations",
-    description: "Decorated with Dreams, Designed for Memories",
-    link: '/galleryimages/academic-celebrations'
-  },
-  {
-    category: "Corporate Events",
-    name: "Team Building Events",
-    description: "Activities aimed at strengthening collaboration and camaraderie among team members.",
-    link: '/galleryimages/teambuildingevents'
-  },
+    {
+        category: "Private Events",
+        name: "Weddings and Reception",
+        description: "Elegant ceremonies and receptions that create lasting memories for the couple.",
+        link: '/galleryimages/weddingsandreception'
+    },
+    {
+        category: "Private Events",
+        name: "Festival Decor",
+        description: "Vibrant decorations that bring festive spirit to community celebrations and events.",
+        link: '/galleryimages/festivaldecors'
+    },
+    // {
+    //   category: "Corporate Events",
+    //   name: "Product Launch Decor",
+    //   description: "Creative decor to showcase new products and enhance brand presence.",
+    //   link:'/galleryimages/productlaunchdecor'
+    // },
+    {
+        category: "Corporate Events",
+        name: "Corporate Celebrations",
+        description: "Engaging experiences designed for team bonding and relaxation away from the office.",
+        link: '/galleryimages/corporateretreats'
+    },
+    // {
+    //   category: "Corporate Events",
+    //   name: "Annual General Meetings Decor",
+    //   description: "Professional decor to create an impactful setting for important discussions.",
+    //   link:'/galleryimages/corporateevents'
+    // },
+    //   {
+    //     category: "Corporate Events",
+    //     name: "New Beginnings",
+    //     description: "Grand Ambience for Grand Openings",
+    //     link: '/galleryimages/inaguration'
+    //   },
+    {
+        category: "Corporate Events",
+        name: "Academic Celebrations",
+        description: "Decorated with Dreams, Designed for Memories",
+        link: '/galleryimages/academic-celebrations'
+    },
+    {
+        category: "Corporate Events",
+        name: "Team Building Events",
+        description: "Activities aimed at strengthening collaboration and camaraderie among team members.",
+        link: '/galleryimages/teambuildingevents'
+    },
 
-  // {
-  //   category: "Corporate Events",
-  //   name: "Award Ceremonies",
-  //   description: "Elegant events to recognize and celebrate outstanding achievements within the company.",
-  //   link:'/galleryimages/awardceremonies'
-  // },
-  // {
-  //   category: "Corporate Events",
-  //   name: "Company Anniversaries",
-  //   description: "Special celebrations to honor milestones and achievements in the company’s history.",
-  //   link:'/galleryimages/corporateevents'
-  // },
-  // {
-  //   category: "Corporate Events",
-  //   name: "Networking Events",
-  //   description: "Opportunities for professionals to connect, share ideas, and build relationships.",
-  //   link:'/galleryimages/corporateevents'
-  // },
-  {
-    category: "Quizzy Beez",
-    name: "Trivia Nights",
-    description: "Vibrant venues perfect for hosting quiz nights and engaging with guests.",
-    link: '/galleryimages/cozyspots'
-  },
-  {
-    category: "Rentals",
-    name: "Event Essentials",
-    description: "A curated selection of high-quality rentals to elevate your gatherings and events.",
-    link: '/galleryimages/rentals'
-  }
+    // {
+    //   category: "Corporate Events",
+    //   name: "Award Ceremonies",
+    //   description: "Elegant events to recognize and celebrate outstanding achievements within the company.",
+    //   link:'/galleryimages/awardceremonies'
+    // },
+    // {
+    //   category: "Corporate Events",
+    //   name: "Company Anniversaries",
+    //   description: "Special celebrations to honor milestones and achievements in the company’s history.",
+    //   link:'/galleryimages/corporateevents'
+    // },
+    // {
+    //   category: "Corporate Events",
+    //   name: "Networking Events",
+    //   description: "Opportunities for professionals to connect, share ideas, and build relationships.",
+    //   link:'/galleryimages/corporateevents'
+    // },
+    {
+        category: "Quizzy Beez",
+        name: "Trivia Nights",
+        description: "Vibrant venues perfect for hosting quiz nights and engaging with guests.",
+        link: '/galleryimages/cozyspots'
+    },
+    {
+        category: "Rentals",
+        name: "Event Essentials",
+        description: "A curated selection of high-quality rentals to elevate your gatherings and events.",
+        link: '/galleryimages/rentals'
+    }
 ];

@@ -29,6 +29,7 @@ import BlogImage21 from '../assets/Blogs/blog-21.png'
 import BlogImage24 from '../assets/Blogs/blog-24.png'
 import BlogImage25 from '../assets/Blogs/blog-25.jpg'
 import BlogImage26 from '../assets/Blogs/blog-26.jpg'
+import BlogImage27 from '../assets/Blogs/blog-27.png'
 
 import Blog5 from "./Blogs/Blog5";
 import Blog6 from "./Blogs/Blog6";
@@ -51,6 +52,7 @@ import Blog23 from "./Blogs/blog23";
 import Blog24 from "./Blogs/Blog24";
 import Blog25 from "./Blogs/Blog25";
 import Blog26 from "./Blogs/Blog26";
+import Blog27 from "./Blogs/Blog27";
 
 
 
@@ -216,6 +218,12 @@ export const blogData = [
         description: "Winter in Dubai feels like an invitation the kind that draws people outdoors to enjoy cool evenings, open skies, and a pace that finally slows down. For us, it’s the season when events feel most effortless. The weather becomes the perfect backdrop for celebrations, from intimate garden gatherings to grand outdoor experiences.",
         imgSrc: BlogImage26,
         blogContent: Blog26,
+    },
+    {
+        title: "The Power of Small Details",
+        description: "At Pop & Palm Events, we’ve seen time and again that the smallest details often carry the biggest emotional weight. They’re the quiet touches that make guests pause, smile, or feel unexpectedly connected even if they can’t always articulate why.",
+        imgSrc: BlogImage27,
+        blogContent: Blog27,
     },
 
 ];
