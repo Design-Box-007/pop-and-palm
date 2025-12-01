@@ -12,9 +12,8 @@ const faqs = [
   answer:
     "For a smooth and well-coordinated experience, we recommend reaching out at least 2–3 weeks in advance for most events.\n\n" +
     "Small events (birthdays, home décor setups, intimate gatherings): Can be planned even 1 week prior, subject to availability.\n\n" +
-    "Medium to large events (corporate functions, weddings, engagement ceremonies, themed décor, multi-vendor events): Ideally 1–3 months in advance to ensure the best planning, design coordination, and vendor scheduling.\n\n" +
-    "However, we always try our best to accommodate shorter timelines whenever possible. Feel free to contact us anytime, and our team will guide you based on availability."
-},
+    "Medium to large events (corporate functions, weddings, engagement ceremonies, themed décor, multi-vendor events): Ideally 1–3 months in advance to ensure the best planning, design coordination, and vendor scheduling.\n\n"
+  },
   {
     question: "Can you handle both planning and execution?",
     answer: "Absolutely! Our team manages everything from concept and design to logistics and on-the-day execution, so you can enjoy a stress-free event."

@@ -30,6 +30,7 @@ import BlogImage24 from '../assets/Blogs/blog-24.png'
 import BlogImage25 from '../assets/Blogs/blog-25.jpg'
 import BlogImage26 from '../assets/Blogs/blog-26.jpg'
 import BlogImage27 from '../assets/Blogs/blog-27.png'
+import BlogImage28 from '../assets/Blogs/blog-28.png'
 
 import Blog5 from "./Blogs/Blog5";
 import Blog6 from "./Blogs/Blog6";
@@ -53,6 +54,7 @@ import Blog24 from "./Blogs/Blog24";
 import Blog25 from "./Blogs/Blog25";
 import Blog26 from "./Blogs/Blog26";
 import Blog27 from "./Blogs/Blog27";
+import Blog28 from "./Blogs/Blog28";
 
 
 
@@ -225,5 +227,10 @@ export const blogData = [
         imgSrc: BlogImage27,
         blogContent: Blog27,
     },
-
+    {
+        title: "The Hidden Side of Event Planning: Lessons We’ve Learned",
+        description: "Every beautiful event has a side no guest ever sees — the quiet, determined, behind-the-scenes world where ideas are tested, timelines are challenged, and details are triple-checked. It’s in these unseen moments that our biggest lessons are learned, and where the real art of event planning comes to life.",
+        imgSrc: BlogImage28,
+        blogContent: Blog28,
+    },
 ];
