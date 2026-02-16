@@ -31,6 +31,10 @@ import BlogImage25 from '../assets/Blogs/blog-25.jpg'
 import BlogImage26 from '../assets/Blogs/blog-26.jpg'
 import BlogImage27 from '../assets/Blogs/blog-27.png'
 import BlogImage28 from '../assets/Blogs/blog-28.png'
+import BlogImage29 from '../assets/Blogs/blog-29.jpeg'
+import BlogImage30 from '../assets/Blogs/blog-30.jpeg'
+import BlogImage31 from '../assets/Blogs/blog-31.jpeg'
+import BlogImage32 from '../assets/Blogs/blog-32.jpeg'
 
 import Blog5 from "./Blogs/Blog5";
 import Blog6 from "./Blogs/Blog6";
@@ -55,6 +59,10 @@ import Blog25 from "./Blogs/Blog25";
 import Blog26 from "./Blogs/Blog26";
 import Blog27 from "./Blogs/Blog27";
 import Blog28 from "./Blogs/Blog28";
+import Blog29 from "./Blogs/Blog29";
+import Blog30 from "./Blogs/Blog30";
+import Blog31 from "./Blogs/Blog31";
+import Blog32 from "./Blogs/Blog32";
 
 
 
@@ -232,5 +240,29 @@ export const blogData = [
         description: "Every beautiful event has a side no guest ever sees — the quiet, determined, behind-the-scenes world where ideas are tested, timelines are challenged, and details are triple-checked. It’s in these unseen moments that our biggest lessons are learned, and where the real art of event planning comes to life.",
         imgSrc: BlogImage28,
         blogContent: Blog28,
+    },
+    {
+        title: "The Art of Personalisation Without Overspending",
+        description: "Personalisation isn’t about spending more : it’s about thinking better. Some of the most impactful events are shaped by small, thoughtful choices that make guests feel the experience was designed just for them.",
+        imgSrc: BlogImage29,
+        blogContent: Blog29,
+    },
+    {
+        title: "The Hidden Language of Decor",
+        description: "Decor speaks — long before anyone says a word. Through colour, texture, and light, a space communicates mood, emotion, and intention. It’s what makes a setting feel calm, energetic, intimate, or celebratory.",
+        imgSrc: BlogImage30,
+        blogContent: Blog30,
+    },
+    {
+        title: "What Makes an Event ‘Feel’ Luxurious",
+        description: "Luxury isn’t always loud. Often, it’s felt in the ease of a space, the flow of an evening, and the details that feel considered without calling attention to themselves.",
+        imgSrc: BlogImage31,
+        blogContent: Blog31,
+    },
+    {
+        title: "From Vision to Venue: How Ideas Take Shape",
+        description: "Every event starts as an idea : a vision shared in conversation, a feeling someone wants to bring to life. The real work happens in the in-between: translating that vision into a space that feels intentional, seamless, and true to its purpose.",
+        imgSrc: BlogImage32,
+        blogContent: Blog32,
     },
 ];

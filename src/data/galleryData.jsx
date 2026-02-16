@@ -18,19 +18,10 @@ import BirthdayParties17 from "../assets/Website photos/Private events/Birthday 
 import BirthdayParties18 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (18).jpg";
 import BirthdayParties19 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (19).jpg";
 import BirthdayParties20 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (20).jpg";
-import BirthdayParties22 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (22).jpg";
-import BirthdayParties23 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (23).jpg";
-import BirthdayParties24 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (24).jpg";
-import BirthdayParties25 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (25).jpg";
-import BirthdayParties26 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (26).jpg";
-import BirthdayParties27 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (27).jpg";
-import BirthdayParties29 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (29).jpeg";
-import BirthdayParties30 from "../assets/Website photos/Private events/Birthday Parties/Birthday Parties (30).jpeg";
 
 
 // import Festivaldecor1 from "../assets/Website photos/Private events/Festival decor/Festival decor (1).jpg";
-import Festivaldecor1 from "../assets/TestimonialVanusha.jpg";
-
+import Festivaldecor1 from "../assets/Website photos/Private events/Festival decor/Festival decor (1).jpg";
 import Festivaldecor2 from "../assets/Website photos/Private events/Festival decor/Festival decor (2).jpg";
 import Festivaldecor3 from "../assets/Website photos/Private events/Festival decor/Festival decor (3).jpg";
 import Festivaldecor4 from "../assets/Website photos/Private events/Festival decor/Festival decor (4).jpg";
@@ -46,25 +37,7 @@ import Festivaldecor13 from "../assets/Website photos/Private events/Festival de
 import Festivaldecor14 from "../assets/Website photos/Private events/Festival decor/Festival decor (14).jpg";
 import Festivaldecor15 from "../assets/Website photos/Private events/Festival decor/Festival decor (15).jpg";
 import Festivaldecor16 from "../assets/Website photos/Private events/Festival decor/Festival decor (16).jpg";
-import Festivaldecor17 from "../assets/Website photos/Private events/Festival decor/Festival decor (17).jpg";
-import Festivaldecor18 from "../assets/Website photos/Private events/Festival decor/Festival decor (18).jpg";
-import Festivaldecor19 from "../assets/Website photos/Private events/Festival decor/Festival decor (19).jpg";
-import Festivaldecor20 from "../assets/Website photos/Private events/Festival decor/Festival decor (20).jpg";
-import Festivaldecor21 from "../assets/Website photos/Private events/Festival decor/Festival decor (21).jpg";
-import Festivaldecor22 from "../assets/Website photos/Private events/Festival decor/Festival decor (22).jpg";
-import Festivaldecor23 from "../assets/Website photos/Private events/Festival decor/Festival decor (23).jpg";
-import Festivaldecor24 from "../assets/Website photos/Private events/Festival decor/Festival decor (24).jpg";
-import Festivaldecor25 from "../assets/Website photos/Private events/Festival decor/Festival decor (25).jpg";
-import Festivaldecor26 from "../assets/Website photos/Private events/Festival decor/Festival decor (26).jpg";
-import Festivaldecor27 from "../assets/Website photos/Private events/Festival decor/Festival decor (27).jpg";
-import Festivaldecor28 from "../assets/Website photos/Private events/Festival decor/Festival decor (28).jpg";
-import Festivaldecor29 from "../assets/Website photos/Private events/Festival decor/Festival decor (29).jpg";
-import Festivaldecor30 from "../assets/Website photos/Private events/Festival decor/Festival decor (30).jpg";
-import Festivaldecor31 from "../assets/Website photos/Private events/Festival decor/Festival decor (31).jpg";
-import Festivaldecor32 from "../assets/Website photos/Private events/Festival decor/Festival decor (32).jpg";
-import Festivaldecor33 from "../assets/Website photos/Private events/Festival decor/Festival decor (33).jpg";
-import Festivaldecor34 from "../assets/Website photos/Private events/Festival decor/Festival decor (34).jpg";
-import Festivaldecor35 from "../assets/Website photos/Private events/Festival decor/Festival decor (35).jpg";
+
 
 import Newbeginnings1 from "../assets/Website photos/Private events/New beginnings/New beginnings (1).jpg";
 import Newbeginnings2 from "../assets/Website photos/Private events/New beginnings/New beginnings (2).jpg";
@@ -77,18 +50,7 @@ import Newbeginnings8 from "../assets/Website photos/Private events/New beginnin
 import Newbeginnings9 from "../assets/Website photos/Private events/New beginnings/New beginnings (9).jpg";
 import Newbeginnings10 from "../assets/Website photos/Private events/New beginnings/New beginnings (10).jpg";
 import Newbeginnings11 from "../assets/Website photos/Private events/New beginnings/New beginnings (11).jpg";
-import Newbeginnings12 from "../assets/Website photos/Private events/New beginnings/New beginnings.jpeg";
-import Newbeginnings13 from "../assets/Website photos/Private events/New beginnings/New beginnings (13).jpg";
-import Newbeginnings14 from "../assets/Website photos/Private events/New beginnings/New beginnings (14).jpg";
-import Newbeginnings15 from "../assets/Website photos/Private events/New beginnings/New beginnings (15).jpg";
-import Newbeginnings16 from "../assets/Website photos/Private events/New beginnings/New beginnings (16).jpg";
-import Newbeginnings17 from "../assets/Website photos/Private events/New beginnings/New beginnings (17).jpg";
-import Newbeginnings18 from "../assets/Website photos/Private events/New beginnings/New beginnings (18).jpg";
-import Newbeginnings19 from "../assets/Website photos/Private events/New beginnings/New beginnings (19).jpg";
-import Newbeginnings20 from "../assets/Website photos/Private events/New beginnings/New beginnings (12).jpg";
-import Newbeginnings21 from "../assets/Website photos/Private events/New beginnings/New beginnings (21).jpg";
-import Newbeginnings22 from "../assets/Website photos/Private events/New beginnings/New beginnings (22).jpg";
-
+import Newbeginnings12 from "../assets/Website photos/Private events/New beginnings/New beginnings (12).jpg";
 
 import WeddingsandReception1 from "../assets/Website photos/Private events/Weddings and Reception/Weddings and Reception (1).jpg";
 import WeddingsandReception2 from "../assets/Website photos/Private events/Weddings and Reception/Weddings and Reception (2).jpg";
@@ -106,6 +68,11 @@ import CorporateRetreats6 from "../assets/Website photos/Corporate Events/Corpor
 import CorporateRetreats7 from "../assets/Website photos/Corporate Events/CorporateRetreats/CorporateRetreats (7).jpg";
 import CorporateRetreats8 from "../assets/Website photos/Corporate Events/CorporateRetreats/CorporateRetreats (8).jpg";
 import CorporateRetreats9 from "../assets/Website photos/Corporate Events/CorporateRetreats/CorporateRetreats (9).jpg";
+import CorporateRetreats10 from "../assets/Website photos/Corporate Events/CorporateRetreats/CorporateRetreats (10).jpg";
+import CorporateRetreats11 from "../assets/Website photos/Corporate Events/CorporateRetreats/CorporateRetreats (11).jpg";
+import CorporateRetreats12 from "../assets/Website photos/Corporate Events/CorporateRetreats/CorporateRetreats (12).jpg";
+import CorporateRetreats13 from "../assets/Website photos/Corporate Events/CorporateRetreats/CorporateRetreats (13).jpg";
+import CorporateRetreats14 from "../assets/Website photos/Corporate Events/CorporateRetreats/CorporateRetreats (14).jpg";
 
 import Inaugration1 from '../assets/Website photos/Corporate Events/Inaugration/Inaugration-1.jpg';
 
@@ -145,10 +112,6 @@ import Rentals8 from "../assets/Website photos/Rentals/Rentals (8).jpg";
 import Rentals9 from "../assets/Website photos/Rentals/Rentals (9).jpg";
 import Rentals10 from "../assets/Website photos/Rentals/Rentals (10).jpg";
 import Rentals11 from "../assets/Website photos/Rentals/Rentals (11).jpg";
-import Rentals12 from "../assets/Website photos/Rentals/Rentals (12).jpg";
-// import Rentals13 from "../assets/Website photos/Rentals/Rentals (13).jpg";
-import Rentals14 from "../assets/Website photos/Rentals/Rentals (14).jpg";
-import Rentals15 from "../assets/Website photos/Rentals/Rentals (15).jpg";
 // import Rentals16 from "../assets/Website photos/Rentals/Rentals (16).jpg";
 
 
@@ -159,10 +122,10 @@ export const galleryImages = {
             imgSrc: BirthdayParties1,
             alt: "Peppa Pig-themed outdoor party with pastel balloons and character decorations in a garden setting",
         },
-        // {
-        //   imgSrc: BirthdayParties2,
-        //   alt: "",
-        // },
+        {
+          imgSrc: BirthdayParties2,
+          alt: "Ballons decoration for a birthday party with a mix of pastel pink, white, and gold balloons, creating a festive and elegant atmosphere",
+        },
         {
             imgSrc: BirthdayParties3,
             alt: "Indoor honey bee-themed party setup with yellow and black decorations, bee balloons, honeycomb patterns, and floral accents",
@@ -175,10 +138,10 @@ export const galleryImages = {
             imgSrc: BirthdayParties5,
             alt: "Indoor Moana-themed party setup with tropical decorations, ocean-inspired colors, island props, and character cutouts",
         },
-        // {
-        //   imgSrc: BirthdayParties6,
-        //   alt: "",
-        // },
+        {
+          imgSrc: BirthdayParties6,
+          alt: "Birthday party decoration with ballons and honey bee theme, featuring yellow and black balloons, bee cutouts, honeycomb patterns, and floral accents for a festive and playful atmosphere",
+        },
         {
             imgSrc: BirthdayParties7,
             alt: "Baby Shark-themed birthday welcome board with colorful ocean background, cartoon sea creatures, and cheerful welcome message",
@@ -187,10 +150,10 @@ export const galleryImages = {
             imgSrc: BirthdayParties8,
             alt: "Indoor Baby Shark-themed party setup with colorful ocean-inspired decorations, blue and yellow balloons, Baby Shark character cutouts, and underwater backdrop",
         },
-        // {
-        //   imgSrc: BirthdayParties9,
-        //   alt: "",
-        // },
+        {
+          imgSrc: BirthdayParties9,
+          alt: "Birthday party decoration with candy theme, featuring vibrant balloons in various colors, candy-shaped props, and playful decorations creating a fun and festive atmosphere",
+        },
         {
             imgSrc: BirthdayParties10,
             alt: "Indoor car karting-themed party setup with red race car prop, blue, white, and red balloons, checkered flags, and racing-themed decorations",
@@ -199,10 +162,10 @@ export const galleryImages = {
             imgSrc: BirthdayParties11,
             alt: "Welcome board for karting-themed birthday party with tire graphics, red go-kart, and custom message for a 3rd birthday",
         },
-        // {
-        //   imgSrc: BirthdayParties12,
-        //   alt: "",
-        // },
+        {
+          imgSrc: BirthdayParties12,
+          alt: "outdoor beach birthday party setup with vibrant balloons in various colors, beach-themed props, and festive decorations creating a fun and lively atmosphere",
+        },
         {
             imgSrc: BirthdayParties13,
             alt: "Outdoor basketball-themed birthday party in a garden with basketball-shaped balloons, ball cutouts, and festive orange and black decorations",
@@ -234,39 +197,7 @@ export const galleryImages = {
         {
             imgSrc: BirthdayParties20,
             alt: "",
-        },
-        {
-            imgSrc: BirthdayParties22,
-            alt: "",
-        },
-        {
-            imgSrc: BirthdayParties23,
-            alt: "",
-        },
-        {
-            imgSrc: BirthdayParties24,
-            alt: "",
-        },
-        {
-            imgSrc: BirthdayParties25,
-            alt: "",
-        },
-        {
-            imgSrc: BirthdayParties26,
-            alt: "",
-        },
-        {
-            imgSrc: BirthdayParties27,
-            alt: "",
-        },
-        {
-            imgSrc: BirthdayParties29,
-            alt: "",
-        },
-        {
-            imgSrc: BirthdayParties30,
-            alt: "",
-        },
+        }
     ],
     "newbeginnings": [
         {
@@ -316,45 +247,7 @@ export const galleryImages = {
         {
             imgSrc: Newbeginnings12,
             alt: "Baby shower decorations with a beautiful flower backdrop, soft pastel-colored blooms, and elegant lamps creating a warm and inviting atmosphere"
-        },
-        // {
-        //     imgSrc: Newbeginnings13,
-        //     alt: "",
-        // },
-        {
-            imgSrc: Newbeginnings14,
-            alt: "",
-        },
-        {
-            imgSrc: Newbeginnings15,
-            alt: "",
-        },
-        {
-            imgSrc: Newbeginnings16,
-            alt: "",
-        },
-        {
-            imgSrc: Newbeginnings17,
-            alt: "",
-        },
-        {
-            imgSrc: Newbeginnings18,
-            alt: "",
-        },
-        {
-            imgSrc: Newbeginnings19,
-            alt: "",
-        },
-        {
-            imgSrc: Newbeginnings20,
-            alt: "",
-        },
-        {
-            imgSrc: Newbeginnings22,
-            alt: "",
         }
-
-
     ],
     "weddingsandreception": [
         {
@@ -379,7 +272,7 @@ export const galleryImages = {
         },
         {
             imgSrc: WeddingsandReception6,
-            alt: ""
+            alt: "wedding reception decor featuring a beautifully decorated stage with a floral backdrop, elegant drapes, and soft lighting creating a romantic and sophisticated ambiance"
         }
     ],
     "festivaldecors": [
@@ -412,6 +305,10 @@ export const galleryImages = {
             alt: "Simple table setup with a white tablecloth and a background decorated with a green and yellow frame, accented with fresh flowers for a cheerful and elegant look"
         },
         {
+            imgSrc: Festivaldecor8,
+            alt: "Close-up view of white flowers with a vibrant Lord Krishna wallpaper in the background, adding a spiritual and serene atmosphere"
+        },
+        {
             imgSrc: Festivaldecor9,
             alt: "Earthy Golu decor featuring small traditional statues arranged on steps, accented with small hanging bells, a green grass mat, and brown fur for a natural, festive setting"
         },
@@ -442,71 +339,68 @@ export const galleryImages = {
         {
             imgSrc: Festivaldecor16,
             alt: "Close-up of table decor featuring a light brown tablecloth with a Buddha statue, flower vases on either side, and glass candle lamps lit, set against a floral background"
-        },
-        {
-            imgSrc: Festivaldecor17,
-            alt: "Sofa table decor with a brown cloth, a vase filled with lamps, decorated with fresh flowers, and surrounded by clay lamps and glass candle lamps, creating a warm and inviting ambiance"
-        },
-        {
-            imgSrc: Festivaldecor18,
-            alt: "Close-up view of white flowers with a vibrant Lord Krishna wallpaper in the background, adding a spiritual and serene atmosphere"
-        },
-        {
-            imgSrc: Festivaldecor19,
-            alt: "Beautiful Lord Krishna wallpaper with pillars adorned in white and lotus flower garlands, complemented by a table draped in mint green cloth, creating an elegant Krishna Jayanthi festive decor"
-        },
-        {
-            imgSrc: Festivaldecor20,
-            alt: "Close-up view of vibrant peacock feathers arranged in a flower pot, with a soft butter-colored background creating a serene and elegant atmosphere"
-        },
-        {
-            imgSrc: Festivaldecor22,
-            alt: "Welcome sign board for Krishna Jayanthi with a beautiful peacock blue background, adorned with festive and traditional decorative elements"
-        },
-        {
-            imgSrc: Festivaldecor23,
-            alt: "Simple Krishna Jayanthi table setup with a brown tablecloth, green garlands, and a Lord Krishna wallpaper centerpiece framed by pillars decorated with green garlands"
-        },
-        {
-            imgSrc: Festivaldecor24,
-            alt: "Outdoor Iftar table setup on a lawn with a stunning Burj Khalifa view, featuring a tablecloth with silver star hangings and white pillow decorations for a serene and festive atmosphere"
-        },
-        {
-            imgSrc: Festivaldecor25,
-            alt: "Welcome sign board featuring Lord Hanuman placed near house doors decorated with vibrant flowers and beautiful lamps, creating a traditional and festive entrance"
-        },
-        {
-            imgSrc: Festivaldecor26,
-            alt: "Elegant table setup featuring a gold tablecloth, white and gold draped backdrop, and front pillars adorned with white and green floral arrangements"
-        },
-        {
-            imgSrc: Festivaldecor27,
-            alt: "Close-up view of diamond-shaped hanging decor with white flowers cascading down from the ceiling, creating a delicate and elegant ambiance"
-        },
-        {
-            imgSrc: Festivaldecor28,
-            alt: "Beautiful wedding stage decor featuring white seating with white fabric, elegant white screen pillars, green leaf strings, and white floral arrangements for a fresh and elegant look"
-        },
-        {
-            imgSrc: Festivaldecor31,
-            alt: "",
-        },
-        {
-            imgSrc: Festivaldecor32,
-            alt: "",
-        },
-        {
-            imgSrc: Festivaldecor33,
-            alt: "",
-        },
-        {
-            imgSrc: Festivaldecor34,
-            alt: "",
-        },
-        {
-            imgSrc: Festivaldecor35,
-            alt: "",
-        },
+        }
+        // {
+        //     imgSrc: Festivaldecor17,
+        //     alt: "Sofa table decor with a brown cloth, a vase filled with lamps, decorated with fresh flowers, and surrounded by clay lamps and glass candle lamps, creating a warm and inviting ambiance"
+        // },
+        // 
+        // {
+        //     imgSrc: Festivaldecor19,
+        //     alt: "Beautiful Lord Krishna wallpaper with pillars adorned in white and lotus flower garlands, complemented by a table draped in mint green cloth, creating an elegant Krishna Jayanthi festive decor"
+        // },
+        // {
+        //     imgSrc: Festivaldecor20,
+        //     alt: "Close-up view of vibrant peacock feathers arranged in a flower pot, with a soft butter-colored background creating a serene and elegant atmosphere"
+        // },
+        // {
+        //     imgSrc: Festivaldecor22,
+        //     alt: "Welcome sign board for Krishna Jayanthi with a beautiful peacock blue background, adorned with festive and traditional decorative elements"
+        // },
+        // {
+        //     imgSrc: Festivaldecor23,
+        //     alt: "Simple Krishna Jayanthi table setup with a brown tablecloth, green garlands, and a Lord Krishna wallpaper centerpiece framed by pillars decorated with green garlands"
+        // },
+        // {
+        //     imgSrc: Festivaldecor24,
+        //     alt: "Outdoor Iftar table setup on a lawn with a stunning Burj Khalifa view, featuring a tablecloth with silver star hangings and white pillow decorations for a serene and festive atmosphere"
+        // },
+        // {
+        //     imgSrc: Festivaldecor25,
+        //     alt: "Welcome sign board featuring Lord Hanuman placed near house doors decorated with vibrant flowers and beautiful lamps, creating a traditional and festive entrance"
+        // },
+        // {
+        //     imgSrc: Festivaldecor26,
+        //     alt: "Elegant table setup featuring a gold tablecloth, white and gold draped backdrop, and front pillars adorned with white and green floral arrangements"
+        // },
+        // {
+        //     imgSrc: Festivaldecor27,
+        //     alt: "Close-up view of diamond-shaped hanging decor with white flowers cascading down from the ceiling, creating a delicate and elegant ambiance"
+        // },
+        // {
+        //     imgSrc: Festivaldecor28,
+        //     alt: "Beautiful wedding stage decor featuring white seating with white fabric, elegant white screen pillars, green leaf strings, and white floral arrangements for a fresh and elegant look"
+        // },
+        // {
+        //     imgSrc: Festivaldecor31,
+        //     alt: "",
+        // },
+        // {
+        //     imgSrc: Festivaldecor32,
+        //     alt: "",
+        // },
+        // {
+        //     imgSrc: Festivaldecor33,
+        //     alt: "",
+        // },
+        // {
+        //     imgSrc: Festivaldecor34,
+        //     alt: "",
+        // },
+        // {
+        //     imgSrc: Festivaldecor35,
+        //     alt: "",
+        // },
     ],
     "corporateretreats": [
         {
@@ -530,6 +424,10 @@ export const galleryImages = {
             alt: "Hallway decorated with multiple pillars of red and gold balloons, creating a vibrant and festive atmosphere"
         },
         {
+            imgSrc: CorporateRetreats5,
+            alt: "Diwali celebration decor featuring a beautifully decorated stage with a floral backdrop, elegant drapes, and soft lighting creating a romantic and sophisticated ambiance"
+        },
+        {
             imgSrc: CorporateRetreats6,
             alt: "Close-up view of a glass window decorated with yellow and orange flowers, creating a vibrant and warm ambiance"
         },
@@ -540,7 +438,31 @@ export const galleryImages = {
         {
             imgSrc: CorporateRetreats8,
             alt: "Food setup decor featuring an elegant display of various dishes, arranged with decorative elements to enhance the presentation"
-        }
+        },
+        {
+            imgSrc: CorporateRetreats9,
+            alt: "Food setup decor featuring an elegant display of various dishes, arranged with decorative elements to enhance the presentation"
+        },
+        {
+            imgSrc: CorporateRetreats10,
+            alt: "decorations with blue balloons and team building activity with employees playing a game, creating a fun and engaging atmosphere for the event"
+        },
+        {
+            imgSrc: CorporateRetreats11,
+            alt: "Team playing a with ball and ballancing game, with employees gathered around and participating in the activity, fostering teamwork and engagement in a lively setting"
+        },
+        {
+            imgSrc: CorporateRetreats12,
+            alt: "all team members gathered together, participating in a team-building activity, creating a sense of camaraderie and fun in a festive atmosphere"
+        },
+        {
+            imgSrc: CorporateRetreats13,
+            alt: "Group of members participating in a team-building activity, with employees gathered around and doing physical activity, fostering teamwork and engagement in a lively setting"
+        },
+        {
+            imgSrc: CorporateRetreats14,
+            alt: "group of members are playing mind games, with employees gathered around and doing physical activity, fostering teamwork and engagement in a lively setting"
+        },
     ],
     // "inaguration": [
     //     {
@@ -684,22 +606,22 @@ export const galleryImages = {
             imgSrc: Rentals11,
             alt: "Indoor birthday party setup with lavender balloons, a beautifully arranged table with chairs, creating a soft and elegant atmosphere for the celebration"
         },
-        {
-            imgSrc: Rentals12,
-            alt: "Table setup for a Baby Shark birthday party, featuring themed decorations, plates, cups, and colorful accents that bring the underwater world to life"
-        },
         // {
-        //     imgSrc: Rentals13,
-        //     alt: "Elegant table and chair setup for a wedding event, featuring beautifully arranged seating and decor, creating a sophisticated atmosphere for the celebration"
+        //     imgSrc: Rentals12,
+        //     alt: "Table setup for a Baby Shark birthday party, featuring themed decorations, plates, cups, and colorful accents that bring the underwater world to life"
         // },
-        {
-            imgSrc: Rentals14,
-            alt: "Close-up view of an Iftar table setup, featuring traditional dishes, drinks, and decorative elements, creating an inviting atmosphere for the evening meal"
-        },
-        {
-            imgSrc: Rentals15,
-            alt: "Close-up view of decorative glasses with candles inside, accompanied by a flower vase, creating a warm and elegant ambiance"
-        },
+        // // {
+        // //     imgSrc: Rentals13,
+        // //     alt: "Elegant table and chair setup for a wedding event, featuring beautifully arranged seating and decor, creating a sophisticated atmosphere for the celebration"
+        // // },
+        // {
+        //     imgSrc: Rentals14,
+        //     alt: "Close-up view of an Iftar table setup, featuring traditional dishes, drinks, and decorative elements, creating an inviting atmosphere for the evening meal"
+        // },
+        // {
+        //     imgSrc: Rentals15,
+        //     alt: "Close-up view of decorative glasses with candles inside, accompanied by a flower vase, creating a warm and elegant ambiance"
+        // },
         // {
         //     imgSrc: Rentals16,
         //     alt: "Close-up view of decorative glasses with candles inside, accompanied by a flower vase, creating a warm and elegant ambiance"

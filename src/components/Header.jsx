@@ -33,7 +33,7 @@ const Header = () => {
           {/* <Nav.Link as={Link} to="/contact-us">Contact Us</Nav.Link> */}
 
           <Nav.Link
-            href="https://us.bigin.online/org868107012/forms/enquiry-form"
+            href="https://whatsform.com/LW55pG"
             target="_blank"
             rel="noopener noreferrer"
           >

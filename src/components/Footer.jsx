@@ -22,7 +22,7 @@ const Footer = () => {
             <HashLink className='footer-link' smooth to="/services#top">Services</HashLink>
             <HashLink className='footer-link' smooth to="/gallery#top">Gallery</HashLink>
             {/* <HashLink className='footer-link' smooth to="/contact-us">Contact Us</HashLink> */}
-            <a className='footer-link' href='https://us.bigin.online/org868107012/forms/enquiry-form' target='_blank' rel="noopener noreferrer">Contact Us</a>
+            <a className='footer-link' href='https://whatsform.com/LW55pG' target='_blank' rel="noopener noreferrer">Contact Us</a>
           </div>
         </div>
         <div className='col-md-3 my-4'>
