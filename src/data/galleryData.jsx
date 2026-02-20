@@ -117,7 +117,7 @@ import Rentals11 from "../assets/Website photos/Rentals/Rentals (11).jpg";
 
 
 export const galleryImages = {
-    "birthdayparties": [
+    "themedbirthdayparties": [
         {
             imgSrc: BirthdayParties1,
             alt: "Peppa Pig-themed outdoor party with pastel balloons and character decorations in a garden setting",
@@ -157,7 +157,32 @@ export const galleryImages = {
         {
             imgSrc: BirthdayParties10,
             alt: "Indoor car karting-themed party setup with red race car prop, blue, white, and red balloons, checkered flags, and racing-themed decorations",
+        }
+        
+    ],
+    "milestonecelebration":[
+        {
+            imgSrc: BirthdayParties16,
+            alt: "40 years birthday party setup with elegant decorations, including a sophisticated balloon arrangement in gold and white, a stylish welcome board, and a festive atmosphere for celebrating the milestone birthday",
         },
+        {
+            imgSrc: BirthdayParties17,
+            alt: "40 years birthday party setup with elegant decorations, including a sophisticated balloon arrangement in gold and white, a stylish welcome board, and a festive atmosphere for celebrating the milestone birthday",
+        },
+        {
+            imgSrc: BirthdayParties18,
+            alt: "50th years birthday party setup with elegant decorations, including a sophisticated balloon arrangement in gold and white, a stylish welcome board, and a festive atmosphere for celebrating the milestone birthday",
+        },
+        {
+            imgSrc: BirthdayParties19,
+            alt: "60th years birthday party setup with elegant decorations, including a sophisticated balloon arrangement in gold and white, a stylish welcome board, and a festive atmosphere for celebrating the milestone birthday",
+        },
+        {
+            imgSrc: BirthdayParties20,
+            alt: "Happy Birthday welcome board for a milestone birthday celebration, featuring elegant decorations, a stylish design, and a personalized message to commemorate the special occasion",
+        }
+    ],
+    "beachanddessertsetup":[
         {
             imgSrc: BirthdayParties11,
             alt: "Welcome board for karting-themed birthday party with tire graphics, red go-kart, and custom message for a 3rd birthday",
@@ -176,29 +201,10 @@ export const galleryImages = {
         },
         {
             imgSrc: BirthdayParties15,
-            alt: "",
+            alt: "Outdoor birthday party setup with a festive welcome board featuring a custom message, colorful balloons, and decorative elements for a joyful celebration",
         },
-        {
-            imgSrc: BirthdayParties16,
-            alt: "",
-        },
-        {
-            imgSrc: BirthdayParties17,
-            alt: "",
-        },
-        {
-            imgSrc: BirthdayParties18,
-            alt: "",
-        },
-        {
-            imgSrc: BirthdayParties19,
-            alt: "",
-        },
-        {
-            imgSrc: BirthdayParties20,
-            alt: "",
-        }
     ],
+
     "newbeginnings": [
         {
             imgSrc: Newbeginnings1,
@@ -403,49 +409,31 @@ export const galleryImages = {
         // },
     ],
     "corporateretreats": [
-        {
-            imgSrc: Inaugration1,
-            alt: "Beautiful wedding stage decor featuring white seating with white fabric, elegant white screen pillars, green leaf strings, and white floral arrangements for a fresh and elegant look"
-        },
+        
         {
             imgSrc: CorporateRetreats1,
             alt: "Placards with motivational and fun messages for turning 17, designed in red, white, and black color cards for a bold and youthful look"
+        },
+        
+        {
+            imgSrc: CorporateRetreats3,
+            alt: "17th-year anniversary backdrop designed for insomniacs with creative elements like clocks, stars, and calming colors, symbolizing a sleepless yet celebratory theme"
         },
         {
             imgSrc: CorporateRetreats2,
             alt: "Balloon decoration featuring a mix of red and white balloons arranged in a festive and elegant display"
         },
         {
-            imgSrc: CorporateRetreats3,
-            alt: "17th-year anniversary backdrop designed for insomniacs with creative elements like clocks, stars, and calming colors, symbolizing a sleepless yet celebratory theme"
-        },
-        {
-            imgSrc: CorporateRetreats4,
-            alt: "Hallway decorated with multiple pillars of red and gold balloons, creating a vibrant and festive atmosphere"
-        },
-        {
-            imgSrc: CorporateRetreats5,
-            alt: "Diwali celebration decor featuring a beautifully decorated stage with a floral backdrop, elegant drapes, and soft lighting creating a romantic and sophisticated ambiance"
-        },
-        {
-            imgSrc: CorporateRetreats6,
-            alt: "Close-up view of a glass window decorated with yellow and orange flowers, creating a vibrant and warm ambiance"
-        },
-        {
-            imgSrc: CorporateRetreats7,
-            alt: "Simple Diwali decor featuring a vase filled with fresh flowers and a Diwali message card, creating a festive and welcoming atmosphere"
-        },
-        {
-            imgSrc: CorporateRetreats8,
-            alt: "Food setup decor featuring an elegant display of various dishes, arranged with decorative elements to enhance the presentation"
-        },
-        {
-            imgSrc: CorporateRetreats9,
-            alt: "Food setup decor featuring an elegant display of various dishes, arranged with decorative elements to enhance the presentation"
-        },
-        {
             imgSrc: CorporateRetreats10,
             alt: "decorations with blue balloons and team building activity with employees playing a game, creating a fun and engaging atmosphere for the event"
+        },
+        {
+            imgSrc: TeamBuilding1,
+            alt: "Team building event featuring employees gathered together, participating in an activity to promote collaboration and engagement"
+        },
+        {
+            imgSrc: TeamBuilding9,
+            alt: "Participants engaged in a team-building activity, guiding a ball through a tunnel formed by people joining their arms or materials, promoting coordination and teamwork"
         },
         {
             imgSrc: CorporateRetreats11,
@@ -455,28 +443,19 @@ export const galleryImages = {
             imgSrc: CorporateRetreats12,
             alt: "all team members gathered together, participating in a team-building activity, creating a sense of camaraderie and fun in a festive atmosphere"
         },
-        {
-            imgSrc: CorporateRetreats13,
-            alt: "Group of members participating in a team-building activity, with employees gathered around and doing physical activity, fostering teamwork and engagement in a lively setting"
-        },
+        // {
+        //     imgSrc: CorporateRetreats13,
+        //     alt: "Group of members participating in a team-building activity, with employees gathered around and doing physical activity, fostering teamwork and engagement in a lively setting"
+        // },
         {
             imgSrc: CorporateRetreats14,
             alt: "group of members are playing mind games, with employees gathered around and doing physical activity, fostering teamwork and engagement in a lively setting"
         },
-    ],
-    // "inaguration": [
-    //     {
-    //         imgSrc: Inaugration1,
-    //         alt: "Beautiful wedding stage decor featuring white seating with white fabric, elegant white screen pillars, green leaf strings, and white floral arrangements for a fresh and elegant look"
-    //     }
-    // ],
-    "academic-celebrations": [
+
+        // Academics Category images//
+
         {
             imgSrc: SchoolEvents1,
-            alt: "",
-        },
-        {
-            imgSrc: SchoolEvents2,
             alt: "",
         },
         {
@@ -492,49 +471,36 @@ export const galleryImages = {
             alt: "",
         },
         {
-            imgSrc: SchoolEvents6,
-            alt: "",
+            imgSrc: CorporateRetreats9,
+            alt: "Food setup decor featuring an elegant display of various dishes, arranged with decorative elements to enhance the presentation"
         },
+        
+        // Team Building images //
 
+        
+        {
+            imgSrc: Inaugration1,
+            alt: "Beautiful wedding stage decor featuring white seating with white fabric, elegant white screen pillars, green leaf strings, and white floral arrangements for a fresh and elegant look"
+        },
+        {
+            imgSrc: CorporateRetreats4,
+            alt: "Hallway decorated with multiple pillars of red and gold balloons, creating a vibrant and festive atmosphere"
+        },
+        {
+            imgSrc: CorporateRetreats7,
+            alt: "Simple Diwali decor featuring a vase filled with fresh flowers and a Diwali message card, creating a festive and welcoming atmosphere"
+        },
+        {
+            imgSrc: CorporateRetreats5,
+            alt: "Diwali celebration decor featuring a beautifully decorated stage with a floral backdrop, elegant drapes, and soft lighting creating a romantic and sophisticated ambiance"
+        },
     ],
-    "teambuildingevents": [
-        {
-            imgSrc: TeamBuilding1,
-            alt: "Team building event featuring employees gathered together, participating in an activity to promote collaboration and engagement"
-        },
-        {
-            imgSrc: TeamBuilding2,
-            alt: "Employees cheering and clapping their hands in a circle, fostering team spirit and excitement during a team-building activity"
-        },
-        {
-            imgSrc: TeamBuilding3,
-            alt: "Team-building activity featuring employees working together to play the ball in the pipe game, promoting collaboration and problem-solving"
-        },
-        {
-            imgSrc: TeamBuilding4,
-            alt: "Employees gathered in a circle in a hall, decorated with blue and white balloons, and water bottles placed on tables, creating a festive and energetic atmosphere"
-        },
-        {
-            imgSrc: TeamBuilding5,
-            alt: "Elderly people participating in recreational activities, seated in a circle, enjoying social interaction and games in a warm, welcoming setting"
-        },
-        {
-            imgSrc: TeamBuilding6,
-            alt: "Elderly people participating in recreational activities outdoors, seated in a circle with their eyes closed and hands placed over their eyes, enjoying a calming and social experience"
-        },
-        {
-            imgSrc: TeamBuilding7,
-            alt: "Elderly people participating in recreational activities outdoors, seated in a circle with their hands placed on their heads, engaging in a fun and interactive group exercise"
-        },
-        {
-            imgSrc: TeamBuilding8,
-            alt: "Elderly participants engaged in a recreational event, drawing bumble bees as part of a creative and fun group activity"
-        },
-        {
-            imgSrc: TeamBuilding9,
-            alt: "Participants engaged in a team-building activity, guiding a ball through a tunnel formed by people joining their arms or materials, promoting coordination and teamwork"
-        }
-    ],
+    // "inaguration": [
+    //     {
+    //         imgSrc: Inaugration1,
+    //         alt: "Beautiful wedding stage decor featuring white seating with white fabric, elegant white screen pillars, green leaf strings, and white floral arrangements for a fresh and elegant look"
+    //     }
+    // ],
     "cozyspots": [
         {
             imgSrc: QuizzyBeez1,
@@ -634,9 +600,21 @@ export const categories = ['All', 'Private Events', 'Corporate Events', 'Rentals
 export const galleryItems = [
     {
         category: "Private Events",
-        name: "Birthday Parties",
-        description: "We organize kids' birthday parties, adult celebrations, and themed events.",
-        link: '/galleryimages/birthdayparties'
+        name: "Themed Birthday Parties",
+        description: "We organize themed birthday parties and themed events.",
+        link: '/galleryimages/themedbirthdayparties'
+    },
+    {
+        category: "Private Events",
+        name: "Milestone Celebration ",
+        description: "We organize milestone celebrations for adults and special occasions.",
+        link: '/galleryimages/milestonecelebration'
+    },
+    {
+        category: "Private Events",
+        name: "Beach And Dessert Setup",
+        description: "We organize beachside and dessert setups for special occasions.",
+        link: '/galleryimages/beachanddessertsetup'
     },
     {
         category: "Private Events",
@@ -647,7 +625,7 @@ export const galleryItems = [
 
     {
         category: "Private Events",
-        name: "Weddings and Reception",
+        name: "Weddings And Reception",
         description: "Elegant ceremonies and receptions that create lasting memories for the couple.",
         link: '/galleryimages/weddingsandreception'
     },
@@ -681,18 +659,18 @@ export const galleryItems = [
     //     description: "Grand Ambience for Grand Openings",
     //     link: '/galleryimages/inaguration'
     //   },
-    {
-        category: "Corporate Events",
-        name: "Academic Celebrations",
-        description: "Decorated with Dreams, Designed for Memories",
-        link: '/galleryimages/academic-celebrations'
-    },
-    {
-        category: "Corporate Events",
-        name: "Team Building Events",
-        description: "Activities aimed at strengthening collaboration and camaraderie among team members.",
-        link: '/galleryimages/teambuildingevents'
-    },
+    // {
+    //     category: "Corporate Events",
+    //     name: "Academic Celebrations",
+    //     description: "Decorated with Dreams, Designed for Memories",
+    //     link: '/galleryimages/academic-celebrations'
+    // },
+    // {
+    //     category: "Corporate Events",
+    //     name: "Team Building Events",
+    //     description: "Activities aimed at strengthening collaboration and camaraderie among team members.",
+    //     link: '/galleryimages/teambuildingevents'
+    // },
 
     // {
     //   category: "Corporate Events",

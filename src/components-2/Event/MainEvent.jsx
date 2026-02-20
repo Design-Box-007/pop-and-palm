@@ -54,9 +54,9 @@ const EventCard = ({ title, img, tags }) => (
             </span>
           ))}
         </div>
-        <span>
+        {/* <span>
           <img src={icons.icon4} alt="icon" />
-        </span>
+        </span> */}
       </div>
     </div>
   </div>

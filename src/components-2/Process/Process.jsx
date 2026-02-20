@@ -78,7 +78,7 @@ export default function ProcessSection() {
             <span className={styles.number}>04</span>
           </div>
 
-          <button className={styles.cta}>
+          <button className={styles.cta} onClick={() => window.open("https://whatsform.com/LW55pG", "_blank")}>
             Start Your Journey
             <span>
               <img src={arrowIcon} alt="icon" />
