@@ -112,7 +112,7 @@ const Services = () => {
                               </button>
                             </HashLink>
                             <a
-                              href="https://us.bigin.online/org868107012/forms/enquiry-form"
+                              href="https://whatsform.com/LW55pG"
                               target="_blank"
                               rel="noopener noreferrer"
                               onClick={scrollToTop}
@@ -146,7 +146,7 @@ const Services = () => {
                               </button>
                             </HashLink>
                             <a
-                              href="https://us.bigin.online/org868107012/forms/enquiry-form"
+                              href="https://whatsform.com/LW55pG"
                               target="_blank"
                               rel="noopener noreferrer"
                               onClick={scrollToTop}

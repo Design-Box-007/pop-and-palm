@@ -119,10 +119,6 @@ import Rentals11 from "../assets/Website photos/Rentals/Rentals (11).jpg";
 export const galleryImages = {
     "themedbirthdayparties": [
         {
-            imgSrc: BirthdayParties1,
-            alt: "Peppa Pig-themed outdoor party with pastel balloons and character decorations in a garden setting",
-        },
-        {
           imgSrc: BirthdayParties2,
           alt: "Ballons decoration for a birthday party with a mix of pastel pink, white, and gold balloons, creating a festive and elegant atmosphere",
         },
@@ -137,6 +133,10 @@ export const galleryImages = {
         {
             imgSrc: BirthdayParties5,
             alt: "Indoor Moana-themed party setup with tropical decorations, ocean-inspired colors, island props, and character cutouts",
+        },
+        {
+            imgSrc: BirthdayParties1,
+            alt: "Peppa Pig-themed outdoor party with pastel balloons and character decorations in a garden setting",
         },
         {
           imgSrc: BirthdayParties6,

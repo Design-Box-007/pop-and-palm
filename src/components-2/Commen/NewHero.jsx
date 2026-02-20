@@ -129,7 +129,7 @@ const Hero = ({
                   <span>-</span>
 
                   <Nav.Link
-                    href="https://us.bigin.online/org868107012/forms/enquiry-form"
+                    href="https://whatsform.com/LW55pG"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={"planButton"}
