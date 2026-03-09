@@ -1,8 +1,3 @@
-import Blog1 from "./Blogs/Blog1";
-import Blog2 from "./Blogs/Blog2";
-import Blog3 from "./Blogs/Blog3";
-import Blog4 from "./Blogs/Blog4";
-
 import BlogImage1 from '../assets/Blogs/cultural-celebration-ramadan.jpg'
 import BlogImage2 from '../assets/Blogs/park-beach-decor.jpg';
 import BlogImage3 from '../assets/Blogs/trends-2025.jpg';
@@ -35,12 +30,19 @@ import BlogImage29 from '../assets/Blogs/blog-29.jpeg'
 import BlogImage30 from '../assets/Blogs/blog-30.jpeg'
 import BlogImage31 from '../assets/Blogs/blog-31.jpeg'
 import BlogImage32 from '../assets/Blogs/blog-32.jpeg'
+import BlogImage33 from '../assets/Blogs/blog-33.png'
+import BlogImage34 from '../assets/Blogs/blog-34.png'
+import BlogImage35 from '../assets/Blogs/blog-35.png'
+import BlogImage36 from '../assets/Blogs/blog-36.png'
 
+import Blog1 from "./Blogs/Blog1";
+import Blog2 from "./Blogs/Blog2";
+import Blog3 from "./Blogs/Blog3";
+import Blog4 from "./Blogs/Blog4";
 import Blog5 from "./Blogs/Blog5";
 import Blog6 from "./Blogs/Blog6";
 import Blog7 from "./Blogs/Blog7";
 import Blog8 from "./Blogs/Blog8";
-
 import Blog9 from "./Blogs/Blog9";
 import Blog10 from "./Blogs/Blog10";
 import Blog11 from "./Blogs/Blog11";
@@ -63,6 +65,10 @@ import Blog29 from "./Blogs/Blog29";
 import Blog30 from "./Blogs/Blog30";
 import Blog31 from "./Blogs/Blog31";
 import Blog32 from "./Blogs/Blog32";
+import Blog33 from "./Blogs/Blog33";
+import Blog34 from "./Blogs/Blog34";
+import Blog35 from "./Blogs/Blog35";
+import Blog36 from "./Blogs/Blog36";
 
 
 
@@ -264,5 +270,29 @@ export const blogData = [
         description: "Every event starts as an idea : a vision shared in conversation, a feeling someone wants to bring to life. The real work happens in the in-between: translating that vision into a space that feels intentional, seamless, and true to its purpose.",
         imgSrc: BlogImage32,
         blogContent: Blog32,
+    },
+    {
+        title: "How Arrival Moments Set the Tone for Corporate Events",
+        description: "The success of corporate events in Dubai often begins before the first presentation or networking conversation. It begins the moment guests arrive.",
+        imgSrc: BlogImage33,
+        blogContent: Blog33,
+    },
+    {
+        title: "The Psychology of Guest Flow: Why Event Layout Matters",
+        description: "When people think about successful corporate events in Dubai, they often focus on décor, entertainment, or food. But one of the most powerful influences on guest experience is something less visible: event layout.",
+        imgSrc: BlogImage34,
+        blogContent: Blog34,
+    },
+    {
+        title: "How Event Environments Influence Brand Perception",
+        description: "In today’s competitive business world, brands are not defined only by their products or services. They are defined by the experiences they create.",
+        imgSrc: BlogImage35,
+        blogContent: Blog35,
+    },
+    {
+        title: "Why Modern Brands Are Investing More in Internal Corporate Events Than Advertising",
+        description: "For many years, companies relied heavily on advertising to communicate their brand message. Today, many organisations are shifting their focus toward internal corporate events designed for employees.",
+        imgSrc: BlogImage36,
+        blogContent: Blog36,
     },
 ];
