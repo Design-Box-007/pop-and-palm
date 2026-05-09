@@ -34,6 +34,14 @@ import BlogImage33 from '../assets/Blogs/blog-33.png'
 import BlogImage34 from '../assets/Blogs/blog-34.png'
 import BlogImage35 from '../assets/Blogs/blog-35.png'
 import BlogImage36 from '../assets/Blogs/blog-36.png'
+import BlogImage37 from '../assets/Blogs/blog-37.jpeg'
+import BlogImage38 from '../assets/Blogs/blog-38.jpeg'
+import BlogImage39 from '../assets/Blogs/blog-39.jpeg'
+import BlogImage40 from '../assets/Blogs/blog-40.png'
+import BlogImage41 from '../assets/Blogs/blog-41.png'
+import BlogImage42 from '../assets/Blogs/blog-42.png'
+import BlogImage43 from '../assets/Blogs/blog-43.png'
+import BlogImage44 from '../assets/Blogs/blog-44.png'
 
 import Blog1 from "./Blogs/Blog1";
 import Blog2 from "./Blogs/Blog2";
@@ -69,6 +77,14 @@ import Blog33 from "./Blogs/Blog33";
 import Blog34 from "./Blogs/Blog34";
 import Blog35 from "./Blogs/Blog35";
 import Blog36 from "./Blogs/Blog36";
+import Blog37 from "./Blogs/Blog37";
+import Blog38 from "./Blogs/Blog38";
+import Blog39 from "./Blogs/Blog39";
+import Blog40 from "./Blogs/Blog40";
+import Blog41 from "./Blogs/Blog41";
+import Blog42 from "./Blogs/Blog42";
+import Blog43 from "./Blogs/Blog43";
+import Blog44 from "./Blogs/Blog44";
 
 
 
@@ -295,4 +311,53 @@ export const blogData = [
         imgSrc: BlogImage36,
         blogContent: Blog36,
     },
+    {
+        title: "The Return of Simplicity: Why Clean Event Design Feels More Premium",
+        description: "In a world of bold themes and elaborate setups, a new trend is emerging. Simplicity.",
+        imgSrc: BlogImage37,
+        blogContent: Blog37,
+    },
+    {
+        title: "Why Mid-Week Corporate Events Are Gaining Popularity",
+        description: "In the world of corporate events, timing is everything. While Fridays and weekends have traditionally been the go-to days for gatherings, a new trend is emerging: mid-week events.",
+        imgSrc: BlogImage38,
+        blogContent: Blog38,
+    },
+    {
+        title: "The Rise of Slow Networking: Why Corporate Events Are Becoming More Human",
+        description: "Corporate networking is evolving. Instead of fast-paced introductions and crowded rooms, companies are now embracing “slow networking”—a more thoughtful and human approach to connection.",
+        imgSrc: BlogImage39,
+        blogContent: Blog39,
+    },
+    {
+        title: "Why “Less but Better” Is Redefining Corporate Events in 2026",
+        description: "In recent years, corporate events have shifted away from scale and spectacle. In 2026, many companies are choosing a different approach—smaller, more intentional experiences that focus on quality over quantity.",
+        imgSrc: BlogImage40,
+        blogContent: Blog40,
+    },
+    {
+        title: "The Intimate Event Revolution: Why Dubai Is Embracing Smaller, More Personal Gatherings",
+        description: "In a world that often equates bigger with better, a quiet revolution is taking place in the events industry. More and more, companies and individuals are choosing smaller, more intimate gatherings over large-scale events.",
+        imgSrc: BlogImage41,
+        blogContent: Blog41,
+    },
+    {
+        title: "Designing for Diversity: How to Create Inclusive Events in a Multicultural City Like Dubai",
+        description: "Dubai is a city of incredible diversity, with people from all over the world living and working together. This multiculturalism is one of the city’s greatest strengths, but it also presents unique challenges when it comes to event planning.",
+        imgSrc: BlogImage42,
+        blogContent: Blog42,
+    },
+    {
+        title: "The Psychology of Event Lighting: Why the Right Light Changes How People Feel",
+        description: "Light doesn’t just illuminate. It communicates. Warm, low light signals safety and intimacy. Cool, bright overhead light signals alertness and formality.",
+        imgSrc: BlogImage43,
+        blogContent: Blog43,
+    },
+    {
+        title: "The Power of Arrival: How the First Moments of an Event Set the Tone for the Entire Experience",
+        description: "The success of an event often hinges on the first moments. The way guests are welcomed, the atmosphere they step into, and the emotions they feel upon arrival can set the tone for the entire experience.",
+        imgSrc: BlogImage44,
+        blogContent: Blog44,
+    },
+
 ];
