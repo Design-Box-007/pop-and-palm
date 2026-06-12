@@ -42,6 +42,10 @@ import BlogImage41 from '../assets/Blogs/blog-41.png'
 import BlogImage42 from '../assets/Blogs/blog-42.png'
 import BlogImage43 from '../assets/Blogs/blog-43.png'
 import BlogImage44 from '../assets/Blogs/blog-44.png'
+import BlogImage45 from '../assets/Blogs/blog-45.png'
+import BlogImage46 from '../assets/Blogs/blog-46.png'
+import BlogImage47 from '../assets/Blogs/blog-47.png'
+import BlogImage48 from '../assets/Blogs/blog-48.png'
 
 import Blog1 from "./Blogs/Blog1";
 import Blog2 from "./Blogs/Blog2";
@@ -85,6 +89,11 @@ import Blog41 from "./Blogs/Blog41";
 import Blog42 from "./Blogs/Blog42";
 import Blog43 from "./Blogs/Blog43";
 import Blog44 from "./Blogs/Blog44";
+import Blog45 from "./Blogs/Blog45";
+import Blog46 from "./Blogs/Blog46";
+import Blog47 from "./Blogs/Blog47";
+import Blog48 from "./Blogs/Blog48";
+import { title } from 'framer-motion/client';
 
 
 
@@ -358,6 +367,30 @@ export const blogData = [
         description: "The success of an event often hinges on the first moments. The way guests are welcomed, the atmosphere they step into, and the emotions they feel upon arrival can set the tone for the entire experience.",
         imgSrc: BlogImage44,
         blogContent: Blog44,
+    },
+    {
+        title: "How to Mark a Company Milestone Without It Feeling Like a Formality",
+        description: "A first anniversary. A decade in business. A significant revenue milestone. A team that delivered something genuinely difficult. And most companies mark these moments the same way.",
+        imgSrc: BlogImage45,
+        blogContent: Blog45,
+    },
+    {
+        title: "The Seating Plan Is Not an Admin Task. It's the Most Important Decision You'll Make.",
+        description: "Most people treat the seating plan as the last thing to sort before an event. Something to finalise once the real planning is done. After years of producing events, we would argue the opposite. The seating plan is often the single decision that determines whether an evening becomes memorable or merely pleasant.",
+        imgSrc: BlogImage46,
+        blogContent: Blog46,
+    },
+    {
+        title: "The Difference Between an Event People Attend and One They Remember",
+        description: "People come, eat, exchange a few minutes with a handful of people, and leave. Within a week the evening has compressed into a vague positive memory pleasant but forgettable.",
+        imgSrc: BlogImage47,
+        blogContent: Blog47,
+    },
+    {
+        title: "What Events Can Do That No Other Business Tool Can",
+        description: "Email. Video calls. Messaging platforms. Collaborative documents. AI assistants summarising everything.",
+        imgSrc: BlogImage48,
+        blogContent: Blog48,
     },
 
 ];
