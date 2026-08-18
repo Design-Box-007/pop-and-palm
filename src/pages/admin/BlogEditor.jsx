@@ -358,25 +358,49 @@ export const BlogEditor = () => {
     setSections(sections.filter((_, i) => i !== index));
   };
 
+  // Smooth error scrolling helper
+  const showErrorAndScroll = (msg, targetId = null) => {
+    setError(msg);
+    setSuccess("");
+    setTimeout(() => {
+      if (targetId) {
+        const el = document.getElementById(targetId);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth", block: "center" });
+          if (typeof el.focus === "function") {
+            el.focus();
+          }
+          return;
+        }
+      }
+      const alertEl = document.getElementById("admin-feedback-alert");
+      if (alertEl) {
+        alertEl.scrollIntoView({ behavior: "smooth", block: "center" });
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    }, 50);
+  };
+
   // Save / Update Post
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    if (e && e.preventDefault) e.preventDefault();
     setError("");
     setSuccess("");
 
     if (!title.trim()) {
-      setError("Please provide an article title.");
+      showErrorAndScroll("Please provide an article title before publishing.", "admin-input-title");
       return;
     }
 
     if (!description.trim()) {
-      setError("Please provide a short description or excerpt.");
+      showErrorAndScroll("Please provide a short description or excerpt.", "admin-input-description");
       return;
     }
 
     const finalImageUrl = coverImagePreview || existingImageUrl;
     if (!finalImageUrl) {
-      setError("Please upload or provide a featured cover image.");
+      showErrorAndScroll("Please upload or provide a featured cover image.", "admin-cover-image-card");
       return;
     }
 
@@ -405,12 +429,14 @@ export const BlogEditor = () => {
         setSuccess("Article published to live website successfully!");
       }
 
+      window.scrollTo({ top: 0, behavior: "smooth" });
+
       setTimeout(() => {
         navigate("/admin");
       }, 1200);
     } catch (err) {
       console.error("Save error:", err);
-      setError(err.message || "Failed to save article. Please try again.");
+      showErrorAndScroll(err.message || "Failed to save article. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -532,11 +558,12 @@ export const BlogEditor = () => {
         {/* Feedback Alerts */}
         {error && (
           <div
+            id="admin-feedback-alert"
             className="alert alert-danger d-flex align-items-center gap-2 mb-4 border-0 shadow-sm"
             role="alert"
             style={{ borderRadius: "14px", padding: "16px 20px", backgroundColor: "#fdf2f2", color: "#9b1c1c" }}
           >
-            <AlertCircle size={20} />
+            <AlertCircle size={20} className="shrink-0" />
             <span className="font-weight-medium">{error}</span>
           </div>
         )}
@@ -569,6 +596,7 @@ export const BlogEditor = () => {
                     <span>Article Title <span className="text-danger">*</span></span>
                   </label>
                   <input
+                    id="admin-input-title"
                     type="text"
                     className="admin-input admin-input-title"
                     placeholder="e.g. Modern Balloon Styling Ideas for Luxury Events"
@@ -623,6 +651,7 @@ export const BlogEditor = () => {
                     <span>Short Excerpt / Card Description <span className="text-danger">*</span></span>
                   </label>
                   <textarea
+                    id="admin-input-description"
                     rows={3}
                     className="admin-textarea"
                     placeholder="Brief summary displayed on the blog card and social previews..."
@@ -832,7 +861,7 @@ export const BlogEditor = () => {
             <div className="col-12 col-lg-4">
               <div className="admin-sticky-sidebar">
                 {/* Cover Image Upload Card */}
-                <div className="admin-card">
+                <div id="admin-cover-image-card" className="admin-card">
                   <div className="d-flex align-items-center justify-content-between mb-3">
                     <h5 className="admin-card-header-title mb-0">
                       Cover Image <span className="text-danger">*</span>
@@ -981,6 +1010,15 @@ export const BlogEditor = () => {
 
                 {/* Submit CTA */}
                 <div className="admin-card p-3">
+                  {error && (
+                    <div
+                      className="alert alert-danger d-flex align-items-start gap-2 mb-3 border-0 p-2.5 small shadow-sm"
+                      style={{ borderRadius: "12px", backgroundColor: "#fdf2f2", color: "#9b1c1c", fontSize: "0.86rem" }}
+                    >
+                      <AlertCircle size={16} className="shrink-0 mt-0.5" />
+                      <span className="font-weight-medium">{error}</span>
+                    </div>
+                  )}
                   <button
                     type="submit"
                     disabled={loading || uploadingImage || deleting}
